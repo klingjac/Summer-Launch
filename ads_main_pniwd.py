@@ -6,9 +6,7 @@ import threading
 from ADS_class import ADS_Sensors
 from datetime import datetime
 
-from lib.gps_lib import gps_scan
-
-class SensorDataLogger:
+class ADSSensorDataLogger:
     def __init__(self):
         self.ads_sensors = ADS_Sensors()
         self.data_dir = "ADS_data"
@@ -38,22 +36,13 @@ class SensorDataLogger:
         GPIO.add_event_detect(self.MAG_TRICLOPS_INTERRUPT_PIN, GPIO.RISING, callback=self.mag_triclops_interrupt_handler, bouncetime=1)
         GPIO.add_event_detect(self.IMU_INTERRUPT_PIN, GPIO.RISING, callback=self.imu_interrupt_handler, bouncetime=1)
 
-        self.gps_data = {
-            'timestamp': '000000',  # HHMMSS format
-            'latitude': 0,
-            'longitude': 0,
-            'ns_indicator': 'N',
-            'ew_indicator': 'E',
-            'ground_speed': 0,
-            'altitude': 0,
-            'snr': 0,
-            'fix': 0
-        }
+        
 
-        # Start watchdog thread
+        # Start ADS watchdog thread
         self.watchdog_thread = threading.Thread(target=self.interrupt_tracker)
         self.watchdog_thread.daemon = True
         self.watchdog_thread.start()
+        self.ads_sensors.getMagReading()
 
     def create_new_csv_file(self):
         if self.csv_file:
@@ -66,7 +55,6 @@ class SensorDataLogger:
         self.file_counter += 1
 
     def mag_triclops_interrupt_handler(self, channel):
-        print("penis")
         self.ads_sensors.getMagReading()
         self.pni_interrupt_flag = True
 
@@ -81,7 +69,7 @@ class SensorDataLogger:
             self.ads_sensors.accX, self.ads_sensors.accY, self.ads_sensors.accZ,
             self.ads_sensors.gyroX, self.ads_sensors.gyroY, self.ads_sensors.gyroZ,
             self.ads_sensors.tri1, self.ads_sensors.tri2, self.ads_sensors.tri3,
-            self.gps_data['latitude'], self.gps_data['longitude'], self.gps_data['altitude'], self.gps_data['timestamp']
+            self.ads_sensors.GPS.gps_data['latitude'], self.ads_sensors.GPS.gps_data['longitude'], self.ads_sensors.GPS.gps_data['altitude'], self.ads_sensors.GPS.gps_data['timestamp']
         ])
         self.current_entries += 1
 
@@ -98,7 +86,7 @@ class SensorDataLogger:
             self.pni_interrupt_flag = False
             time.sleep(1)
 
-    def run(self):
+    def run(self): #Only needed outside of main loop
         # self.ads_sensors.getMagReading()  # Needed to initialize mag interrupts
         self.ads_sensors.getMagReading()
         while True:

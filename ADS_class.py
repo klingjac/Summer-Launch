@@ -15,7 +15,7 @@ from lib.icm20948_lib import ICM20948_ACCEL_XOUT_H
 from lib.AD7994 import AD7994 
 from lib.pni_rm3100 import PniRm3100
 
-from lib.gps_lib import gps_scan
+from lib.gps_lib import GPSScanner
 
 class ADS_Sensors():
 
@@ -88,6 +88,11 @@ class ADS_Sensors():
         self.sun_ref = 3 #For later Triclops Conversion
         self.MaxCounts = 1023
 
+        self.GPS = GPSScanner()
+
+        self.gps_thread = threading.Thread(target=self.GPS.gps_scan)
+        self.gps_thread.start()
+
 
     def getTriclopsReading(self):
         data = self.triclops.get_data() 
@@ -123,6 +128,8 @@ class ADS_Sensors():
         self.accX = ax
         self.accY = ay
         self.accZ = az
+
+
     
 
     

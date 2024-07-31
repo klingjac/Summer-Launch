@@ -1,16 +1,20 @@
-import threading
-import os
+from ads_main_pniwd import ADSSensorDataLogger
+from opv_class import OPV
 import time
 
-from opv_interface import opv_loop
-
 def main():
-    opv_thread = threading.Thread(target=opv_loop)
-    opv_thread.start()
+    #Start all subsystem functions/loggers
 
-    
+    ADS_logger = ADSSensorDataLogger()
+
+    OPV_logger = OPV() #Autostarts once the class is evoked
+
     while True:
         time.sleep(1)
+
+
+
+    
 
 if __name__ == "__main__":
     main()
