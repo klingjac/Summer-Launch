@@ -26,7 +26,7 @@ class SensorDataLogger:
         self.create_new_csv_file()
 
         # Define GPIO pins for interrupts
-        self.MAG_TRICLOPS_INTERRUPT_PIN = 22  # GPIO pin for magnetometer and Triclops interrupt
+        self.MAG_TRICLOPS_INTERRUPT_PIN = 18  # GPIO pin for magnetometer and Triclops interrupt
         self.IMU_INTERRUPT_PIN = 4           # GPIO pin for IMU interrupt
 
         # GPIO setup
@@ -35,8 +35,8 @@ class SensorDataLogger:
         GPIO.setup(self.IMU_INTERRUPT_PIN, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
         # Setup interrupts
-        GPIO.add_event_detect(self.MAG_TRICLOPS_INTERRUPT_PIN, GPIO.RISING, callback=self.mag_triclops_interrupt_handler, bouncetime=2)
-        GPIO.add_event_detect(self.IMU_INTERRUPT_PIN, GPIO.RISING, callback=self.imu_interrupt_handler, bouncetime=2)
+        GPIO.add_event_detect(self.MAG_TRICLOPS_INTERRUPT_PIN, GPIO.RISING, callback=self.mag_triclops_interrupt_handler, bouncetime=1)
+        GPIO.add_event_detect(self.IMU_INTERRUPT_PIN, GPIO.RISING, callback=self.imu_interrupt_handler, bouncetime=1)
 
         self.gps_data = {
             'timestamp': '000000',  # HHMMSS format
@@ -66,6 +66,7 @@ class SensorDataLogger:
         self.file_counter += 1
 
     def mag_triclops_interrupt_handler(self, channel):
+        print("penis")
         self.ads_sensors.getMagReading()
         self.pni_interrupt_flag = True
 
@@ -99,6 +100,7 @@ class SensorDataLogger:
 
     def run(self):
         # self.ads_sensors.getMagReading()  # Needed to initialize mag interrupts
+        self.ads_sensors.getMagReading()
         while True:
             #gps_scan(self.gps_data)
             time.sleep(0.2)
