@@ -5,29 +5,33 @@ import numpy as np
 import pandas as pd
 import threading
 
-class QuadMag():
+class QuadMag_logger():
     def __init__(self):
-        self.qm_thread = threading.Thread(target=self.RunQM) #Create the thread object this runs off of the
-        self.qm_thread.start()  
+        self.QuadMag = QuadMag()  
+        self.QuadMag.setCollectionTime(20)
 
-    def RunQM(self, prefix):
+        self.qm_thread = threading.Thread(target=self.RunQM) #Create the thread object this runs off of the
+        self.qm_thread.start() 
+
+    def RunQM(self):
+        prefix = "test"
         i = 1
         while 1:
             #37 HZ CYCLE- Set sample rate, update name, run
-            QuadMag.setSampleRate(37)
+            self.QuadMag.setSampleRate(37)
             name = prefix+"_"+str(i)+"_37Hz"
-            QuadMag.setfilename(name)
-            QuadMag.CollectData(0) #Change to 1 if raw
+            self.QuadMag.setfilename(name)
+            self.QuadMag.CollectData(0) #Change to 1 if raw
 
             #75 HZ CYCLE- Set sample rate, update name, run
-            QuadMag.setSampleRate(75)
+            self.QuadMag.setSampleRate(75)
             name = prefix+"_"+str(i)+"_75Hz"
-            QuadMag.setfilename(name)
-            QuadMag.CollectData(0) #Change to 1 if raw
+            self.QuadMag.setfilename(name)
+            self.QuadMag.CollectData(0) #Change to 1 if raw
             i = i+1
         return
 
-    def QuadMagBeaconator(self, QuadMag, BeacFreq):
+    def QuadMagBeaconator(self, BeacFreq):
         #BeacFreq = Beacon Frequency in Hz. Yes this will probably be less than 1Hz
         #Find folder, sort data by recent, get newest first
         folder_path = 'data_storage/'

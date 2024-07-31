@@ -11,7 +11,7 @@ CTRL+F "data_storage/" and replace it with some QM-related folder heading throug
 import serial
 import sys
 from sys import byteorder
-import data_processing_lib.data_commands_lib as dcl
+import lib.data_processing_lib.data_commands_lib as dcl
 import csv
 import threading
 from datetime import datetime
