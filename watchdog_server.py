@@ -1,97 +1,61 @@
-import threading
-import socket
+import multiprocessing
 import time
+import logging
 
-class Watchdog:
-    def __init__(self, udp_ip="127.0.0.1", udp_port=5005, tcp_ip="127.0.0.1", tcp_port=5006):
-        self.udp_ip = udp_ip
-        self.udp_port = udp_port
-        self.tcp_ip = tcp_ip
-        self.tcp_port = tcp_port
-        self.last_heartbeat = {}
-        self.threads = {}
-        self.lock = threading.Lock()
+def create_shared_heartbeat():
+    return multiprocessing.Value('b', False)
 
-        # Start the TCP server for registration
-        self.tcp_server_thread = threading.Thread(target=self.tcp_server, daemon=True)
-        self.tcp_server_thread.start()
+def initialize_logger():
+    logger = logging.getLogger('WatchdogLogger')
+    logger.setLevel(logging.INFO)
+    fh = logging.FileHandler('watchdog_restarts.log')
+    fh.setLevel(logging.INFO)
+    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+    fh.setFormatter(formatter)
+    logger.addHandler(fh)
+    return logger
 
-        # Start the UDP listener for heartbeats
-        self.udp_listener_thread = threading.Thread(target=self.udp_listener, daemon=True)
-        self.udp_listener_thread.start()
-
-        # Start the watchdog monitor
-        self.watchdog_thread = threading.Thread(target=self.watchdog, daemon=True)
-        self.watchdog_thread.start()
-
-    def tcp_server(self):
-        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-            s.bind((self.tcp_ip, self.tcp_port))
-            s.listen()
-            while True:
-                conn, addr = s.accept()
-                with conn:
-                    data = conn.recv(1024)
-                    if data:
-                        name = data.decode()
-                        print(f"Registered {name}")
-                        with self.lock:
-                            self.start_thread(name)
-
-    def start_thread(self, name):
-        thread = threading.Thread(target=self.target_function, args=(name,), daemon=True)
-        self.threads[name] = thread
-        thread.start()
-        self.last_heartbeat[name] = time.time()
-        print(f"Started thread {name}")
-
-    def target_function(self, name):
-        with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as sock:
-            while True:
-                message = f"heartbeat from {name}"
-                sock.sendto(message.encode(), (self.udp_ip, self.udp_port))
-                time.sleep(10)  # Send a heartbeat every 10 seconds
-
-    def udp_listener(self):
-        with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as sock:
-            sock.bind((self.udp_ip, self.udp_port))
-            while True:
-                data, addr = sock.recvfrom(1024)
-                message = data.decode()
-                name = message.split()[-1]  # Extract the thread name from the message
-                with self.lock:
-                    self.last_heartbeat[name] = time.time()
-                print(f"Received heartbeat from {name}")
-
-    def watchdog(self):
-        while True:
-            current_time = time.time()
-            with self.lock:
-                for name, last_time in list(self.last_heartbeat.items()):
-                    if current_time - last_time > 60:
-                        print(f"{name} failed to send heartbeat. Restarting...")
-                        self.restart_thread(name)
-            time.sleep(5)  # Check every 5 seconds
-
-    def restart_thread(self, name):
-        self.threads[name].join()
-        self.start_thread(name)
-        print(f"Restarted thread {name}")
-
-# Example usage
-if __name__ == "__main__":
-    watchdog = Watchdog()
-
-    # Simulate registering target functions
-    def register_function(name):
-        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-            s.connect((watchdog.tcp_ip, watchdog.tcp_port))
-            s.sendall(name.encode())
-
-    # Register 3 target functions
-    for i in range(3):
-        register_function(f"thread-{i}")
-
-    # Keep the main thread alive
+def watchdog_process(heartbeats, processes, logger):
     while True:
-        time.sleep(1)
+        for name, heartbeat in heartbeats.items():
+            if not heartbeat.value:
+                logger.info(f"{name} failed to send heartbeat. Restarting...")
+                processes[name].terminate()
+                processes[name].join()  # Ensure the process has terminated
+                heartbeat.value = True  # Reset heartbeat before restarting
+                process = spawn_process(name, heartbeats, logger)
+                processes[name] = process
+            else:
+                heartbeat.value = False  # Reset heartbeat for the next check
+        time.sleep(60)
+
+def spawn_process(name, heartbeats, logger):
+    if name == "ADS":
+        from ads_main_pniwd import run_ads_logger
+        process = multiprocessing.Process(target=run_ads_logger, args=(heartbeats[name],))
+    elif name == "OPV":
+        from opv_class import run_opv
+        process = multiprocessing.Process(target=run_opv, args=(heartbeats[name],))
+    elif name == "QuadMag":
+        from QM_class import run_quadmag
+        process = multiprocessing.Process(target=run_quadmag, args=(heartbeats[name],))
+    process.start()
+    logger.info(f"Started {name} process with PID {process.pid}")
+    return process
+
+def main():
+    logger = initialize_logger()
+    heartbeats = {
+        "ADS": create_shared_heartbeat(),
+        "OPV": create_shared_heartbeat(),
+        "QuadMag": create_shared_heartbeat()
+    }
+
+    processes = {}
+    for name in heartbeats.keys():
+        processes[name] = spawn_process(name, heartbeats, logger)
+
+    watchdog_process(heartbeats, processes, logger)
+
+if __name__ == "__main__":
+    main()

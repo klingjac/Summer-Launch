@@ -1,13 +1,13 @@
-import RPi.GPIO as GPIO
+import multiprocessing
 import time
+import RPi.GPIO as GPIO
 import csv
 import os
-import threading
 from ADS_class import ADS_Sensors
 from datetime import datetime
 
 class ADSSensorDataLogger:
-    def __init__(self):
+    def __init__(self, heartbeat):
         self.ads_sensors = ADS_Sensors()
         self.data_dir = "ADS_data"
         self.file_counter = 0
@@ -16,6 +16,8 @@ class ADSSensorDataLogger:
         self.csv_file = None
         self.csv_writer = None
         self.pni_interrupt_flag = False
+        self.running = True
+        self.heartbeat = heartbeat
 
         # Create directory for storing CSV files
         if not os.path.exists(self.data_dir):
@@ -36,12 +38,6 @@ class ADSSensorDataLogger:
         GPIO.add_event_detect(self.MAG_TRICLOPS_INTERRUPT_PIN, GPIO.RISING, callback=self.mag_triclops_interrupt_handler, bouncetime=1)
         GPIO.add_event_detect(self.IMU_INTERRUPT_PIN, GPIO.RISING, callback=self.imu_interrupt_handler, bouncetime=1)
 
-        
-
-        # Start ADS watchdog thread
-        self.watchdog_thread = threading.Thread(target=self.interrupt_tracker)
-        self.watchdog_thread.daemon = True
-        self.watchdog_thread.start()
         self.ads_sensors.getMagReading()
 
     def create_new_csv_file(self):
@@ -61,7 +57,7 @@ class ADSSensorDataLogger:
     def imu_interrupt_handler(self, channel):
         self.ads_sensors.getGyroReading()
         self.ads_sensors.getTriclopsReading()
-        
+
         # Write to CSV
         self.csv_writer.writerow([
             datetime.utcnow().isoformat(),
@@ -79,20 +75,24 @@ class ADSSensorDataLogger:
             self.current_entries = 0
 
     def interrupt_tracker(self):
-        while True:
+        while self.running:
             if not self.pni_interrupt_flag:
                 print("No interrupt in the past second, manually triggering a read")
                 self.ads_sensors.getMagReading()
             self.pni_interrupt_flag = False
+            self.heartbeat.value = True  # Update heartbeat
             time.sleep(1)
 
-    def run(self): #Only needed outside of main loop
-        # self.ads_sensors.getMagReading()  # Needed to initialize mag interrupts
+    def run(self):
         self.ads_sensors.getMagReading()
-        while True:
-            #gps_scan(self.gps_data)
+        while self.running:
+            self.heartbeat.value = True  # Update heartbeat
             time.sleep(0.2)
 
-if __name__ == "__main__":
-    logger = SensorDataLogger()
+def run_ads_logger(heartbeat):
+    logger = ADSSensorDataLogger(heartbeat)
     logger.run()
+
+if __name__ == "__main__":
+    heartbeat = create_shared_heartbeat()
+    run_ads_logger(heartbeat)

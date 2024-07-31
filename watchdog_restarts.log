@@ -1,0 +1,7 @@
+2024-07-31 18:18:47,237 - WatchdogLogger - INFO - Started ADS process with PID 8771
+2024-07-31 18:19:13,252 - WatchdogLogger - INFO - Started ADS process with PID 8854
+2024-07-31 18:20:21,794 - WatchdogLogger - INFO - Started ADS process with PID 9094
+2024-07-31 18:20:21,875 - WatchdogLogger - INFO - Started OPV process with PID 9098
+2024-07-31 18:20:44,433 - WatchdogLogger - INFO - Started QuadMag process with PID 9230
+2024-07-31 18:20:44,439 - WatchdogLogger - INFO - QuadMag failed to send heartbeat. Restarting...
+2024-07-31 18:20:44,495 - WatchdogLogger - INFO - Started QuadMag process with PID 9231
