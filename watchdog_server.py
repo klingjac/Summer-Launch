@@ -66,6 +66,7 @@ class Beacon_Transmitter:
             bmetemp = self.instances["Status"].bme680_temp
             bmepressure = self.instances["Status"].bme680_pressure
             # Where am I pulling QM data from?
+
             mag1x
             mag1y
             mag1z
@@ -80,25 +81,28 @@ class Beacon_Transmitter:
             mag4z
             QMtemp
             # Where am I pulling OPV data from?
-            recent_sweep_time
-            ref_Voc
-            opv_Voc
-            opv_Isc
-            UNIXtime
+            recent_sweep_time = self.instances["OPV"].recent_sweep_time
+            ref_Voc = self.instances["OPV"].ref_Voc
+            opv_Voc = self.instances["OPV"].opv_Voc
+            opv_Isc = self.instances["OPV"].opv_Isc
+
             # Where am I pulling GPS data from?
-            GPSnumSats
-            Alt = 
-            Lat
-            loggingCN0
-            magx
-            magy
-            magz
-            gyrox
-            gyroy
-            gyroz
-            tridiode1
-            tridiode2
-            tridiode3
+            GPSfix = self.instances["ADS"].ads_sensors.GPS. gps_data['fix']
+            UNIXtime = 
+            GPSnumSats = self.instances["ADS"].ads_sensors.GPS.gps_data['num_sv']
+            Alt = self.instances["ADS"].ads_sensors.GPS.gps_data['altitude']
+            Lat = self.instances["ADS"].ads_sensors.GPS.gps_data['latitude']
+            Long = self.instances["ADS"].ads_sensors.GPS.gps_data['longitude']
+            loggingCN0 = self.instances["ADS"].ads_sensors.GPS.gps_data['snr']
+            magx = self.instances["ADS"].ads_sensors.magX
+            magy = self.instances["ADS"].ads_sensors.magY
+            magz = self.instances["ADS"].ads_sensors.magZ
+            gyrox = self.instances["ADS"].ads_sensors.gyroX
+            gyroy = self.instances["ADS"].ads_sensors.gyroY
+            gyroz = self.instances["ADS"].ads_sensors.gyroZ
+            tridiode1 = self.instances["ADS"].ads_sensors.tri1
+            tridiode2 = self.instances["ADS"].ads_sensors.tri2
+            tridiode3 = self.instances["ADS"].ads_sensors.tri3
             time.sleep(15)  # Adjust the beacon interval as needed
 
 class Watchdog:
