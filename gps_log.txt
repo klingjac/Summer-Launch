@@ -1,905 +1,107 @@
 GPS SCAN ENTERED
-raw: b'$GNRMC,201556.00,V,,,,,,,010824,,,N,V*13\r\n', parsed: <NMEA(GNRMC, time=20:15:56, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNRMC,212507.00,V,,,,,,,010824,,,N,V*15\r\n', parsed: <NMEA(GNRMC, time=21:25:07, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
 raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201556.00,,,,,0,00,99.99,,,,,,*7D\r\n', parsed: <NMEA(GNGGA, time=20:15:56, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGGA,212507.00,,,,,0,00,99.99,,,,,,*7B\r\n', parsed: <NMEA(GNGGA, time=21:25:07, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
 raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
 raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
 raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
 raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,00,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GPGSV,1,1,01,18,,,16,1*6B\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=18, elv_01=, az_01=, cno_01=16, signalID=1)>
 raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
 raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
 raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201556.00,V,N*51\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:15:56, status=V, posMode=N)>
-raw: b'$GNRMC,201557.00,V,,,,,,,010824,,,N,V*12\r\n', parsed: <NMEA(GNRMC, time=20:15:57, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNGLL,,,,,212507.00,V,N*57\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=21:25:07, status=V, posMode=N)>
+raw: b'$GNRMC,212508.00,V,,,,,,,010824,,,N,V*1A\r\n', parsed: <NMEA(GNRMC, time=21:25:08, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
 raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201557.00,,,,,0,00,99.99,,,,,,*7C\r\n', parsed: <NMEA(GNGGA, time=20:15:57, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGGA,212508.00,,,,,0,00,99.99,,,,,,*74\r\n', parsed: <NMEA(GNGGA, time=21:25:08, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
 raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
 raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
 raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
 raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,00,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GPGSV,1,1,01,18,,,15,1*68\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=18, elv_01=, az_01=, cno_01=15, signalID=1)>
 raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
 raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
 raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201557.00,V,N*50\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:15:57, status=V, posMode=N)>
-raw: b'$GNRMC,201558.00,V,,,,,,,010824,,,N,V*1D\r\n', parsed: <NMEA(GNRMC, time=20:15:58, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNGLL,,,,,212508.00,V,N*58\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=21:25:08, status=V, posMode=N)>
+raw: b'$GNRMC,212509.00,V,,,,,,,010824,,,N,V*1B\r\n', parsed: <NMEA(GNRMC, time=21:25:09, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
 raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201558.00,,,,,0,00,99.99,,,,,,*73\r\n', parsed: <NMEA(GNGGA, time=20:15:58, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGGA,212509.00,,,,,0,00,99.99,,,,,,*75\r\n', parsed: <NMEA(GNGGA, time=21:25:09, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
 raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
 raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
 raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
 raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,00,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GPGSV,1,1,01,18,,,16,1*6B\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=18, elv_01=, az_01=, cno_01=16, signalID=1)>
 raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
 raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
 raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201558.00,V,N*5F\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:15:58, status=V, posMode=N)>
-raw: b'$GNRMC,201559.00,V,,,,,,,010824,,,N,V*1C\r\n', parsed: <NMEA(GNRMC, time=20:15:59, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNGLL,,,,,212509.00,V,N*59\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=21:25:09, status=V, posMode=N)>
+raw: b'$GNRMC,212510.00,V,,,,,,,010824,,,N,V*13\r\n', parsed: <NMEA(GNRMC, time=21:25:10, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
 raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201559.00,,,,,0,00,99.99,,,,,,*72\r\n', parsed: <NMEA(GNGGA, time=20:15:59, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGGA,212510.00,,,,,0,00,99.99,,,,,,*7D\r\n', parsed: <NMEA(GNGGA, time=21:25:10, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
 raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
 raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
 raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
 raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,00,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GPGSV,1,1,01,18,,,16,1*6B\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=18, elv_01=, az_01=, cno_01=16, signalID=1)>
 raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
 raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
 raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201559.00,V,N*5E\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:15:59, status=V, posMode=N)>
-raw: b'$GNRMC,201600.00,V,,,,,,,010824,,,N,V*13\r\n', parsed: <NMEA(GNRMC, time=20:16:00, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNGLL,,,,,212510.00,V,N*51\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=21:25:10, status=V, posMode=N)>
+raw: b'$GNRMC,212511.00,V,,,,,,,010824,,,N,V*12\r\n', parsed: <NMEA(GNRMC, time=21:25:11, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
 raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201600.00,,,,,0,00,99.99,,,,,,*7D\r\n', parsed: <NMEA(GNGGA, time=20:16:00, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGGA,212511.00,,,,,0,00,99.99,,,,,,*7C\r\n', parsed: <NMEA(GNGGA, time=21:25:11, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
 raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
 raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
 raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
 raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,00,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GPGSV,1,1,01,18,,,16,1*6B\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=18, elv_01=, az_01=, cno_01=16, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GNRMC,212517.00,V,,,,,,,010824,,,N,V*14\r\n', parsed: <NMEA(GNRMC, time=21:25:17, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+raw: b'$GNGGA,212517.00,,,,,0,00,99.99,,,,,,*7A\r\n', parsed: <NMEA(GNGGA, time=21:25:17, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,01,18,,,16,1*6B\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=18, elv_01=, az_01=, cno_01=16, signalID=1)>
 raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
 raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
 raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201600.00,V,N*51\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:16:00, status=V, posMode=N)>
-raw: b'$GNRMC,201601.00,V,,,,,,,010824,,,N,V*12\r\n', parsed: <NMEA(GNRMC, time=20:16:01, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNRMC,201607.00,V,,,,,,,010824,,,N,V*14\r\n', parsed: <NMEA(GNRMC, time=20:16:07, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNGLL,,,,,212517.00,V,N*56\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=21:25:17, status=V, posMode=N)>
+raw: b'$GNRMC,212518.00,V,,,,,,,010824,,,N,V*1B\r\n', parsed: <NMEA(GNRMC, time=21:25:18, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
 raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201607.00,,,,,0,00,99.99,,,,,,*7A\r\n', parsed: <NMEA(GNGGA, time=20:16:07, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGGA,212518.00,,,,,0,00,99.99,,,,,,*75\r\n', parsed: <NMEA(GNGGA, time=21:25:18, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
 raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
 raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
 raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
 raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,00,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GPGSV,1,1,01,18,,,16,1*6B\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=18, elv_01=, az_01=, cno_01=16, signalID=1)>
 raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
 raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
 raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201607.00,V,N*56\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:16:07, status=V, posMode=N)>
-raw: b'$GNRMC,201608.00,V,,,,,,,010824,,,N,V*1B\r\n', parsed: <NMEA(GNRMC, time=20:16:08, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNGLL,,,,,212518.00,V,N*59\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=21:25:18, status=V, posMode=N)>
+raw: b'$GNRMC,212519.00,V,,,,,,,010824,,,N,V*1A\r\n', parsed: <NMEA(GNRMC, time=21:25:19, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
 raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201608.00,,,,,0,00,99.99,,,,,,*75\r\n', parsed: <NMEA(GNGGA, time=20:16:08, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGGA,212519.00,,,,,0,00,99.99,,,,,,*74\r\n', parsed: <NMEA(GNGGA, time=21:25:19, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
 raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
 raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
 raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
 raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,00,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GPGSV,1,1,01,18,,,15,1*68\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=18, elv_01=, az_01=, cno_01=15, signalID=1)>
+raw: b'$GLGSV,1,1,01,,,,26,1*7D\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=1, svid_01=, elv_01=, az_01=, cno_01=26, signalID=1)>
 raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
 raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201608.00,V,N*59\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:16:08, status=V, posMode=N)>
-raw: b'$GNRMC,201609.00,V,,,,,,,010824,,,N,V*1A\r\n', parsed: <NMEA(GNRMC, time=20:16:09, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNGLL,,,,,212519.00,V,N*58\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=21:25:19, status=V, posMode=N)>
+raw: b'$GNRMC,212520.00,V,,,,,,,010824,,,N,V*10\r\n', parsed: <NMEA(GNRMC, time=21:25:20, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
 raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201609.00,,,,,0,00,99.99,,,,,,*74\r\n', parsed: <NMEA(GNGGA, time=20:16:09, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGGA,212520.00,,,,,0,00,99.99,,,,,,*7E\r\n', parsed: <NMEA(GNGGA, time=21:25:20, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
 raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
 raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
 raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
 raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,00,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GPGSV,1,1,01,18,,,15,1*68\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=18, elv_01=, az_01=, cno_01=15, signalID=1)>
+raw: b'$GLGSV,1,1,01,,,,05,1*7C\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=1, svid_01=, elv_01=, az_01=, cno_01=5, signalID=1)>
 raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
 raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201609.00,V,N*58\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:16:09, status=V, posMode=N)>
-raw: b'$GNRMC,201610.00,V,,,,,,,010824,,,N,V*12\r\n', parsed: <NMEA(GNRMC, time=20:16:10, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201610.00,,,,,0,00,99.99,,,,,,*7C\r\n', parsed: <NMEA(GNGGA, time=20:16:10, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,00,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201610.00,V,N*50\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:16:10, status=V, posMode=N)>
-raw: b'$GNRMC,201611.00,V,,,,,,,010824,,,N,V*13\r\n', parsed: <NMEA(GNRMC, time=20:16:11, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNRMC,201617.00,V,,,,,,,010824,,,N,V*15\r\n', parsed: <NMEA(GNRMC, time=20:16:17, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201617.00,,,,,0,00,99.99,,,,,,*7B\r\n', parsed: <NMEA(GNGGA, time=20:16:17, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,00,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GLGSV,1,1,03,,,,14,,,,07,,,,20,1*7B\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=3, svid_01=, elv_01=, az_01=, cno_01=14, svid_02=, elv_02=, az_02=, cno_02=7, svid_03=, elv_03=, az_03=, cno_03=20, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201617.00,V,N*57\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:16:17, status=V, posMode=N)>
-raw: b'$GNRMC,201618.00,V,,,,,,,010824,,,N,V*1A\r\n', parsed: <NMEA(GNRMC, time=20:16:18, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201618.00,,,,,0,00,99.99,,,,,,*74\r\n', parsed: <NMEA(GNGGA, time=20:16:18, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,00,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GLGSV,1,1,02,,,,10,,,,18,1*72\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=2, svid_01=, elv_01=, az_01=, cno_01=10, svid_02=, elv_02=, az_02=, cno_02=18, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201618.00,V,N*58\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:16:18, status=V, posMode=N)>
-raw: b'$GNRMC,201619.00,V,,,,,,,010824,,,N,V*1B\r\n', parsed: <NMEA(GNRMC, time=20:16:19, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201619.00,,,,,0,00,99.99,,,,,,*75\r\n', parsed: <NMEA(GNGGA, time=20:16:19, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,00,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GLGSV,1,1,03,,,,25,,,,08,,,,17,1*72\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=3, svid_01=, elv_01=, az_01=, cno_01=25, svid_02=, elv_02=, az_02=, cno_02=8, svid_03=, elv_03=, az_03=, cno_03=17, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201619.00,V,N*59\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:16:19, status=V, posMode=N)>
-raw: b'$GNRMC,201620.00,V,,,,,,,010824,,,N,V*11\r\n', parsed: <NMEA(GNRMC, time=20:16:20, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201620.00,,,,,0,00,99.99,,,,,,*7F\r\n', parsed: <NMEA(GNGGA, time=20:16:20, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,00,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GLGSV,1,1,03,,,,20,,,,08,,,,13,1*73\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=3, svid_01=, elv_01=, az_01=, cno_01=20, svid_02=, elv_02=, az_02=, cno_02=8, svid_03=, elv_03=, az_03=, cno_03=13, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201620.00,V,N*53\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:16:20, status=V, posMode=N)>
-raw: b'$GNRMC,201621.00,V,,,,,,,010824,,,N,V*10\r\n', parsed: <NMEA(GNRMC, time=20:16:21, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201621.00,,,,,0,00,99.99,,,,,,*7E\r\n', parsed: <NMEA(GNGGA, time=20:16:21, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNRMC,201627.00,V,,,,,,,010824,,,N,V*16\r\n', parsed: <NMEA(GNRMC, time=20:16:27, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201627.00,,,,,0,00,99.99,,,,,,*78\r\n', parsed: <NMEA(GNGGA, time=20:16:27, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,00,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GLGSV,1,1,02,,,,13,,,,09,1*71\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=2, svid_01=, elv_01=, az_01=, cno_01=13, svid_02=, elv_02=, az_02=, cno_02=9, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201627.00,V,N*54\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:16:27, status=V, posMode=N)>
-raw: b'$GNRMC,201628.00,V,,,,,,,010824,,,N,V*19\r\n', parsed: <NMEA(GNRMC, time=20:16:28, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201628.00,,,,,0,00,99.99,,,,,,*77\r\n', parsed: <NMEA(GNGGA, time=20:16:28, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,00,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GLGSV,1,1,01,,,,10,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=1, svid_01=, elv_01=, az_01=, cno_01=10, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201628.00,V,N*5B\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:16:28, status=V, posMode=N)>
-raw: b'$GNRMC,201629.00,V,,,,,,,010824,,,N,V*18\r\n', parsed: <NMEA(GNRMC, time=20:16:29, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201629.00,,,,,0,00,99.99,,,,,,*76\r\n', parsed: <NMEA(GNGGA, time=20:16:29, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,00,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GLGSV,1,1,01,,,,08,1*71\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=1, svid_01=, elv_01=, az_01=, cno_01=8, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201629.00,V,N*5A\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:16:29, status=V, posMode=N)>
-raw: b'$GNRMC,201630.00,V,,,,,,,010824,,,N,V*10\r\n', parsed: <NMEA(GNRMC, time=20:16:30, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201630.00,,,,,0,00,99.99,,,,,,*7E\r\n', parsed: <NMEA(GNGGA, time=20:16:30, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,00,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GLGSV,1,1,02,,,,09,,,,19,1*7B\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=2, svid_01=, elv_01=, az_01=, cno_01=9, svid_02=, elv_02=, az_02=, cno_02=19, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201630.00,V,N*52\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:16:30, status=V, posMode=N)>
-raw: b'$GNRMC,201631.00,V,,,,,,,010824,,,N,V*11\r\n', parsed: <NMEA(GNRMC, time=20:16:31, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201631.00,,,,,0,00,99.99,,,,,,*7F\r\n', parsed: <NMEA(GNGGA, time=20:16:31, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNRMC,201637.00,V,,,,,,,010824,,,N,V*17\r\n', parsed: <NMEA(GNRMC, time=20:16:37, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201637.00,,,,,0,00,99.99,,,,,,*79\r\n', parsed: <NMEA(GNGGA, time=20:16:37, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,00,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GLGSV,1,1,01,,,,15,1*7D\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=1, svid_01=, elv_01=, az_01=, cno_01=15, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201637.00,V,N*55\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:16:37, status=V, posMode=N)>
-raw: b'$GNRMC,201638.00,V,,,,,,,010824,,,N,V*18\r\n', parsed: <NMEA(GNRMC, time=20:16:38, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201638.00,,,,,0,00,99.99,,,,,,*76\r\n', parsed: <NMEA(GNGGA, time=20:16:38, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,00,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GLGSV,1,1,01,,,,10,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=1, svid_01=, elv_01=, az_01=, cno_01=10, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201638.00,V,N*5A\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:16:38, status=V, posMode=N)>
-raw: b'$GNRMC,201639.00,V,,,,,,,010824,,,N,V*19\r\n', parsed: <NMEA(GNRMC, time=20:16:39, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201639.00,,,,,0,00,99.99,,,,,,*77\r\n', parsed: <NMEA(GNGGA, time=20:16:39, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,00,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201639.00,V,N*5B\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:16:39, status=V, posMode=N)>
-raw: b'$GNRMC,201640.00,V,,,,,,,010824,,,N,V*17\r\n', parsed: <NMEA(GNRMC, time=20:16:40, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201640.00,,,,,0,00,99.99,,,,,,*79\r\n', parsed: <NMEA(GNGGA, time=20:16:40, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,00,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201640.00,V,N*55\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:16:40, status=V, posMode=N)>
-raw: b'$GNRMC,201641.00,V,,,,,,,010824,,,N,V*16\r\n', parsed: <NMEA(GNRMC, time=20:16:41, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201641.00,,,,,0,00,99.99,,,,,,*78\r\n', parsed: <NMEA(GNGGA, time=20:16:41, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNRMC,201647.00,V,,,,,,,010824,,,N,V*10\r\n', parsed: <NMEA(GNRMC, time=20:16:47, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201647.00,,,,,0,00,99.99,,,,,,*7E\r\n', parsed: <NMEA(GNGGA, time=20:16:47, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,00,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201647.00,V,N*52\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:16:47, status=V, posMode=N)>
-raw: b'$GNRMC,201648.00,V,,,,,,,010824,,,N,V*1F\r\n', parsed: <NMEA(GNRMC, time=20:16:48, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201648.00,,,,,0,00,99.99,,,,,,*71\r\n', parsed: <NMEA(GNGGA, time=20:16:48, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,00,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201648.00,V,N*5D\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:16:48, status=V, posMode=N)>
-raw: b'$GNRMC,201649.00,V,,,,,,,010824,,,N,V*1E\r\n', parsed: <NMEA(GNRMC, time=20:16:49, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201649.00,,,,,0,00,99.99,,,,,,*70\r\n', parsed: <NMEA(GNGGA, time=20:16:49, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,00,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201649.00,V,N*5C\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:16:49, status=V, posMode=N)>
-raw: b'$GNRMC,201650.00,V,,,,,,,010824,,,N,V*16\r\n', parsed: <NMEA(GNRMC, time=20:16:50, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201650.00,,,,,0,00,99.99,,,,,,*78\r\n', parsed: <NMEA(GNGGA, time=20:16:50, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,00,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201650.00,V,N*54\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:16:50, status=V, posMode=N)>
-raw: b'$GNRMC,201651.00,V,,,,,,,010824,,,N,V*17\r\n', parsed: <NMEA(GNRMC, time=20:16:51, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201651.00,,,,,0,00,99.99,,,,,,*79\r\n', parsed: <NMEA(GNGGA, time=20:16:51, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNRMC,201657.00,V,,,,,,,010824,,,N,V*11\r\n', parsed: <NMEA(GNRMC, time=20:16:57, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201657.00,,,,,0,00,99.99,,,,,,*7F\r\n', parsed: <NMEA(GNGGA, time=20:16:57, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,01,11,,,08,1*6D\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=11, elv_01=, az_01=, cno_01=8, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201657.00,V,N*53\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:16:57, status=V, posMode=N)>
-raw: b'$GNRMC,201658.00,V,,,,,,,010824,,,N,V*1E\r\n', parsed: <NMEA(GNRMC, time=20:16:58, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201658.00,,,,,0,00,99.99,,,,,,*70\r\n', parsed: <NMEA(GNGGA, time=20:16:58, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,01,11,,,08,1*6D\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=11, elv_01=, az_01=, cno_01=8, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201658.00,V,N*5C\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:16:58, status=V, posMode=N)>
-raw: b'$GNRMC,201659.00,V,,,,,,,010824,,,N,V*1F\r\n', parsed: <NMEA(GNRMC, time=20:16:59, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201659.00,,,,,0,00,99.99,,,,,,*71\r\n', parsed: <NMEA(GNGGA, time=20:16:59, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,01,11,,,08,1*6D\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=11, elv_01=, az_01=, cno_01=8, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201659.00,V,N*5D\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:16:59, status=V, posMode=N)>
-raw: b'$GNRMC,201700.00,V,,,,,,,010824,,,N,V*12\r\n', parsed: <NMEA(GNRMC, time=20:17:00, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201700.00,,,,,0,00,99.99,,,,,,*7C\r\n', parsed: <NMEA(GNGGA, time=20:17:00, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,01,11,,,08,1*6D\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=11, elv_01=, az_01=, cno_01=8, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201700.00,V,N*50\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:17:00, status=V, posMode=N)>
-raw: b'$GNRMC,201701.00,V,,,,,,,010824,,,N,V*13\r\n', parsed: <NMEA(GNRMC, time=20:17:01, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201701.00,,,,,0,00,99.99,,,,,,*7D\r\n', parsed: <NMEA(GNGGA, time=20:17:01, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GNRMC,201707.00,V,,,,,,,010824,,,N,V*15\r\n', parsed: <NMEA(GNRMC, time=20:17:07, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201707.00,,,,,0,00,99.99,,,,,,*7B\r\n', parsed: <NMEA(GNGGA, time=20:17:07, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,01,11,,,14,1*60\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=11, elv_01=, az_01=, cno_01=14, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201707.00,V,N*57\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:17:07, status=V, posMode=N)>
-raw: b'$GNRMC,201708.00,V,,,,,,,010824,,,N,V*1A\r\n', parsed: <NMEA(GNRMC, time=20:17:08, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201708.00,,,,,0,00,99.99,,,,,,*74\r\n', parsed: <NMEA(GNGGA, time=20:17:08, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,01,11,,,12,1*66\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=11, elv_01=, az_01=, cno_01=12, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201708.00,V,N*58\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:17:08, status=V, posMode=N)>
-raw: b'$GNRMC,201709.00,V,,,,,,,010824,,,N,V*1B\r\n', parsed: <NMEA(GNRMC, time=20:17:09, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201709.00,,,,,0,00,99.99,,,,,,*75\r\n', parsed: <NMEA(GNGGA, time=20:17:09, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,01,11,,,12,1*66\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=11, elv_01=, az_01=, cno_01=12, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201709.00,V,N*59\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:17:09, status=V, posMode=N)>
-raw: b'$GNRMC,201710.00,V,,,,,,,010824,,,N,V*13\r\n', parsed: <NMEA(GNRMC, time=20:17:10, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201710.00,,,,,0,00,99.99,,,,,,*7D\r\n', parsed: <NMEA(GNGGA, time=20:17:10, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,01,11,,,13,1*67\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=11, elv_01=, az_01=, cno_01=13, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201710.00,V,N*51\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:17:10, status=V, posMode=N)>
-raw: b'$GNRMC,201711.00,V,,,,,,,010824,,,N,V*12\r\n', parsed: <NMEA(GNRMC, time=20:17:11, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201711.00,,,,,0,00,99.99,,,,,,*7C\r\n', parsed: <NMEA(GNGGA, time=20:17:11, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,01,11,,,12,1*66\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=11, elv_01=, az_01=, cno_01=12, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GNRMC,201717.00,V,,,,,,,010824,,,N,V*14\r\n', parsed: <NMEA(GNRMC, time=20:17:17, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201717.00,,,,,0,00,99.99,,,,,,*7A\r\n', parsed: <NMEA(GNGGA, time=20:17:17, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,01,11,,,11,1*65\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=11, elv_01=, az_01=, cno_01=11, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201717.00,V,N*56\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:17:17, status=V, posMode=N)>
-raw: b'$GNRMC,201718.00,V,,,,,,,010824,,,N,V*1B\r\n', parsed: <NMEA(GNRMC, time=20:17:18, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201718.00,,,,,0,00,99.99,,,,,,*75\r\n', parsed: <NMEA(GNGGA, time=20:17:18, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,00,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201718.00,V,N*59\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:17:18, status=V, posMode=N)>
-raw: b'$GNRMC,201719.00,V,,,,,,,010824,,,N,V*1A\r\n', parsed: <NMEA(GNRMC, time=20:17:19, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201719.00,,,,,0,00,99.99,,,,,,*74\r\n', parsed: <NMEA(GNGGA, time=20:17:19, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,00,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201719.00,V,N*58\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:17:19, status=V, posMode=N)>
-raw: b'$GNRMC,201720.00,V,,,,,,,010824,,,N,V*10\r\n', parsed: <NMEA(GNRMC, time=20:17:20, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201720.00,,,,,0,00,99.99,,,,,,*7E\r\n', parsed: <NMEA(GNGGA, time=20:17:20, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,00,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201720.00,V,N*52\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:17:20, status=V, posMode=N)>
-raw: b'$GNRMC,201721.00,V,,,,,,,010824,,,N,V*11\r\n', parsed: <NMEA(GNRMC, time=20:17:21, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201721.00,,,,,0,00,99.99,,,,,,*7F\r\n', parsed: <NMEA(GNGGA, time=20:17:21, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GNRMC,201727.00,V,,,,,,,010824,,,N,V*17\r\n', parsed: <NMEA(GNRMC, time=20:17:27, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201727.00,,,,,0,00,99.99,,,,,,*79\r\n', parsed: <NMEA(GNGGA, time=20:17:27, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,02,11,,,08,17,,,12,1*6B\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=2, svid_01=11, elv_01=, az_01=, cno_01=8, svid_02=17, elv_02=, az_02=, cno_02=12, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201727.00,V,N*55\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:17:27, status=V, posMode=N)>
-raw: b'$GNRMC,201728.00,V,,,,,,,010824,,,N,V*18\r\n', parsed: <NMEA(GNRMC, time=20:17:28, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201728.00,,,,,0,00,99.99,,,,,,*76\r\n', parsed: <NMEA(GNGGA, time=20:17:28, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,02,11,,,10,17,,,09,1*68\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=2, svid_01=11, elv_01=, az_01=, cno_01=10, svid_02=17, elv_02=, az_02=, cno_02=9, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201728.00,V,N*5A\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:17:28, status=V, posMode=N)>
-raw: b'$GNRMC,201729.00,V,,,,,,,010824,,,N,V*19\r\n', parsed: <NMEA(GNRMC, time=20:17:29, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201729.00,,,,,0,00,99.99,,,,,,*77\r\n', parsed: <NMEA(GNGGA, time=20:17:29, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,02,11,,,10,17,,,08,1*69\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=2, svid_01=11, elv_01=, az_01=, cno_01=10, svid_02=17, elv_02=, az_02=, cno_02=8, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201729.00,V,N*5B\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:17:29, status=V, posMode=N)>
-raw: b'$GNRMC,201730.00,V,,,,,,,010824,,,N,V*11\r\n', parsed: <NMEA(GNRMC, time=20:17:30, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201730.00,,,,,0,00,99.99,,,,,,*7F\r\n', parsed: <NMEA(GNGGA, time=20:17:30, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,02,11,,,08,17,,,09,1*61\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=2, svid_01=11, elv_01=, az_01=, cno_01=8, svid_02=17, elv_02=, az_02=, cno_02=9, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201730.00,V,N*53\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:17:30, status=V, posMode=N)>
-raw: b'$GNRMC,201731.00,V,,,,,,,010824,,,N,V*10\r\n', parsed: <NMEA(GNRMC, time=20:17:31, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201731.00,,,,,0,00,99.99,,,,,,*7E\r\n', parsed: <NMEA(GNGGA, time=20:17:31, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,02,11,,,08,17,,,08,1*60\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=2, svid_01=11, elv_01=, az_01=, cno_01=8, svid_02=17, elv_02=, az_02=, cno_02=8, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201731.00,V,N*52\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:17:31, status=V, posMode=N)>
-raw: b'$GNRMC,201732.00,V,,,,,,,010824,,,N,V*13\r\n', parsed: <NMEA(GNRMC, time=20:17:32, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNRMC,201738.00,V,,,,,,,010824,,,N,V*19\r\n', parsed: <NMEA(GNRMC, time=20:17:38, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201738.00,,,,,0,00,99.99,,,,,,*77\r\n', parsed: <NMEA(GNGGA, time=20:17:38, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,00,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GLGSV,1,1,04,,,,08,,,,08,,,,24,,,,17,1*7C\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=4, svid_01=, elv_01=, az_01=, cno_01=8, svid_02=, elv_02=, az_02=, cno_02=8, svid_03=, elv_03=, az_03=, cno_03=24, svid_04=, elv_04=, az_04=, cno_04=17, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201738.00,V,N*5B\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:17:38, status=V, posMode=N)>
-raw: b'$GNRMC,201739.00,V,,,,,,,010824,,,N,V*18\r\n', parsed: <NMEA(GNRMC, time=20:17:39, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201739.00,,,,,0,00,99.99,,,,,,*76\r\n', parsed: <NMEA(GNGGA, time=20:17:39, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,00,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GLGSV,1,1,04,,,,07,,,,06,,,,24,,,,13,1*79\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=4, svid_01=, elv_01=, az_01=, cno_01=7, svid_02=, elv_02=, az_02=, cno_02=6, svid_03=, elv_03=, az_03=, cno_03=24, svid_04=, elv_04=, az_04=, cno_04=13, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201739.00,V,N*5A\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:17:39, status=V, posMode=N)>
-raw: b'$GNRMC,201740.00,V,,,,,,,010824,,,N,V*16\r\n', parsed: <NMEA(GNRMC, time=20:17:40, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201740.00,,,,,0,00,99.99,,,,,,*78\r\n', parsed: <NMEA(GNGGA, time=20:17:40, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,00,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GLGSV,1,1,04,,,,08,,,,06,,,,23,,,,15,1*77\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=4, svid_01=, elv_01=, az_01=, cno_01=8, svid_02=, elv_02=, az_02=, cno_02=6, svid_03=, elv_03=, az_03=, cno_03=23, svid_04=, elv_04=, az_04=, cno_04=15, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201740.00,V,N*54\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:17:40, status=V, posMode=N)>
-raw: b'$GNRMC,201741.00,V,,,,,,,010824,,,N,V*17\r\n', parsed: <NMEA(GNRMC, time=20:17:41, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201741.00,,,,,0,00,99.99,,,,,,*79\r\n', parsed: <NMEA(GNGGA, time=20:17:41, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,00,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GLGSV,1,1,04,,,,05,,,,05,,,,23,,,,14,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=4, svid_01=, elv_01=, az_01=, cno_01=5, svid_02=, elv_02=, az_02=, cno_02=5, svid_03=, elv_03=, az_03=, cno_03=23, svid_04=, elv_04=, az_04=, cno_04=14, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201741.00,V,N*55\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:17:41, status=V, posMode=N)>
-raw: b'$GNRMC,201742.00,V,,,,,,,010824,,,N,V*14\r\n', parsed: <NMEA(GNRMC, time=20:17:42, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNRMC,201748.00,V,,,,,,,010824,,,N,V*1E\r\n', parsed: <NMEA(GNRMC, time=20:17:48, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201748.00,,,,,0,00,99.99,,,,,,*70\r\n', parsed: <NMEA(GNGGA, time=20:17:48, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,00,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GLGSV,1,1,03,,,,04,,,,07,,,,05,1*7D\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=3, svid_01=, elv_01=, az_01=, cno_01=4, svid_02=, elv_02=, az_02=, cno_02=7, svid_03=, elv_03=, az_03=, cno_03=5, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201748.00,V,N*5C\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:17:48, status=V, posMode=N)>
-raw: b'$GNRMC,201749.00,V,,,,,,,010824,,,N,V*1F\r\n', parsed: <NMEA(GNRMC, time=20:17:49, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201749.00,,,,,0,00,99.99,,,,,,*71\r\n', parsed: <NMEA(GNGGA, time=20:17:49, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,00,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GLGSV,1,1,03,,,,03,,,,06,,,,08,1*76\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=3, svid_01=, elv_01=, az_01=, cno_01=3, svid_02=, elv_02=, az_02=, cno_02=6, svid_03=, elv_03=, az_03=, cno_03=8, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201749.00,V,N*5D\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:17:49, status=V, posMode=N)>
-raw: b'$GNRMC,201750.00,V,,,,,,,010824,,,N,V*17\r\n', parsed: <NMEA(GNRMC, time=20:17:50, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201750.00,,,,,0,00,99.99,,,,,,*79\r\n', parsed: <NMEA(GNGGA, time=20:17:50, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,00,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GLGSV,1,1,02,,,,06,,,,13,1*7E\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=2, svid_01=, elv_01=, az_01=, cno_01=6, svid_02=, elv_02=, az_02=, cno_02=13, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201750.00,V,N*55\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:17:50, status=V, posMode=N)>
-raw: b'$GNRMC,201751.00,V,,,,,,,010824,,,N,V*16\r\n', parsed: <NMEA(GNRMC, time=20:17:51, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201751.00,,,,,0,00,99.99,,,,,,*78\r\n', parsed: <NMEA(GNGGA, time=20:17:51, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,00,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GLGSV,1,1,02,,,,06,,,,12,1*7F\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=2, svid_01=, elv_01=, az_01=, cno_01=6, svid_02=, elv_02=, az_02=, cno_02=12, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201751.00,V,N*54\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:17:51, status=V, posMode=N)>
-raw: b'$GNRMC,201752.00,V,,,,,,,010824,,,N,V*15\r\n', parsed: <NMEA(GNRMC, time=20:17:52, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201752.00,,,,,0,00,99.99,,,,,,*7B\r\n', parsed: <NMEA(GNGGA, time=20:17:52, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNRMC,201758.00,V,,,,,,,010824,,,N,V*1F\r\n', parsed: <NMEA(GNRMC, time=20:17:58, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201758.00,,,,,0,00,99.99,,,,,,*71\r\n', parsed: <NMEA(GNGGA, time=20:17:58, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,02,21,,,12,22,,,07,1*61\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=2, svid_01=21, elv_01=, az_01=, cno_01=12, svid_02=22, elv_02=, az_02=, cno_02=7, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201758.00,V,N*5D\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:17:58, status=V, posMode=N)>
-raw: b'$GNRMC,201759.00,V,,,,,,,010824,,,N,V*1E\r\n', parsed: <NMEA(GNRMC, time=20:17:59, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201759.00,,,,,0,00,99.99,,,,,,*70\r\n', parsed: <NMEA(GNGGA, time=20:17:59, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,02,21,,,12,22,,,08,1*6E\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=2, svid_01=21, elv_01=, az_01=, cno_01=12, svid_02=22, elv_02=, az_02=, cno_02=8, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201759.00,V,N*5C\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:17:59, status=V, posMode=N)>
-raw: b'$GNRMC,201800.00,V,,,,,,,010824,,,N,V*1D\r\n', parsed: <NMEA(GNRMC, time=20:18:00, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201800.00,,,,,0,00,99.99,,,,,,*73\r\n', parsed: <NMEA(GNGGA, time=20:18:00, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,02,21,,,11,22,,,10,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=2, svid_01=21, elv_01=, az_01=, cno_01=11, svid_02=22, elv_02=, az_02=, cno_02=10, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201800.00,V,N*5F\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:18:00, status=V, posMode=N)>
-raw: b'$GNRMC,201801.00,V,,,,,,,010824,,,N,V*1C\r\n', parsed: <NMEA(GNRMC, time=20:18:01, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201801.00,,,,,0,00,99.99,,,,,,*72\r\n', parsed: <NMEA(GNGGA, time=20:18:01, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,02,21,,,13,22,,,11,1*67\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=2, svid_01=21, elv_01=, az_01=, cno_01=13, svid_02=22, elv_02=, az_02=, cno_02=11, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201801.00,V,N*5E\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:18:01, status=V, posMode=N)>
-raw: b'$GNRMC,201802.00,V,,,,,,,010824,,,N,V*1F\r\n', parsed: <NMEA(GNRMC, time=20:18:02, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNRMC,201808.00,V,,,,,,,010824,,,N,V*15\r\n', parsed: <NMEA(GNRMC, time=20:18:08, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201808.00,,,,,0,00,99.99,,,,,,*7B\r\n', parsed: <NMEA(GNGGA, time=20:18:08, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,01,22,,,08,1*6D\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=22, elv_01=, az_01=, cno_01=8, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201808.00,V,N*57\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:18:08, status=V, posMode=N)>
-raw: b'$GNRMC,201809.00,V,,,,,,,010824,,,N,V*14\r\n', parsed: <NMEA(GNRMC, time=20:18:09, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201809.00,,,,,0,00,99.99,,,,,,*7A\r\n', parsed: <NMEA(GNGGA, time=20:18:09, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,01,22,,,09,1*6C\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=22, elv_01=, az_01=, cno_01=9, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201809.00,V,N*56\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:18:09, status=V, posMode=N)>
-raw: b'$GNRMC,201810.00,V,,,,,,,010824,,,N,V*1C\r\n', parsed: <NMEA(GNRMC, time=20:18:10, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201810.00,,,,,0,00,99.99,,,,,,*72\r\n', parsed: <NMEA(GNGGA, time=20:18:10, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,01,22,,,10,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=22, elv_01=, az_01=, cno_01=10, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201810.00,V,N*5E\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:18:10, status=V, posMode=N)>
-raw: b'$GNRMC,201811.00,V,,,,,,,010824,,,N,V*1D\r\n', parsed: <NMEA(GNRMC, time=20:18:11, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201811.00,,,,,0,00,99.99,,,,,,*73\r\n', parsed: <NMEA(GNGGA, time=20:18:11, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,02,22,,,12,25,,,08,1*6A\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=2, svid_01=22, elv_01=, az_01=, cno_01=12, svid_02=25, elv_02=, az_02=, cno_02=8, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201811.00,V,N*5F\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:18:11, status=V, posMode=N)>
-raw: b'$GNRMC,201812.00,V,,,,,,,010824,,,N,V*1E\r\n', parsed: <NMEA(GNRMC, time=20:18:12, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201812.00,,,,,0,00,99.99,,,,,,*70\r\n', parsed: <NMEA(GNGGA, time=20:18:12, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNRMC,201818.00,V,,,,,,,010824,,,N,V*14\r\n', parsed: <NMEA(GNRMC, time=20:18:18, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201818.00,,,,,0,00,99.99,,,,,,*7A\r\n', parsed: <NMEA(GNGGA, time=20:18:18, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,02,21,,,12,25,,,11,1*61\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=2, svid_01=21, elv_01=, az_01=, cno_01=12, svid_02=25, elv_02=, az_02=, cno_02=11, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201818.00,V,N*56\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:18:18, status=V, posMode=N)>
-raw: b'$GNRMC,201819.00,V,,,,,,,010824,,,N,V*15\r\n', parsed: <NMEA(GNRMC, time=20:18:19, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201819.00,,,,,0,00,99.99,,,,,,*7B\r\n', parsed: <NMEA(GNGGA, time=20:18:19, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,02,21,,,10,25,,,11,1*63\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=2, svid_01=21, elv_01=, az_01=, cno_01=10, svid_02=25, elv_02=, az_02=, cno_02=11, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201819.00,V,N*57\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:18:19, status=V, posMode=N)>
-raw: b'$GNRMC,201820.00,V,,,,,,,010824,,,N,V*1F\r\n', parsed: <NMEA(GNRMC, time=20:18:20, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201820.00,,,,,0,00,99.99,,,,,,*71\r\n', parsed: <NMEA(GNGGA, time=20:18:20, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,02,21,,,10,25,,,13,1*61\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=2, svid_01=21, elv_01=, az_01=, cno_01=10, svid_02=25, elv_02=, az_02=, cno_02=13, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201820.00,V,N*5D\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:18:20, status=V, posMode=N)>
-raw: b'$GNRMC,201821.00,V,,,,,,,010824,,,N,V*1E\r\n', parsed: <NMEA(GNRMC, time=20:18:21, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201821.00,,,,,0,00,99.99,,,,,,*70\r\n', parsed: <NMEA(GNGGA, time=20:18:21, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,02,21,,,11,25,,,14,1*67\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=2, svid_01=21, elv_01=, az_01=, cno_01=11, svid_02=25, elv_02=, az_02=, cno_02=14, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201821.00,V,N*5C\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:18:21, status=V, posMode=N)>
-raw: b'$GNRMC,201822.00,V,,,,,,,010824,,,N,V*1D\r\n', parsed: <NMEA(GNRMC, time=20:18:22, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201822.00,,,,,0,00,99.99,,,,,,*73\r\n', parsed: <NMEA(GNGGA, time=20:18:22, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNRMC,201828.00,V,,,,,,,010824,,,N,V*17\r\n', parsed: <NMEA(GNRMC, time=20:18:28, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201828.00,,,,,0,00,99.99,,,,,,*79\r\n', parsed: <NMEA(GNGGA, time=20:18:28, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,02,25,,,08,26,,,10,1*6C\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=2, svid_01=25, elv_01=, az_01=, cno_01=8, svid_02=26, elv_02=, az_02=, cno_02=10, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201828.00,V,N*55\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:18:28, status=V, posMode=N)>
-raw: b'$GNRMC,201829.00,V,,,,,,,010824,,,N,V*16\r\n', parsed: <NMEA(GNRMC, time=20:18:29, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201829.00,,,,,0,00,99.99,,,,,,*78\r\n', parsed: <NMEA(GNGGA, time=20:18:29, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,02,25,,,08,26,,,09,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=2, svid_01=25, elv_01=, az_01=, cno_01=8, svid_02=26, elv_02=, az_02=, cno_02=9, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201829.00,V,N*54\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:18:29, status=V, posMode=N)>
-raw: b'$GNRMC,201830.00,V,,,,,,,010824,,,N,V*1E\r\n', parsed: <NMEA(GNRMC, time=20:18:30, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201830.00,,,,,0,00,99.99,,,,,,*70\r\n', parsed: <NMEA(GNGGA, time=20:18:30, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,02,25,,,08,26,,,08,1*65\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=2, svid_01=25, elv_01=, az_01=, cno_01=8, svid_02=26, elv_02=, az_02=, cno_02=8, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201830.00,V,N*5C\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:18:30, status=V, posMode=N)>
-raw: b'$GNRMC,201831.00,V,,,,,,,010824,,,N,V*1F\r\n', parsed: <NMEA(GNRMC, time=20:18:31, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201831.00,,,,,0,00,99.99,,,,,,*71\r\n', parsed: <NMEA(GNGGA, time=20:18:31, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,02,25,,,09,26,,,11,1*6C\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=2, svid_01=25, elv_01=, az_01=, cno_01=9, svid_02=26, elv_02=, az_02=, cno_02=11, signalID=1)>
-raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201831.00,V,N*5D\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:18:31, status=V, posMode=N)>
-raw: b'$GNRMC,201832.00,V,,,,,,,010824,,,N,V*1C\r\n', parsed: <NMEA(GNRMC, time=20:18:32, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201832.00,,,,,0,00,99.99,,,,,,*72\r\n', parsed: <NMEA(GNGGA, time=20:18:32, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNRMC,201838.00,V,,,,,,,010824,,,N,V*16\r\n', parsed: <NMEA(GNRMC, time=20:18:38, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201838.00,,,,,0,00,99.99,,,,,,*78\r\n', parsed: <NMEA(GNGGA, time=20:18:38, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,01,26,,,09,1*68\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=26, elv_01=, az_01=, cno_01=9, signalID=1)>
-raw: b'$GLGSV,1,1,01,,,,21,1*7A\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=1, svid_01=, elv_01=, az_01=, cno_01=21, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201838.00,V,N*54\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:18:38, status=V, posMode=N)>
-raw: b'$GNRMC,201839.00,V,,,,,,,010824,,,N,V*17\r\n', parsed: <NMEA(GNRMC, time=20:18:39, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201839.00,,,,,0,00,99.99,,,,,,*79\r\n', parsed: <NMEA(GNGGA, time=20:18:39, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,01,26,,,08,1*69\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=26, elv_01=, az_01=, cno_01=8, signalID=1)>
-raw: b'$GLGSV,1,1,01,,,,17,1*7F\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=1, svid_01=, elv_01=, az_01=, cno_01=17, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201839.00,V,N*55\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:18:39, status=V, posMode=N)>
-raw: b'$GNRMC,201840.00,V,,,,,,,010824,,,N,V*19\r\n', parsed: <NMEA(GNRMC, time=20:18:40, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201840.00,,,,,0,00,99.99,,,,,,*77\r\n', parsed: <NMEA(GNGGA, time=20:18:40, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,02,25,,,08,26,,,08,1*65\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=2, svid_01=25, elv_01=, az_01=, cno_01=8, svid_02=26, elv_02=, az_02=, cno_02=8, signalID=1)>
-raw: b'$GLGSV,1,1,03,,,,22,,,,14,,,,23,1*7F\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=3, svid_01=, elv_01=, az_01=, cno_01=22, svid_02=, elv_02=, az_02=, cno_02=14, svid_03=, elv_03=, az_03=, cno_03=23, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201840.00,V,N*5B\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:18:40, status=V, posMode=N)>
-raw: b'$GNRMC,201841.00,V,,,,,,,010824,,,N,V*18\r\n', parsed: <NMEA(GNRMC, time=20:18:41, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201841.00,,,,,0,00,99.99,,,,,,*76\r\n', parsed: <NMEA(GNGGA, time=20:18:41, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
-raw: b'$GPGSV,1,1,02,25,,,08,26,,,09,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=2, svid_01=25, elv_01=, az_01=, cno_01=8, svid_02=26, elv_02=, az_02=, cno_02=9, signalID=1)>
-raw: b'$GLGSV,1,1,02,,,,15,,,,23,1*7F\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=2, svid_01=, elv_01=, az_01=, cno_01=15, svid_02=, elv_02=, az_02=, cno_02=23, signalID=1)>
-raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
-raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
-raw: b'$GNGLL,,,,,201841.00,V,N*5A\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=20:18:41, status=V, posMode=N)>
-raw: b'$GNRMC,201842.00,V,,,,,,,010824,,,N,V*1B\r\n', parsed: <NMEA(GNRMC, time=20:18:42, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-01, mv=, mvEW=, posMode=N, navStatus=V)>
-raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
-raw: b'$GNGGA,201842.00,,,,,0,00,99.99,,,,,,*75\r\n', parsed: <NMEA(GNGGA, time=20:18:42, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
-raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGLL,,,,,212520.00,V,N*52\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=21:25:20, status=V, posMode=N)>

@@ -35,9 +35,6 @@ beacon_enabled = True
 #last_beacon_time = time.monotonic()
 
 def parse_magnetometer_data(data):
-    # Split the input string by commas
-    parts = data.split(',')
-
     # Define the keys for the dictionary
     keys = [
         'mag1x', 'mag1y', 'mag1z', 
@@ -46,11 +43,17 @@ def parse_magnetometer_data(data):
         'mag4x', 'mag4y', 'mag4z', 
         'QMtemp'
     ]
-
-    # Create a dictionary mapping the keys to the corresponding values
-    mag_values = {keys[i]: float(parts[i + 2]) for i in range(len(keys))}
+    
+    # If data is None, set all values to 0
+    if data is None:
+        mag_values = {key: 0.0 for key in keys}
+    else:
+        # Create a dictionary mapping the keys to the corresponding values starting from index 2
+        mag_values = {keys[i]: float(data[i + 2]) for i in range(len(keys))}
 
     return mag_values
+
+    
 
 class Beacon_Transmitter:
     def __init__(self, instances, logger):
@@ -112,7 +115,7 @@ class Beacon_Transmitter:
 
             # Where am I pulling GPS data from?
             GPSfix = self.instances["ADS"].ads_sensors.GPS. gps_data['fix']
-            UNIXtime = 
+            UNIXtime = 1722546521
             GPSnumSats = self.instances["ADS"].ads_sensors.GPS.gps_data['num_sv']
             Alt = self.instances["ADS"].ads_sensors.GPS.gps_data['altitude']
             Lat = self.instances["ADS"].ads_sensors.GPS.gps_data['latitude']

@@ -88,7 +88,7 @@ class OPV:
             # Time output
             finished = time.time()
             self.recent_sweep_time = int(1000*(finished - start))
-            print(f”{self.recent_sweep_time}“)
+            print(f"{self.recent_sweep_time/1000}")
             # Stop continuous conversion for all ADCs
             self.nons.stop_adc()
             self.shunted.stop_adc()
