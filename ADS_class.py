@@ -43,6 +43,10 @@ class ADS_Sensors():
     tri2 = 0
     tri3 = 0
 
+    tri1b = 0
+    tri2b = 0
+    tri3b = 0
+
 
     latitude = 42.75
     longitude = -84.99
@@ -101,6 +105,9 @@ class ADS_Sensors():
         self.tri1 = byte_convert[0]
         self.tri2 = byte_convert[1]
         self.tri3 = byte_convert[2]
+        tri1b = data[0]
+        tri2b = data[1]
+        tri3b = data[2]
 
 
     def getMagReading(self):

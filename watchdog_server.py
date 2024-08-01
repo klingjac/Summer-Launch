@@ -127,9 +127,9 @@ class Beacon_Transmitter:
             gyrox = self.instances["ADS"].ads_sensors.gyroX
             gyroy = self.instances["ADS"].ads_sensors.gyroY
             gyroz = self.instances["ADS"].ads_sensors.gyroZ
-            tridiode1 = self.instances["ADS"].ads_sensors.tri1
-            tridiode2 = self.instances["ADS"].ads_sensors.tri2
-            tridiode3 = self.instances["ADS"].ads_sensors.tri3
+            tridiode1 = self.instances["ADS"].ads_sensors.tri1b
+            tridiode2 = self.instances["ADS"].ads_sensors.tri2b
+            tridiode3 = self.instances["ADS"].ads_sensors.tri3b
             time.sleep(15)  # Adjust the beacon interval as needed
 
 class Watchdog:
