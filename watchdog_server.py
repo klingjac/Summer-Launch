@@ -7,7 +7,7 @@ import board
 import adafruit_rfm9x
 from datetime import datetime
 from digitalio import DigitalInOut, Direction, Pull
-from encode import encode_rap
+from lib.encode import encode_rap
 
 from ads_main_pniwd import ADSSensorDataLogger
 from opv_class import OPV
@@ -21,13 +21,13 @@ beacon_interval = 5 # in seconds (beacon telemetry every X seconds)
 uplink_wait_time = 6.0 # in seconds (wait for uplink for X seconds after downlinking a beacon)
 
 #LoRa device set up
-#CS = DigitalInOut(board.CE1) # init CS pin for SPI
-#RESET = DigitalInOut(board.D25) # init RESET pin for the RFM9x module
-#spi = busio.SPI(board.SCK, MOSI=board.MOSI, MISO=board.MISO) # init SPI
-#rfm9x = adafruit_rfm9x.RFM9x(spi, CS, RESET, 437.0) # init object for the radio
+CS = DigitalInOut(board.CE1) # init CS pin for SPI
+RESET = DigitalInOut(board.D25) # init RESET pin for the RFM9x module
+spi = busio.SPI(board.SCK, MOSI=board.MOSI, MISO=board.MISO) # init SPI
+rfm9x = adafruit_rfm9x.RFM9x(spi, CS, RESET, 437.0) # init object for the radio
 
 # LoRa PHY settings
-#rfm9x.tx_power = 23                 # TX power in dBm (23 dBm = 0.2 W) (TODO, default 13)
+rfm9x.tx_power = 23                 # TX power in dBm (23 dBm = 0.2 W) (TODO, default 13)
 # rfm9x.signal_bandwidth = 62500    # High bandwidth => high data rate and low range (TODO, default 12500)
 # rfm9x.coding_rate = 5               # Coding rate (TODO, default 5)
 # rfm9x.spreading_factor = 12         # Spreading factor (TODO, default 7)
@@ -62,6 +62,8 @@ class Beacon_Transmitter:
         self.instances = instances
         self.logger = logger
         self.running = True
+        self.last_telem = time.time()
+        self.beacon = bytes(0)
 
     def run(self):
         while self.running:
@@ -140,12 +142,12 @@ class Beacon_Transmitter:
                 telemetry_list_nums = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
             pass
 
-            telem_time_elapsed = time.time() - last_telem
+            telem_time_elapsed = time.time() - self.last_telem
             if telem_time_elapsed > beacon_interval:
-                last_telem = time.time()
+                self.last_telem = time.time()
 
             # Update number of sent packets
-                n_packets += 1
+                #n_packets += 1
             
             
                 try:
@@ -167,12 +169,12 @@ class Beacon_Transmitter:
                           byte_value = bytearray(byte_lengths[i]) # if cannot convert to bytes, create bytearray filled with 0s
                           telemetry_list_bytes.append(byte_value)
                 
-                    beacon = bytes().join(telemetry_list_bytes)
+                    self.beacon = bytes().join(telemetry_list_bytes)
                 except Exception as e:
-                    beacon = bytes(0)
+                    self.beacon = bytes(0)
                     pass
-            print(beacon)
-            rap = encode_rap(BEACON_FLAG, beacon) #add RAP packets
+            print(self.beacon)
+            rap = encode_rap(BEACON_FLAG, self.beacon) #add RAP packets
             print(rap)
 
 
