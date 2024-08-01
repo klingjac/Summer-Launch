@@ -4,7 +4,7 @@ import logging
 #Imports for lora:
 import busio
 import board
-import adafruit_rfm0x
+import adafruit_rfm9x
 from datetime import datetime
 from digitalio import DigitalInOut, Direction, Pull
 
@@ -18,13 +18,13 @@ beacon_interval = 5 # in seconds (beacon telemetry every X seconds)
 uplink_wait_time = 6.0 # in seconds (wait for uplink for X seconds after downlinking a beacon)
 
 #LoRa device set up
-CS = DigitalInOut(board.CE1) # init CS pin for SPI
-RESET = DigitalInOut(board.D25) # init RESET pin for the RFM9x module
-spi = busio.SPI(board.SCK, MOSI=board.MOSI, MISO=board.MISO) # init SPI
-rfm9x = adafruit_rfm9x.RFM9x(spi, CS, RESET, 437.0) # init object for the radio
+#CS = DigitalInOut(board.CE1) # init CS pin for SPI
+#RESET = DigitalInOut(board.D25) # init RESET pin for the RFM9x module
+#spi = busio.SPI(board.SCK, MOSI=board.MOSI, MISO=board.MISO) # init SPI
+#rfm9x = adafruit_rfm9x.RFM9x(spi, CS, RESET, 437.0) # init object for the radio
 
 # LoRa PHY settings
-rfm9x.tx_power = 23                 # TX power in dBm (23 dBm = 0.2 W) (TODO, default 13)
+#rfm9x.tx_power = 23                 # TX power in dBm (23 dBm = 0.2 W) (TODO, default 13)
 # rfm9x.signal_bandwidth = 62500    # High bandwidth => high data rate and low range (TODO, default 12500)
 # rfm9x.coding_rate = 5               # Coding rate (TODO, default 5)
 # rfm9x.spreading_factor = 12         # Spreading factor (TODO, default 7)
@@ -42,13 +42,16 @@ class Beacon_Transmitter:
 
     def run(self):
         while self.running:
-            for name, instance in self.instances.items():
-                if instance:
-                    try:
-                        self.logger.info(f"Beacon from {name}: Alive")
-                        # Access and log specific details from the instance if needed
-                    except Exception as e:
-                        self.logger.error(f"Error accessing {name} instance: {e}")
+            # for name, instance in self.instances.items():
+            #     if instance:
+            #         try:
+            #             self.logger.info(f"Beacon from {name}: Alive")
+            #             # Access and log specific details from the instance if needed
+            #         except Exception as e:
+            #             self.logger.error(f"Error accessing {name} instance: {e}")
+            temp = self.instances["Status"].VbattRaw
+            print("temp")
+            print(temp)
             time.sleep(15)  # Adjust the beacon interval as needed
 
 class Watchdog:
