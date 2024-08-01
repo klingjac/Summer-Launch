@@ -1,10 +1,38 @@
 import threading
 import time
 import logging
+#Imports for lora:
+import busio
+import board
+import adafruit_rfm0x
+from datetime import datetime
+from digitalio import DigitalInOut, Direction, Pull
+
 from ads_main_pniwd import ADSSensorDataLogger
 from opv_class import OPV
 from QM_class import QuadMag_logger
 from general_data import Status_Data
+
+#LoRa Tunable Parameters
+beacon_interval = 5 # in seconds (beacon telemetry every X seconds)
+uplink_wait_time = 6.0 # in seconds (wait for uplink for X seconds after downlinking a beacon)
+
+#LoRa device set up
+CS = DigitalInOut(board.CE1) # init CS pin for SPI
+RESET = DigitalInOut(board.D25) # init RESET pin for the RFM9x module
+spi = busio.SPI(board.SCK, MOSI=board.MOSI, MISO=board.MISO) # init SPI
+rfm9x = adafruit_rfm9x.RFM9x(spi, CS, RESET, 437.0) # init object for the radio
+
+# LoRa PHY settings
+rfm9x.tx_power = 23                 # TX power in dBm (23 dBm = 0.2 W) (TODO, default 13)
+# rfm9x.signal_bandwidth = 62500    # High bandwidth => high data rate and low range (TODO, default 12500)
+# rfm9x.coding_rate = 5               # Coding rate (TODO, default 5)
+# rfm9x.spreading_factor = 12         # Spreading factor (TODO, default 7)
+# rfm9x.enable_crc = True           # crc (TODO, default True)
+
+# Variables to control beacon state and interval
+beacon_enabled = True
+#last_beacon_time = time.monotonic()
 
 class Beacon_Transmitter:
     def __init__(self, instances, logger):
