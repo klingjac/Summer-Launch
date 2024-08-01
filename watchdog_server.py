@@ -38,9 +38,6 @@ beacon_enabled = True
 #last_beacon_time = time.monotonic()
 
 def parse_magnetometer_data(data):
-    # Split the input string by commas
-    parts = data.split(',')
-
     # Define the keys for the dictionary
     keys = [
         'mag1x', 'mag1y', 'mag1z', 
@@ -49,11 +46,16 @@ def parse_magnetometer_data(data):
         'mag4x', 'mag4y', 'mag4z', 
         'QMtemp'
     ]
-
-    # Create a dictionary mapping the keys to the corresponding values
-    mag_values = {keys[i]: float(parts[i + 2]) for i in range(len(keys))}
+    
+    # If data is None, set all values to 0
+    if data is None:
+        mag_values = {key: 0.0 for key in keys}
+    else:
+        # Create a dictionary mapping the keys to the corresponding values starting from index 2
+        mag_values = {keys[i]: float(data[i + 2]) for i in range(len(keys))}
 
     return mag_values
+
 
 class Beacon_Transmitter:
     def __init__(self, instances, logger):
@@ -127,9 +129,9 @@ class Beacon_Transmitter:
             gyrox = self.instances["ADS"].ads_sensors.gyroX
             gyroy = self.instances["ADS"].ads_sensors.gyroY
             gyroz = self.instances["ADS"].ads_sensors.gyroZ
-            tridiode1 = self.instances["ADS"].ads_sensors.tri1
-            tridiode2 = self.instances["ADS"].ads_sensors.tri2
-            tridiode3 = self.instances["ADS"].ads_sensors.tri3
+            tridiode1 = self.instances["ADS"].ads_sensors.tri1b
+            tridiode2 = self.instances["ADS"].ads_sensors.tri2b
+            tridiode3 = self.instances["ADS"].ads_sensors.tri3b
             
             try:
                 telemetry_list_nums = [free_memory, free_storage, CPUtemp, Vbattraw, Ibattraw, V3v3, I3v3, V5v, I5v, Vbatt, Ibatt, T3v3, T5v, batt_temp, bmetemp, bmepressure, mag1x, mag1y, mag1z, mag2x, mag2y, mag2z, mag3x, mag3y, mag3z, mag4x, mag4y, mag4z, QMtemp, recent_sweep_time, ref_Voc, opv_Voc, opv_Isc, GPSfix, UNIXtime, GPSnumSats, Alt, Lat, Long, loggingCN0, magx, magy, magz, gyrox, gyroy, gyroz,tridiode1, tridiode2, tridiode3]
