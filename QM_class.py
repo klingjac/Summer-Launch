@@ -8,7 +8,7 @@ import pandas as pd
 class QuadMag_logger:
     def __init__(self):
         self.QuadMag = QuadMag()
-        self.QuadMag.setCollectionTime(5)
+        self.QuadMag.setCollectionTime(20)
         self.running = True
         self.alive_flag = threading.Event()
         self.alive_flag.set()
@@ -33,9 +33,10 @@ class QuadMag_logger:
             self.alive_flag.set()  # Update alive flag
 
     def run(self):
-        try:
-            self.RunQM()
-        except Exception as e:
-            self.alive_flag.clear()
-            print(f"Exception in QuadMag logger: {e}")
+        self.RunQM()
+        # try:
+        #     self.RunQM()
+        # except Exception as e:
+        #     self.alive_flag.clear()
+        #     print(f"Exception in QuadMag logger: {e}")
 

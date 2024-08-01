@@ -110,4 +110,4 @@ class ADSSensorDataLogger:
             self.alive_flag.clear()
             print(f"Exception in ADS logger: {e}")
         finally:
-            self.cleanup_gpio()
+            self.cleanup_gpio() #Necessary to prevent dumb stuff from happening

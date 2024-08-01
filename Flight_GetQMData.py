@@ -557,6 +557,9 @@ class QuadMag:
                 ser = serial.Serial(
                     port, baudrate, timeout=timeout, write_timeout=timeout)
                 print("Serial port", port, "was opened successfully\n")
+                ser.flush()
+                ser.reset_input_buffer()
+                ser.reset_output_buffer()
                 break
             except serial.SerialException:
                 print("Could not open", port,
