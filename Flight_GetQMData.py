@@ -73,6 +73,7 @@ class QuadMag:
         if(_magDataCV == None): self.magDataCV = threading.Condition(self.magDataLock)
         else: self.magDataCV = _magDataCV
         self.RTC = _RTC
+        self.current_reading = None
     
     def GetQuadMagDiagnostic(self):
         #Opening Serial Port
@@ -340,6 +341,7 @@ class QuadMag:
                     self.magDataCV.notify()
                     self.magDataLock.release()
                     csvwriter.writerow(processed_data)
+                    self.current_reading = processed_data
                     #write_file_raw.write(str(processed_data) + "\n")
                 else:
                     invalid_packet_count = invalid_packet_count + 1

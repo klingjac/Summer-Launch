@@ -31,7 +31,7 @@ class GPSScanner:
             ubr = UBXReader(stream, protfilter=pyubx2.UBX_PROTOCOL + pyubx2.NMEA_PROTOCOL)
             while True:
                 time.sleep(5)  # Update GPS data once every x seconds
-                #stream.reset_input_buffer()  # Clear stale messages from the sleep period
+                stream.reset_input_buffer()  # Clear stale messages from the sleep period
                 starttime = time.time()
                 self.posflag = False
                 self.snrflag = False
@@ -49,6 +49,8 @@ class GPSScanner:
                     except Exception as e:
                         with open("gps_log.txt", "a", newline='') as file:
                             file.write(f"Unknown Error: {e} {parsed_data} {raw_data}\n")
+                    with open("gps_log.txt", "a", newline='') as file:
+                        file.write(f"raw: {raw_data}, parsed: {parsed_data}\n")
         except (ValueError, IOError, serial.SerialException) as err:
             print(f"Failed to read GPS data: {err} {parsed_data}")
             with open("gps_log.txt", "a", newline='') as file:

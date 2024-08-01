@@ -17,6 +17,7 @@ class QuadMag_logger:
         prefix = "test"
         i = 1
         while self.running:
+            
             # 37 HZ CYCLE
             self.QuadMag.setSampleRate(37)
             name = f"{prefix}_{i}_37Hz"
