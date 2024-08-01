@@ -7,11 +7,14 @@ import board
 import adafruit_rfm9x
 from datetime import datetime
 from digitalio import DigitalInOut, Direction, Pull
+from encode import encode_rap
 
 from ads_main_pniwd import ADSSensorDataLogger
 from opv_class import OPV
 from QM_class import QuadMag_logger
 from general_data import Status_Data
+
+BEACON_FLAG = 0x69
 
 #LoRa Tunable Parameters
 beacon_interval = 5 # in seconds (beacon telemetry every X seconds)
@@ -35,6 +38,9 @@ beacon_enabled = True
 #last_beacon_time = time.monotonic()
 
 def parse_magnetometer_data(data):
+    # Split the input string by commas
+    parts = data.split(',')
+
     # Define the keys for the dictionary
     keys = [
         'mag1x', 'mag1y', 'mag1z', 
@@ -43,17 +49,11 @@ def parse_magnetometer_data(data):
         'mag4x', 'mag4y', 'mag4z', 
         'QMtemp'
     ]
-    
-    # If data is None, set all values to 0
-    if data is None:
-        mag_values = {key: 0.0 for key in keys}
-    else:
-        # Create a dictionary mapping the keys to the corresponding values starting from index 2
-        mag_values = {keys[i]: float(data[i + 2]) for i in range(len(keys))}
+
+    # Create a dictionary mapping the keys to the corresponding values
+    mag_values = {keys[i]: float(parts[i + 2]) for i in range(len(keys))}
 
     return mag_values
-
-    
 
 class Beacon_Transmitter:
     def __init__(self, instances, logger):
@@ -115,7 +115,7 @@ class Beacon_Transmitter:
 
             # Where am I pulling GPS data from?
             GPSfix = self.instances["ADS"].ads_sensors.GPS. gps_data['fix']
-            UNIXtime = 1722546521
+            UNIXtime = 1722546568
             GPSnumSats = self.instances["ADS"].ads_sensors.GPS.gps_data['num_sv']
             Alt = self.instances["ADS"].ads_sensors.GPS.gps_data['altitude']
             Lat = self.instances["ADS"].ads_sensors.GPS.gps_data['latitude']
@@ -127,10 +127,53 @@ class Beacon_Transmitter:
             gyrox = self.instances["ADS"].ads_sensors.gyroX
             gyroy = self.instances["ADS"].ads_sensors.gyroY
             gyroz = self.instances["ADS"].ads_sensors.gyroZ
-            tridiode1 = self.instances["ADS"].ads_sensors.tri1b
-            tridiode2 = self.instances["ADS"].ads_sensors.tri2b
-            tridiode3 = self.instances["ADS"].ads_sensors.tri3b
-            time.sleep(15)  # Adjust the beacon interval as needed
+            tridiode1 = self.instances["ADS"].ads_sensors.tri1
+            tridiode2 = self.instances["ADS"].ads_sensors.tri2
+            tridiode3 = self.instances["ADS"].ads_sensors.tri3
+            
+            try:
+                telemetry_list_nums = [free_memory, free_storage, CPUtemp, Vbattraw, Ibattraw, V3v3, I3v3, V5v, I5v, Vbatt, Ibatt, T3v3, T5v, batt_temp, bmetemp, bmepressure, mag1x, mag1y, mag1z, mag2x, mag2y, mag2z, mag3x, mag3y, mag3z, mag4x, mag4y, mag4z, QMtemp, recent_sweep_time, ref_Voc, opv_Voc, opv_Isc, GPSfix, UNIXtime, GPSnumSats, Alt, Lat, Long, loggingCN0, magx, magy, magz, gyrox, gyroy, gyroz,tridiode1, tridiode2, tridiode3]
+                print(telemetry_list_nums)
+            except Exception as e:
+                telemetry_list_nums = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+            pass
+
+            telem_time_elapsed = time.time() - last_telem
+            if telem_time_elapsed > beacon_interval:
+                last_telem = time.time()
+
+            # Update number of sent packets
+                n_packets += 1
+            
+            
+                try:
+                # List of signed/unsigned
+                    signed_unsigned = [0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,1,1,0,0,0]
+                
+                # List of filed lengths in bytes
+                    byte_lengths = [2,2,4,2,2,2,2,2,2,2,2,2,2,2,2,2,4,4,4,4,4,4,4,4,4,4,4,4,4,2,2,2,2,1,4,2,2,2,2,2,1,4,2,2,2,2,2,4,4,4,4,4,4,2,2,2]
+
+                # List of conversion functions
+                    conversion_funcs = [1*100,1*100,1*100,1*100,1*100,1*100,1*100,1*100,1*100,1*100,1*100,1*100,1*100,1*100,1*100,1*10, 1*1000,1*1000,1*1000,1*1000,1*1000,1*1000,1*1000,1*1000,1*1000,1*1000,1*1000,1*1000,1*10, 1*1000, (1*1000)*250, (1*1000)*250, 1*1000,1,1,1,1*100, 1*100, 1*100, 1, 1*100, 1*100, 1*100, 1*100, 1*100, 1*100, 1, 1, 1]
+
+                # Combine all of that into bytes
+                    telemetry_list_bytes = []
+                    for i, value in enumerate(telemetry_list_nums):
+                        try:
+                            byte_value = int(value * conversion_funcs[i]).to_bytes(byte_lengths[i], 'little', signed=signed_unsigned[i])
+                        except:
+                          byte_value = bytearray(byte_lengths[i]) # if cannot convert to bytes, create bytearray filled with 0s
+                          telemetry_list_bytes.append(byte_value)
+                
+                    beacon = bytes().join(telemetry_list_bytes)
+                except Exception as e:
+                    beacon = bytes(0)
+                    pass
+            print(beacon)
+            rap = encode_rap(BEACON_FLAG, beacon) #add RAP packets
+            print(rap)
+
+
 
 class Watchdog:
     def __init__(self, logger):
