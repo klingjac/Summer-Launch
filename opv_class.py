@@ -21,8 +21,7 @@ class OPV:
         self.alive_flag.set()
         self.ref_Voc = 0
         self.opv_Voc = 0
-        self.opv_Vsc_ns = 0
-        self.opv_Vsc_s = 0
+        self.opv_Isc = 0
         self.recent_sweep_time = 0
         # Directory Setup
         self.directory = "./OPV"
@@ -83,8 +82,9 @@ class OPV:
             subset = second_col[-9:]
             subset2 = third_col[-9:]
             # I_sc = (nonsh - shunted)/6.8
-            self.opv_Vsc_ns = int((sum(subset)/9)*1000)
-            self.opv_Vsc_s = int((sum(subset2)/9)*1000)
+            opv_Vsc_ns = ((sum(subset)/9)*1000)/250
+            opv_Vsc_s = ((sum(subset2)/9)*1000)/250
+            self.opv_Isc = int(((opv_Vsc_ns - opv_Vsc_s)/6.8)*1000)
             # Time output
             finished = time.time()
             self.recent_sweep_time = int(1000*(finished - start))
