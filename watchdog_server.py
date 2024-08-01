@@ -176,6 +176,14 @@ class Beacon_Transmitter:
             print(self.beacon)
             rap = encode_rap(BEACON_FLAG, self.beacon) #add RAP packets
             print(rap)
+            try:
+                rfm9x.send(rap) # You can only send 252 bytes at a time (limited by chip’s FIFO size and appended headers)
+                # print("Sent packet to ground node")
+                # print("n_packets: ", n_packets)
+            except Exception as e:
+                # print('UNABLE TO SEND BEACON VIA LORA')
+                pass
+
 
 
 
