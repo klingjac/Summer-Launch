@@ -137,7 +137,7 @@ class Beacon_Transmitter:
             
             try:
                 telemetry_list_nums = [free_memory, free_storage, CPUtemp, Vbattraw, Ibattraw, V3v3, I3v3, V5v, I5v, Vbatt, Ibatt, T3v3, T5v, batt_temp, bmetemp, bmepressure, mag1x, mag1y, mag1z, mag2x, mag2y, mag2z, mag3x, mag3y, mag3z, mag4x, mag4y, mag4z, QMtemp, recent_sweep_time, ref_Voc, opv_Voc, opv_Isc, GPSfix, UNIXtime, GPSnumSats, Alt, Lat, Long, loggingCN0, magx, magy, magz, gyrox, gyroy, gyroz,tridiode1, tridiode2, tridiode3]
-                print(telemetry_list_nums)
+                #print(telemetry_list_nums)
             except Exception as e:
                 telemetry_list_nums = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
             pass
@@ -175,7 +175,8 @@ class Beacon_Transmitter:
                     pass
             print(self.beacon)
             rap = encode_rap(BEACON_FLAG, self.beacon) #add RAP packets
-            print(rap)
+            #print(rap)
+            
 
 
 
