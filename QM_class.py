@@ -40,3 +40,6 @@ class QuadMag_logger:
         #     self.alive_flag.clear()
         #     print(f"Exception in QuadMag logger: {e}")
 
+    def stop(self):
+        self.running = False
+
