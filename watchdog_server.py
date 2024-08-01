@@ -49,9 +49,11 @@ class Beacon_Transmitter:
             #             # Access and log specific details from the instance if needed
             #         except Exception as e:
             #             self.logger.error(f"Error accessing {name} instance: {e}")
-            temp = self.instances["Status"].VbattRaw
-            print("temp")
-            print(temp)
+            #temp = self.instances["Status"].VbattRaw
+            #print("temp")
+            #print(temp)
+            temp = self.instances["QuadMag"].QuadMag.current_reading
+            print(f"Quadmag line: {temp}")
             time.sleep(15)  # Adjust the beacon interval as needed
 
 class Watchdog:
@@ -71,7 +73,7 @@ class Watchdog:
                     self.instances[name] = self.spawn_instance(name)
                 instance.alive_flag.clear()
                     
-            time.sleep(15)  # Adjust the sleep duration as needed
+            time.sleep(60)  # Adjust the sleep duration as needed
 
     def spawn_instance(self, name):
         instance = None
@@ -93,7 +95,7 @@ class Watchdog:
         return instance
 
     def start_monitoring(self):
-        for name in ["ADS", "OPV", "QuadMag", "Status"]:
+        for name in ["ADS", "QuadMag", "OPV", "Status"]:
             self.instances[name] = self.spawn_instance(name)
         
         # Start the Beacon_Transmitter

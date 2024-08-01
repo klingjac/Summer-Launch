@@ -19,6 +19,8 @@ class ADSSensorDataLogger:
         self.alive_flag = threading.Event()
         self.alive_flag.set()
         self.running = True
+        self.imu_status = True
+        self.pni_status = True
 
         # GPIO setup and initialization
         self.setup_gpio()
@@ -54,6 +56,7 @@ class ADSSensorDataLogger:
         self.file_counter += 1
 
     def safe_mag_triclops_interrupt_handler(self, channel):
+        self.pni_status = True
         try:
             self.mag_triclops_interrupt_handler(channel)
         except Exception as e:
@@ -65,6 +68,7 @@ class ADSSensorDataLogger:
         self.pni_interrupt_flag = True
 
     def safe_imu_interrupt_handler(self, channel):
+        self.imu_status = True
         try:
             self.imu_interrupt_handler(channel)
         except Exception as e:
@@ -105,6 +109,10 @@ class ADSSensorDataLogger:
             self.ads_sensors.getMagReading()
             while self.running:
                 #self.alive_flag.set()  # Update alive flag
+                if self.imu_status and self.pni_status:
+                    self.alive_flag.set()
+                self.imu_status = False
+                self.pni_status = False
                 time.sleep(0.2)
         except Exception as e:
             self.alive_flag.clear()
