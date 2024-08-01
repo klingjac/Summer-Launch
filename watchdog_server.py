@@ -81,11 +81,19 @@ class Beacon_Transmitter:
             mag4z
             QMtemp
             # Where am I pulling OPV data from?
+<<<<<<< HEAD
             recent_sweep_time = self.instances["OPV"].recent_sweep_time
             ref_Voc = self.instances["OPV"].ref_Voc
             opv_Voc = self.instances["OPV"].opv_Voc
             opv_Isc = self.instances["OPV"].opv_Isc
 
+=======
+            recent_sweep_time = OPV.recent_sweep_time
+            ref_Voc = OPV.ref_Voc
+            opv_Voc = OPV.opv_Voc
+            opv_Isc = OPV.opv_Isc
+            UNIXtime
+>>>>>>> 1f3c25a6359cbd5d5f52e36e330b22c8b6287601
             # Where am I pulling GPS data from?
             GPSfix = self.instances["ADS"].ads_sensors.GPS. gps_data['fix']
             UNIXtime = 
