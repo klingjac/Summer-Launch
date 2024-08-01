@@ -34,6 +34,24 @@ uplink_wait_time = 6.0 # in seconds (wait for uplink for X seconds after downlin
 beacon_enabled = True
 #last_beacon_time = time.monotonic()
 
+def parse_magnetometer_data(data):
+    # Split the input string by commas
+    parts = data.split(',')
+
+    # Define the keys for the dictionary
+    keys = [
+        'mag1x', 'mag1y', 'mag1z', 
+        'mag2x', 'mag2y', 'mag2z', 
+        'mag3x', 'mag3y', 'mag3z', 
+        'mag4x', 'mag4y', 'mag4z', 
+        'QMtemp'
+    ]
+
+    # Create a dictionary mapping the keys to the corresponding values
+    mag_values = {keys[i]: float(parts[i + 2]) for i in range(len(keys))}
+
+    return mag_values
+
 class Beacon_Transmitter:
     def __init__(self, instances, logger):
         self.instances = instances
@@ -72,34 +90,26 @@ class Beacon_Transmitter:
             bmetemp = self.instances["Status"].bme680_temp
             bmepressure = self.instances["Status"].bme680_pressure
             # Where am I pulling QM data from?
-
-            mag1x
-            mag1y
-            mag1z
-            mag2x
-            mag2y
-            mag2z
-            mag3x
-            mag3y
-            mag3z
-            mag4x
-            mag4y
-            mag4z
-            QMtemp
+            dict = parse_magnetometer_data(self.instances["QuadMag"].QuadMag.current_reading)
+            mag1x = dict["mag1x"]
+            mag1y = dict["mag1y"]
+            mag1z = dict["mag1z"]
+            mag2x = dict["mag2x"]
+            mag2y = dict["mag2y"]
+            mag2z = dict["mag2z"]
+            mag3x = dict["mag3x"]
+            mag3y = dict["mag3y"]
+            mag3z = dict["mag3z"]
+            mag4x = dict["mag4x"]
+            mag4y = dict["mag4y"]
+            mag4z = dict["mag4z"]
+            QMtemp = dict["QMtemp"]
             # Where am I pulling OPV data from?
-<<<<<<< HEAD
             recent_sweep_time = self.instances["OPV"].recent_sweep_time
             ref_Voc = self.instances["OPV"].ref_Voc
             opv_Voc = self.instances["OPV"].opv_Voc
             opv_Isc = self.instances["OPV"].opv_Isc
 
-=======
-            recent_sweep_time = OPV.recent_sweep_time
-            ref_Voc = OPV.ref_Voc
-            opv_Voc = OPV.opv_Voc
-            opv_Isc = OPV.opv_Isc
-            UNIXtime
->>>>>>> 1f3c25a6359cbd5d5f52e36e330b22c8b6287601
             # Where am I pulling GPS data from?
             GPSfix = self.instances["ADS"].ads_sensors.GPS. gps_data['fix']
             UNIXtime = 
