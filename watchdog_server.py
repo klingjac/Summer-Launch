@@ -80,10 +80,10 @@ class Beacon_Transmitter:
             mag4z
             QMtemp
             # Where am I pulling OPV data from?
-            recent_sweep_time
-            ref_Voc
-            opv_Voc
-            opv_Isc
+            recent_sweep_time = OPV.recent_sweep_time
+            ref_Voc = OPV.ref_Voc
+            opv_Voc = OPV.opv_Voc
+            opv_Isc = OPV.opv_Isc
             UNIXtime
             # Where am I pulling GPS data from?
             GPSnumSats
