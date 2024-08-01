@@ -38,6 +38,7 @@ class Watchdog:
                     instance.stop()
                     self.threads[name].join()  # Ensure the thread has finished
                     self.instances[name] = self.spawn_instance(name)
+                instance.alive_flag.clear()
                     
             time.sleep(15)  # Adjust the sleep duration as needed
 
