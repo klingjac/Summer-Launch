@@ -79,7 +79,7 @@ class Beacon_Transmitter:
             #print("temp")
             #print(temp)
             temp = self.instances["QuadMag"].QuadMag.current_reading
-            print(f"Quadmag line: {temp}")
+            #print(f"Quadmag line: {temp}")
             free_memory = self.instances["Status"].free_memory
             free_storage = self.instances["Status"].free_disk_space
             CPUtemp = self.instances["Status"].cpu_temp
