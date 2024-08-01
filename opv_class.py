@@ -22,6 +22,7 @@ class OPV:
         self.ref_Voc = 0
         self.opv_Voc = 0
         self.opv_Vsc_ns = 0
+        self.opv_Vsc_s = 0
         self.recent_sweep_time = 0
         # Directory Setup
         self.directory = "./OPV"
