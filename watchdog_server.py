@@ -49,9 +49,56 @@ class Beacon_Transmitter:
             #             # Access and log specific details from the instance if needed
             #         except Exception as e:
             #             self.logger.error(f"Error accessing {name} instance: {e}")
-            temp = self.instances["Status"].VbattRaw
-            print("temp")
-            print(temp)
+            free_memory = self.instances["Status"].free_memory
+            free_storage = self.instances["Status"].free_disk_space
+            CPUtemp = self.instances["Status"].cpu_temp
+            Vbattraw = self.instances["Status"].VbattRaw
+            Ibattraw = self.instances["Status"].IbattRaw
+            V3v3 = self.instances["Status"].V3v3
+            I3v3 = self.instances["Status"].I3v3
+            V5v = self.instances["Status"].V5v0
+            I5v = self.instances["Status"].I5v0
+            Vbatt = self.instances["Status"].Vbatt
+            Ibatt = self.instances["Status"].Ibatt
+            T3v3 = self.instances["Status"].T3v3
+            T5v = self.instances["Status"].T5v0
+            batt_temp = self.instances["Status"].tmp102_temp
+            bmetemp = self.instances["Status"].bme680_temp
+            bmepressure = self.instances["Status"].bme680_pressure
+            # Where am I pulling QM data from?
+            mag1x
+            mag1y
+            mag1z
+            mag2x
+            mag2y
+            mag2z
+            mag3x
+            mag3y
+            mag3z
+            mag4x
+            mag4y
+            mag4z
+            QMtemp
+            # Where am I pulling OPV data from?
+            recent_sweep_time
+            ref_Voc
+            opv_Voc
+            opv_Isc
+            UNIXtime
+            # Where am I pulling GPS data from?
+            GPSnumSats
+            Alt = 
+            Lat
+            loggingCN0
+            magx
+            magy
+            magz
+            gyrox
+            gyroy
+            gyroz
+            tridiode1
+            tridiode2
+            tridiode3
             time.sleep(15)  # Adjust the beacon interval as needed
 
 class Watchdog:
