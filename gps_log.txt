@@ -1,2 +1,2 @@
 GPS SCAN ENTERED
-GPS ------ GPS scan failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+Unknown Error: device reports readiness to read but returned no data (device disconnected or multiple access on port?) None b'$GPGSV,1,1,001\n'
