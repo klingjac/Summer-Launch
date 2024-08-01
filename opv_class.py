@@ -19,7 +19,10 @@ class OPV:
         self.running = True
         self.alive_flag = threading.Event()
         self.alive_flag.set()
-
+        self.ref_Voc = 0
+        self.opv_Voc = 0
+        self.opv_Isc = 0
+        self.recent_sweep_time = 0
         # Directory Setup
         self.directory = "./OPV"
         os.makedirs(self.directory, exist_ok=True)
@@ -65,14 +68,32 @@ class OPV:
                     value += 1
 
         finally:
+            # Save output variables for beaconing
+            #ref_Voc calc
+            fourth_col = [row[3] for row in data]
+            subset = fourth_col[1:10]
+            self.ref_Voc = int((sum(subset)/9)*1000)
+            #opv_Voc calc
+            second_col = [row[1] for row in data]
+            subset = second_col[1:10]
+            self.opv_Voc = int((sum(subset)/9)*1000)
+            #opv_Isc components calc
+            third_col = [row[2] for row in data]
+            subset = second_col[-9:]
+            subset2 = third_col[-9:]
+            # I_sc = (nonsh - shunted)/6.8
+            opv_Vsc_ns = ((sum(subset)/9)*1000)/250
+            opv_Vsc_s = ((sum(subset2)/9)*1000)/250
+            self.opv_Isc = int(((opv_Vsc_ns - opv_Vsc_s)/6.8)*1000)
+            # Time output
+            finished = time.time()
+            self.recent_sweep_time = int(1000*(finished - start))
+            print(f”{self.recent_sweep_time}“)
             # Stop continuous conversion for all ADCs
             self.nons.stop_adc()
             self.shunted.stop_adc()
             self.refer.stop_adc()
             self.tocsv(filename, data)
-            finished = time.time()
-            elapsed = finished - start
-            print(f"{elapsed}")
 
     def opv_loop_run(self):
         while self.running:
