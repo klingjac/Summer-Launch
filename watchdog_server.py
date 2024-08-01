@@ -24,7 +24,7 @@ uplink_wait_time = 6.0 # in seconds (wait for uplink for X seconds after downlin
 CS = DigitalInOut(board.CE1) # init CS pin for SPI
 RESET = DigitalInOut(board.D25) # init RESET pin for the RFM9x module
 spi = busio.SPI(board.SCK, MOSI=board.MOSI, MISO=board.MISO) # init SPI
-rfm9x = adafruit_rfm9x.RFM9x(spi, CS, RESET, 437.0) # init object for the radio
+rfm9x = adafruit_rfm9x.RFM9x(spi, CS, RESET, 433.0) # init object for the radio
 
 # LoRa PHY settings
 rfm9x.tx_power = 23                 # TX power in dBm (23 dBm = 0.2 W) (TODO, default 13)
@@ -173,10 +173,18 @@ class Beacon_Transmitter:
                 except Exception as e:
                     self.beacon = bytes(0)
                     pass
-            print(self.beacon)
+            #print(self.beacon)
             rap = encode_rap(BEACON_FLAG, self.beacon) #add RAP packets
-            #print(rap)
-            
+            print(rap)
+            try:
+                rfm9x.send(rap) # You can only send 252 bytes at a time (limited by chip’s FIFO size and appended headers)
+                print("Sent packet to ground node")
+                # print("n_packets: ", n_packets)
+            except Exception as e:
+                print(f'UNABLE TO SEND BEACON VIA LORA {e}')
+                pass
+            time.sleep(2)
+
 
 
 
