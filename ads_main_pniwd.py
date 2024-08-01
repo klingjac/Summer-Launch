@@ -1,4 +1,4 @@
-import multiprocessing
+import threading
 import time
 import RPi.GPIO as GPIO
 import csv
@@ -7,7 +7,7 @@ from ADS_class import ADS_Sensors
 from datetime import datetime
 
 class ADSSensorDataLogger:
-    def __init__(self, heartbeat):
+    def __init__(self):
         self.ads_sensors = ADS_Sensors()
         self.data_dir = "ADS_data"
         self.file_counter = 0
@@ -16,18 +16,18 @@ class ADSSensorDataLogger:
         self.csv_file = None
         self.csv_writer = None
         self.pni_interrupt_flag = False
+        self.alive_flag = threading.Event()
+        self.alive_flag.set()
         self.running = True
-        self.heartbeat = heartbeat
 
-        # Create directory for storing CSV files
-        if not os.path.exists(self.data_dir):
-            os.makedirs(self.data_dir)
-
+        # GPIO setup and initialization
+        self.setup_gpio()
         self.create_new_csv_file()
 
+    def setup_gpio(self):
         # Define GPIO pins for interrupts
         self.MAG_TRICLOPS_INTERRUPT_PIN = 18  # GPIO pin for magnetometer and Triclops interrupt
-        self.IMU_INTERRUPT_PIN = 4           # GPIO pin for IMU interrupt
+        self.IMU_INTERRUPT_PIN = 4            # GPIO pin for IMU interrupt
 
         # GPIO setup
         GPIO.setmode(GPIO.BCM)
@@ -35,10 +35,13 @@ class ADSSensorDataLogger:
         GPIO.setup(self.IMU_INTERRUPT_PIN, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
         # Setup interrupts
-        GPIO.add_event_detect(self.MAG_TRICLOPS_INTERRUPT_PIN, GPIO.RISING, callback=self.mag_triclops_interrupt_handler, bouncetime=1)
-        GPIO.add_event_detect(self.IMU_INTERRUPT_PIN, GPIO.RISING, callback=self.imu_interrupt_handler, bouncetime=1)
+        GPIO.add_event_detect(self.MAG_TRICLOPS_INTERRUPT_PIN, GPIO.RISING, callback=self.safe_mag_triclops_interrupt_handler, bouncetime=1)
+        GPIO.add_event_detect(self.IMU_INTERRUPT_PIN, GPIO.RISING, callback=self.safe_imu_interrupt_handler, bouncetime=1)
 
-        self.ads_sensors.getMagReading()
+    def cleanup_gpio(self):
+        GPIO.remove_event_detect(self.MAG_TRICLOPS_INTERRUPT_PIN)
+        GPIO.remove_event_detect(self.IMU_INTERRUPT_PIN)
+        GPIO.cleanup()
 
     def create_new_csv_file(self):
         if self.csv_file:
@@ -50,9 +53,23 @@ class ADSSensorDataLogger:
         self.csv_writer.writerow(['Time', 'MagX', 'MagY', 'MagZ', 'AccX', 'AccY', 'AccZ', 'GyroX', 'GyroY', 'GyroZ', 'Tri1', 'Tri2', 'Tri3', 'Latitude', 'Longitude', 'Altitude', 'GPS_Time'])
         self.file_counter += 1
 
+    def safe_mag_triclops_interrupt_handler(self, channel):
+        try:
+            self.mag_triclops_interrupt_handler(channel)
+        except Exception as e:
+            self.alive_flag.clear()
+            print(f"Exception in mag_triclops_interrupt_handler: {e}")
+
     def mag_triclops_interrupt_handler(self, channel):
         self.ads_sensors.getMagReading()
         self.pni_interrupt_flag = True
+
+    def safe_imu_interrupt_handler(self, channel):
+        try:
+            self.imu_interrupt_handler(channel)
+        except Exception as e:
+            self.alive_flag.clear()
+            print(f"Exception in imu_interrupt_handler: {e}")
 
     def imu_interrupt_handler(self, channel):
         self.ads_sensors.getGyroReading()
@@ -80,19 +97,17 @@ class ADSSensorDataLogger:
                 print("No interrupt in the past second, manually triggering a read")
                 self.ads_sensors.getMagReading()
             self.pni_interrupt_flag = False
-            self.heartbeat.value = True  # Update heartbeat
+            self.alive_flag.set()  # Update alive flag
             time.sleep(1)
 
     def run(self):
-        self.ads_sensors.getMagReading()
-        while self.running:
-            self.heartbeat.value = True  # Update heartbeat
-            time.sleep(0.2)
-
-def run_ads_logger(heartbeat):
-    logger = ADSSensorDataLogger(heartbeat)
-    logger.run()
-
-if __name__ == "__main__":
-    heartbeat = create_shared_heartbeat()
-    run_ads_logger(heartbeat)
+        try:
+            self.ads_sensors.getMagReading()
+            while self.running:
+                #self.alive_flag.set()  # Update alive flag
+                time.sleep(0.2)
+        except Exception as e:
+            self.alive_flag.clear()
+            print(f"Exception in ADS logger: {e}")
+        finally:
+            self.cleanup_gpio()

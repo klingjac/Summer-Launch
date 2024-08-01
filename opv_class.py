@@ -1,3 +1,4 @@
+import threading
 import os
 import time
 import smbus2
@@ -9,14 +10,15 @@ from datetime import datetime
 import logging
 
 class OPV:
-    def __init__(self, heartbeat):
+    def __init__(self):
         # Initialize Sensor Members
         self.dac = MCP4725(address=0x60)
         self.nons = ADS1015(address=0x4a)
         self.shunted = ADS1015(address=0x48)
         self.refer = ADS1015(address=0x49)
         self.running = True
-        self.heartbeat = heartbeat
+        self.alive_flag = threading.Event()
+        self.alive_flag.set()
 
         # Directory Setup
         self.directory = "./OPV"
@@ -77,16 +79,13 @@ class OPV:
             file_path = self.generate_opv_file_name(self.directory)
             print(file_path)
             self.start_stop_weened(file_path)
-            self.heartbeat.value = True  # Update heartbeat
+            self.alive_flag.set()  # Update alive flag
             time.sleep(0.1)
 
     def run(self):
-        self.opv_loop_run()
+        try:
+            self.opv_loop_run()
+        except Exception as e:
+            self.alive_flag.clear()
+            print(f"Exception in OPV logger: {e}")
 
-def run_opv(heartbeat):
-    opv = OPV(heartbeat)
-    opv.run()
-
-if __name__ == "__main__":
-    heartbeat = create_shared_heartbeat()
-    run_opv(heartbeat)

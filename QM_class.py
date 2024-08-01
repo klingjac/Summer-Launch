@@ -1,3 +1,4 @@
+import threading
 from Flight_GetQMData import QuadMag
 import os
 import glob
@@ -5,11 +6,12 @@ import numpy as np
 import pandas as pd
 
 class QuadMag_logger:
-    def __init__(self, heartbeat):
+    def __init__(self):
         self.QuadMag = QuadMag()
-        self.QuadMag.setCollectionTime(20)
+        self.QuadMag.setCollectionTime(5)
         self.running = True
-        self.heartbeat = heartbeat
+        self.alive_flag = threading.Event()
+        self.alive_flag.set()
 
     def RunQM(self):
         prefix = "test"
@@ -28,15 +30,12 @@ class QuadMag_logger:
             self.QuadMag.CollectData(0)
             i += 1
 
-            self.heartbeat.value = True  # Update heartbeat
+            self.alive_flag.set()  # Update alive flag
 
     def run(self):
-        self.RunQM()
+        try:
+            self.RunQM()
+        except Exception as e:
+            self.alive_flag.clear()
+            print(f"Exception in QuadMag logger: {e}")
 
-def run_quadmag(heartbeat):
-    logger = QuadMag_logger(heartbeat)
-    logger.run()
-
-if __name__ == "__main__":
-    heartbeat = create_shared_heartbeat()
-    run_quadmag(heartbeat)

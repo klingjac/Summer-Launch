@@ -1,9 +1,47 @@
-import multiprocessing
+import threading
 import time
 import logging
 
-def create_shared_heartbeat():
-    return multiprocessing.Value('b', False)
+class Watchdog:
+    def __init__(self, logger):
+        self.logger = logger
+        self.instances = {}
+        self.threads = {}
+
+    def monitor(self):
+        while True:
+            for name, instance in self.instances.items():
+                if not instance.alive_flag.is_set():
+                    self.logger.info(f"{name} thread died. Restarting...")
+                    self.instances[name].running = False
+                    time.sleep(10)
+                    self.instances[name] = self.spawn_instance(name)
+                    
+            time.sleep(15)  # Adjust the sleep duration as needed
+
+    def spawn_instance(self, name):
+        instance = None
+        if name == "ADS":
+            from ads_main_pniwd import ADSSensorDataLogger
+            instance = ADSSensorDataLogger()
+        elif name == "OPV":
+            from opv_class import OPV
+            instance = OPV()
+        elif name == "QuadMag":
+            from QM_class import QuadMag_logger
+            instance = QuadMag_logger()
+
+        thread = threading.Thread(target=instance.run)
+        thread.start()
+        self.threads[name] = thread
+
+        self.logger.info(f"Started {name} thread with ID {thread.ident}")
+        return instance
+
+    def start_monitoring(self):
+        for name in ["ADS", "OPV", "QuadMag"]:
+            self.instances[name] = self.spawn_instance(name)
+        self.monitor()
 
 def initialize_logger():
     logger = logging.getLogger('WatchdogLogger')
@@ -15,47 +53,10 @@ def initialize_logger():
     logger.addHandler(fh)
     return logger
 
-def watchdog_process(heartbeats, processes, logger):
-    while True:
-        for name, heartbeat in heartbeats.items():
-            if not heartbeat.value:
-                logger.info(f"{name} failed to send heartbeat. Restarting...")
-                processes[name].terminate()
-                processes[name].join()  # Ensure the process has terminated
-                heartbeat.value = True  # Reset heartbeat before restarting
-                process = spawn_process(name, heartbeats, logger)
-                processes[name] = process
-            else:
-                heartbeat.value = False  # Reset heartbeat for the next check
-        time.sleep(60)
-
-def spawn_process(name, heartbeats, logger):
-    if name == "ADS":
-        from ads_main_pniwd import run_ads_logger
-        process = multiprocessing.Process(target=run_ads_logger, args=(heartbeats[name],))
-    elif name == "OPV":
-        from opv_class import run_opv
-        process = multiprocessing.Process(target=run_opv, args=(heartbeats[name],))
-    elif name == "QuadMag":
-        from QM_class import run_quadmag
-        process = multiprocessing.Process(target=run_quadmag, args=(heartbeats[name],))
-    process.start()
-    logger.info(f"Started {name} process with PID {process.pid}")
-    return process
-
 def main():
     logger = initialize_logger()
-    heartbeats = {
-        "ADS": create_shared_heartbeat(),
-        "OPV": create_shared_heartbeat(),
-        "QuadMag": create_shared_heartbeat()
-    }
-
-    processes = {}
-    for name in heartbeats.keys():
-        processes[name] = spawn_process(name, heartbeats, logger)
-
-    watchdog_process(heartbeats, processes, logger)
+    watchdog = Watchdog(logger)
+    watchdog.start_monitoring()
 
 if __name__ == "__main__":
     main()
