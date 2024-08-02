@@ -56,6 +56,51 @@ def parse_magnetometer_data(data):
 
     return mag_values
 
+def downlink_telemetry_beacon(telemetry_data):
+    rfm9x.send(bytes(telemetry_data, 'utf-8'))
+    print("Beacon sent.")
+
+def listen_for_commands(timeout=uplink_wait_time):
+    # Listen for a specific amount of time (timeout) for incoming packets
+    rfm9x.receive(timeout=timeout)
+
+
+def handle_incoming_packet(packet):
+    global beacon_enabled  # Needed to modify the global variable
+
+    # Send ACK
+    packet_decoded = str(packet, "utf-8")
+    ack_msg = f'ACK_{packet_decoded}'
+    rfm9x.send(bytes(ack_msg, 'utf-8'))
+
+    # The commands we expect: Disable/Enable beaconing, request a big file downlink, or ping
+    if packet == b'CMD_DISABLE_BEACON':
+        beacon_enabled = False
+        print("Beacon disabled")
+    elif packet == b'CMD_ENABLE_BEACON':
+        beacon_enabled = True
+        print("Beacon enabled")
+    elif packet == b'CMD_DOWNLINK_BIG_FILE':
+        send_big_file()  # Implement this function with the actual logic to downlink a big file
+        print("Big file requested for downlink")
+    elif packet == b'CMD_PING':
+        send_ping_response()
+        print("Ping received and acknowledged")
+        print()
+
+
+def send_big_file():
+    # Replace this with the logic to send a big file downlink
+    print("Sending big file...")
+
+def send_ping_response():
+    # Send an acknowledgment back as a response to the ping
+    ping_response_data = "PONG"
+    rfm9x.send(bytes(ping_response_data, 'utf-8'))
+    print("Ping response sent.")
+
+prev_packet = None
+
 
 class Beacon_Transmitter:
     def __init__(self, instances, logger):
@@ -78,8 +123,9 @@ class Beacon_Transmitter:
             #temp = self.instances["Status"].VbattRaw
             #print("temp")
             #print(temp)
-            temp = self.instances["QuadMag"].QuadMag.current_reading
+            #temp = self.instances["QuadMag"].QuadMag.current_reading
             #print(f"Quadmag line: {temp}")
+            start = time.time()
             free_memory = self.instances["Status"].free_memory
             free_storage = self.instances["Status"].free_disk_space
             CPUtemp = self.instances["Status"].cpu_temp
@@ -176,14 +222,24 @@ class Beacon_Transmitter:
             #print(self.beacon)
             rap = encode_rap(BEACON_FLAG, self.beacon) #add RAP packets
             print(rap)
-            try:
-                rfm9x.send(rap) # You can only send 252 bytes at a time (limited by chip’s FIFO size and appended headers)
-                print("Sent packet to ground node")
-                # print("n_packets: ", n_packets)
-            except Exception as e:
-                print(f'UNABLE TO SEND BEACON VIA LORA {e}')
-                pass
-            time.sleep(2)
+            if beacon_enabled:
+                downlink_telemetry_beacon(rap)
+                packet = None
+            packet = rfm9x.receive(timeout=uplink_wait_time)
+            if packet is not None:
+                prev_packet = packet
+                packet_text = str(prev_packet, "utf-8")
+                print(packet_text)
+
+                handle_incoming_packet(prev_packet)
+            end = time.time()
+
+            # Calculate required sleep time
+            elapsed_time = end - start
+            sleep_time = beacon_interval - elapsed_time
+            if(sleep_time>0):
+                time.sleep(sleep_time)
+
 
 
 
