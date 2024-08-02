@@ -87,3 +87,155 @@
 2024-08-01 18:12:52,422 - WatchdogLogger - INFO - Started OPV thread with ID 547902415296
 2024-08-01 18:12:52,552 - WatchdogLogger - INFO - Started Status thread with ID 547893760448
 2024-08-01 18:13:52,603 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 13:46:00,063 - WatchdogLogger - INFO - Started ADS thread with ID 548160180672
+2024-08-02 13:46:00,070 - WatchdogLogger - INFO - Started QuadMag thread with ID 547932475840
+2024-08-02 13:46:00,139 - WatchdogLogger - INFO - Started OPV thread with ID 547767079360
+2024-08-02 13:46:00,269 - WatchdogLogger - INFO - Started Status thread with ID 547758424512
+2024-08-02 13:48:34,324 - WatchdogLogger - INFO - Started ADS thread with ID 547717005760
+2024-08-02 13:48:34,327 - WatchdogLogger - INFO - Started QuadMag thread with ID 547489300928
+2024-08-02 13:48:34,351 - WatchdogLogger - INFO - Started OPV thread with ID 547323953600
+2024-08-02 13:48:34,504 - WatchdogLogger - INFO - Started Status thread with ID 547315298752
+2024-08-02 13:49:42,933 - WatchdogLogger - INFO - Started ADS thread with ID 547750166976
+2024-08-02 13:49:42,988 - WatchdogLogger - INFO - Started QuadMag thread with ID 547522462144
+2024-08-02 13:49:43,058 - WatchdogLogger - INFO - Started OPV thread with ID 547357069760
+2024-08-02 13:49:43,202 - WatchdogLogger - INFO - Started Status thread with ID 547348414912
+2024-08-02 13:51:08,797 - WatchdogLogger - INFO - Started ADS thread with ID 547903631808
+2024-08-02 13:51:08,808 - WatchdogLogger - INFO - Started QuadMag thread with ID 547675926976
+2024-08-02 13:51:08,831 - WatchdogLogger - INFO - Started OPV thread with ID 547510534592
+2024-08-02 13:51:08,986 - WatchdogLogger - INFO - Started Status thread with ID 547501879744
+2024-08-02 13:51:55,283 - WatchdogLogger - INFO - Started ADS thread with ID 547625152960
+2024-08-02 13:51:55,286 - WatchdogLogger - INFO - Started QuadMag thread with ID 547397448128
+2024-08-02 13:51:55,314 - WatchdogLogger - INFO - Started OPV thread with ID 547232059840
+2024-08-02 13:51:55,494 - WatchdogLogger - INFO - Started Status thread with ID 547223404992
+2024-08-02 13:53:07,490 - WatchdogLogger - INFO - Started ADS thread with ID 548158050752
+2024-08-02 13:53:07,495 - WatchdogLogger - INFO - Started QuadMag thread with ID 547930345920
+2024-08-02 13:53:07,517 - WatchdogLogger - INFO - Started OPV thread with ID 547764953536
+2024-08-02 13:53:07,702 - WatchdogLogger - INFO - Started Status thread with ID 547756298688
+2024-08-02 13:53:37,336 - WatchdogLogger - INFO - Started ADS thread with ID 547628413376
+2024-08-02 13:53:37,346 - WatchdogLogger - INFO - Started QuadMag thread with ID 547400708544
+2024-08-02 13:53:37,370 - WatchdogLogger - INFO - Started OPV thread with ID 547235361216
+2024-08-02 13:53:37,524 - WatchdogLogger - INFO - Started Status thread with ID 547226706368
+2024-08-02 13:54:50,594 - WatchdogLogger - INFO - Started ADS thread with ID 548348170688
+2024-08-02 13:54:50,597 - WatchdogLogger - INFO - Started QuadMag thread with ID 548120465856
+2024-08-02 13:54:50,615 - WatchdogLogger - INFO - Started OPV thread with ID 547955081664
+2024-08-02 13:54:50,780 - WatchdogLogger - INFO - Started Status thread with ID 547608326592
+2024-08-02 13:55:50,792 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 13:55:51,807 - WatchdogLogger - INFO - Started Status thread with ID 547608326592
+2024-08-02 13:57:36,436 - WatchdogLogger - INFO - Started ADS thread with ID 548253213120
+2024-08-02 13:57:36,438 - WatchdogLogger - INFO - Started QuadMag thread with ID 548025508288
+2024-08-02 13:57:36,457 - WatchdogLogger - INFO - Started OPV thread with ID 547860111808
+2024-08-02 13:57:36,620 - WatchdogLogger - INFO - Started Status thread with ID 547851456960
+2024-08-02 13:58:36,685 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 13:58:37,821 - WatchdogLogger - INFO - Started Status thread with ID 547851456960
+2024-08-02 14:00:37,948 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 14:00:40,072 - WatchdogLogger - INFO - Started Status thread with ID 547851456960
+2024-08-02 14:02:40,146 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 14:02:42,395 - WatchdogLogger - INFO - Started Status thread with ID 547851456960
+2024-08-02 14:04:42,517 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 14:04:44,587 - WatchdogLogger - INFO - Started Status thread with ID 547851456960
+2024-08-02 14:06:44,654 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 14:06:46,847 - WatchdogLogger - INFO - Started Status thread with ID 547851456960
+2024-08-02 14:08:46,965 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 14:08:49,099 - WatchdogLogger - INFO - Started Status thread with ID 547851456960
+2024-08-02 14:10:49,138 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 14:10:51,366 - WatchdogLogger - INFO - Started Status thread with ID 547851456960
+2024-08-02 14:12:51,417 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 14:12:53,998 - WatchdogLogger - INFO - Started Status thread with ID 547851456960
+2024-08-02 14:14:54,076 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 14:14:56,299 - WatchdogLogger - INFO - Started Status thread with ID 547851456960
+2024-08-02 14:16:56,380 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 14:16:58,591 - WatchdogLogger - INFO - Started Status thread with ID 547851456960
+2024-08-02 14:18:58,716 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 14:19:00,878 - WatchdogLogger - INFO - Started Status thread with ID 547851456960
+2024-08-02 14:21:00,937 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 14:21:03,076 - WatchdogLogger - INFO - Started Status thread with ID 547851456960
+2024-08-02 14:23:03,201 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 14:23:05,349 - WatchdogLogger - INFO - Started Status thread with ID 547851456960
+2024-08-02 14:25:05,472 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 14:25:07,761 - WatchdogLogger - INFO - Started Status thread with ID 547851456960
+2024-08-02 14:27:07,868 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 14:27:10,043 - WatchdogLogger - INFO - Started Status thread with ID 547851456960
+2024-08-02 14:29:10,095 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 14:29:12,318 - WatchdogLogger - INFO - Started Status thread with ID 547851456960
+2024-08-02 14:31:12,437 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 14:31:14,541 - WatchdogLogger - INFO - Started Status thread with ID 547851456960
+2024-08-02 14:33:14,611 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 14:33:17,441 - WatchdogLogger - INFO - Started Status thread with ID 547851456960
+2024-08-02 14:35:17,558 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 14:35:20,401 - WatchdogLogger - INFO - Started Status thread with ID 547851456960
+2024-08-02 14:37:20,533 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 14:37:24,281 - WatchdogLogger - INFO - Started Status thread with ID 547851456960
+2024-08-02 14:39:24,361 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 14:39:26,470 - WatchdogLogger - INFO - Started Status thread with ID 547851456960
+2024-08-02 14:41:26,536 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 14:41:28,730 - WatchdogLogger - INFO - Started Status thread with ID 547851456960
+2024-08-02 14:43:28,829 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 14:43:31,094 - WatchdogLogger - INFO - Started Status thread with ID 547851456960
+2024-08-02 14:45:31,217 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 14:45:33,487 - WatchdogLogger - INFO - Started Status thread with ID 547851456960
+2024-08-02 14:47:33,604 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 14:47:35,717 - WatchdogLogger - INFO - Started Status thread with ID 547851456960
+2024-08-02 14:49:35,812 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 14:49:37,943 - WatchdogLogger - INFO - Started Status thread with ID 547851456960
+2024-08-02 14:51:38,065 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 14:51:40,234 - WatchdogLogger - INFO - Started Status thread with ID 547851456960
+2024-08-02 14:53:40,359 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 14:53:42,516 - WatchdogLogger - INFO - Started Status thread with ID 547851456960
+2024-08-02 14:55:42,640 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 14:55:44,764 - WatchdogLogger - INFO - Started Status thread with ID 547851456960
+2024-08-02 14:57:10,382 - WatchdogLogger - INFO - Started ADS thread with ID 548321116608
+2024-08-02 14:57:10,401 - WatchdogLogger - INFO - Started QuadMag thread with ID 548093411776
+2024-08-02 14:57:13,403 - WatchdogLogger - INFO - Started OPV thread with ID 547927761344
+2024-08-02 14:57:13,522 - WatchdogLogger - INFO - Started Status thread with ID 547919368640
+2024-08-02 14:57:50,168 - WatchdogLogger - INFO - Started ADS thread with ID 548255175104
+2024-08-02 14:57:50,174 - WatchdogLogger - INFO - Started QuadMag thread with ID 548027470272
+2024-08-02 14:57:50,200 - WatchdogLogger - INFO - Started OPV thread with ID 547862077888
+2024-08-02 14:57:50,408 - WatchdogLogger - INFO - Started Status thread with ID 547853423040
+2024-08-02 14:58:50,456 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 14:58:51,905 - WatchdogLogger - INFO - Started Status thread with ID 547853423040
+2024-08-02 15:00:52,021 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 15:00:54,874 - WatchdogLogger - INFO - Started Status thread with ID 547853423040
+2024-08-02 15:02:54,949 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 15:02:57,386 - WatchdogLogger - INFO - Started Status thread with ID 547853423040
+2024-08-02 15:05:19,826 - WatchdogLogger - INFO - Started ADS thread with ID 547621175744
+2024-08-02 15:05:19,834 - WatchdogLogger - INFO - Started QuadMag thread with ID 547393470912
+2024-08-02 15:05:19,859 - WatchdogLogger - INFO - Started OPV thread with ID 547228078528
+2024-08-02 15:05:20,057 - WatchdogLogger - INFO - Started Status thread with ID 547219423680
+2024-08-02 15:05:54,508 - WatchdogLogger - INFO - Started ADS thread with ID 548339110336
+2024-08-02 15:05:54,512 - WatchdogLogger - INFO - Started QuadMag thread with ID 548111405504
+2024-08-02 15:05:54,555 - WatchdogLogger - INFO - Started OPV thread with ID 547742544320
+2024-08-02 15:05:54,711 - WatchdogLogger - INFO - Started Status thread with ID 547734151616
+2024-08-02 15:06:54,783 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 15:06:56,228 - WatchdogLogger - INFO - Started Status thread with ID 547734151616
+2024-08-02 15:09:19,204 - WatchdogLogger - INFO - Started ADS thread with ID 548516581824
+2024-08-02 15:09:19,214 - WatchdogLogger - INFO - Started QuadMag thread with ID 548288876992
+2024-08-02 15:09:19,239 - WatchdogLogger - INFO - Started OPV thread with ID 548123484608
+2024-08-02 15:09:19,354 - WatchdogLogger - INFO - Started Status thread with ID 548114829760
+2024-08-02 15:13:06,636 - WatchdogLogger - INFO - Started ADS thread with ID 547705950656
+2024-08-02 15:13:06,646 - WatchdogLogger - INFO - Started QuadMag thread with ID 547478245824
+2024-08-02 15:13:06,669 - WatchdogLogger - INFO - Started OPV thread with ID 547312845248
+2024-08-02 15:13:06,880 - WatchdogLogger - INFO - Started Status thread with ID 547304190400
+2024-08-02 15:14:06,901 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 15:14:08,199 - WatchdogLogger - INFO - Started Status thread with ID 547304190400
+2024-08-02 15:16:08,322 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 15:16:10,304 - WatchdogLogger - INFO - Started Status thread with ID 547304190400
+2024-08-02 15:18:10,401 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 15:18:12,132 - WatchdogLogger - INFO - Started Status thread with ID 547304190400
+2024-08-02 15:19:46,636 - WatchdogLogger - INFO - Started ADS thread with ID 547686068672
+2024-08-02 15:19:46,640 - WatchdogLogger - INFO - Started QuadMag thread with ID 547458363840
+2024-08-02 15:19:46,664 - WatchdogLogger - INFO - Started OPV thread with ID 547292975552
+2024-08-02 15:19:46,871 - WatchdogLogger - INFO - Started Status thread with ID 547284320704
+2024-08-02 15:20:26,234 - WatchdogLogger - INFO - Started ADS thread with ID 547619443136
+2024-08-02 15:20:26,515 - WatchdogLogger - INFO - Started QuadMag thread with ID 547391738304
+2024-08-02 15:20:27,689 - WatchdogLogger - INFO - Started OPV thread with ID 547226341824
+2024-08-02 15:20:27,879 - WatchdogLogger - INFO - Started Status thread with ID 547217686976
+2024-08-02 15:21:27,914 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 15:21:29,397 - WatchdogLogger - INFO - Started Status thread with ID 547217686976
+2024-08-02 15:23:29,481 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 15:23:31,554 - WatchdogLogger - INFO - Started Status thread with ID 547217686976
+2024-08-02 15:25:31,615 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 15:25:33,583 - WatchdogLogger - INFO - Started Status thread with ID 547217686976
+2024-08-02 15:27:33,705 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 15:27:35,794 - WatchdogLogger - INFO - Started Status thread with ID 547217686976
+2024-08-02 15:29:35,913 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-02 15:29:37,767 - WatchdogLogger - INFO - Started Status thread with ID 547217686976

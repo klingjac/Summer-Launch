@@ -13,7 +13,7 @@ RAP_FOOT_LENGTH = 6
 
 # Your payload's spacecraft ID
 PID = '290'
-SID = '18'
+SID = '69'
 
 def checksum(data):
     # This calculates the Fletcher-16 checksum of your passed bytearray

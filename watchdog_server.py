@@ -14,11 +14,11 @@ from opv_class import OPV
 from QM_class import QuadMag_logger
 from general_data import Status_Data
 
-BEACON_FLAG = 0x69
+BEACON_FLAG = 0x03
 
 #LoRa Tunable Parameters
 beacon_interval = 5 # in seconds (beacon telemetry every X seconds)
-uplink_wait_time = 6.0 # in seconds (wait for uplink for X seconds after downlinking a beacon)
+uplink_wait_time = 2.0 # in seconds (wait for uplink for X seconds after downlinking a beacon)
 
 #LoRa device set up
 CS = DigitalInOut(board.CE1) # init CS pin for SPI
@@ -57,8 +57,14 @@ def parse_magnetometer_data(data):
     return mag_values
 
 def downlink_telemetry_beacon(telemetry_data):
-    rfm9x.send(bytes(telemetry_data, 'utf-8'))
-    print("Beacon sent.")
+    if telemetry_data:
+        print(f"this is telem data: {telemetry_data}")
+        
+        rfm9x.send(telemetry_data)
+        print("Beacon sent.")
+        
+    else:
+        print("Telemetry data is none")
 
 def listen_for_commands(timeout=uplink_wait_time):
     # Listen for a specific amount of time (timeout) for incoming packets
