@@ -15,7 +15,6 @@ class ADSSensorDataLogger:
         self.current_entries = 0
         self.csv_file = None
         self.csv_writer = None
-        self.pni_interrupt_flag = False
         self.alive_flag = threading.Event()
         self.alive_flag.set()
         self.running = True
@@ -55,27 +54,26 @@ class ADSSensorDataLogger:
         self.csv_writer.writerow(['Time', 'MagX', 'MagY', 'MagZ', 'AccX', 'AccY', 'AccZ', 'GyroX', 'GyroY', 'GyroZ', 'Tri1', 'Tri2', 'Tri3', 'Latitude', 'Longitude', 'Altitude', 'GPS_Time'])
         self.file_counter += 1
 
-    def safe_mag_triclops_interrupt_handler(self, channel):
+    def safe_mag_interrupt_handler(self, channel):
         self.pni_status = True
         try:
-            self.mag_triclops_interrupt_handler(channel)
+            self.mag_interrupt_handler(channel)
         except Exception as e:
             self.alive_flag.clear()
-            print(f"Exception in mag_triclops_interrupt_handler: {e}")
+            print(f"Exception in mag_interrupt_handler: {e}")
 
-    def mag_triclops_interrupt_handler(self, channel):
+    def mag_interrupt_handler(self, channel):
         self.ads_sensors.getMagReading()
-        self.pni_interrupt_flag = True
 
-    def safe_imu_interrupt_handler(self, channel):
+    def safe_imu_triclops_interrupt_handler(self, channel):
         self.imu_status = True
         try:
-            self.imu_interrupt_handler(channel)
+            self.imu_triclops_interrupt_handler(channel)
         except Exception as e:
             self.alive_flag.clear()
-            print(f"Exception in imu_interrupt_handler: {e}")
+            print(f"Exception in imu_triclops_interrupt_handler: {e}")
 
-    def imu_interrupt_handler(self, channel):
+    def imu_triclops_interrupt_handler(self, channel):
         self.ads_sensors.getGyroReading()
         self.ads_sensors.getTriclopsReading()
 
@@ -94,15 +92,6 @@ class ADSSensorDataLogger:
         if self.current_entries >= self.entries_per_file:
             self.create_new_csv_file()
             self.current_entries = 0
-
-    def interrupt_tracker(self):
-        while self.running:
-            if not self.pni_interrupt_flag:
-                print("No interrupt in the past second, manually triggering a read")
-                self.ads_sensors.getMagReading()
-            self.pni_interrupt_flag = False
-            self.alive_flag.set()  # Update alive flag
-            time.sleep(1)
 
     def run(self):
         try:
