@@ -109,8 +109,8 @@ class GPSScanner:
                 print("ERROR, NUMREAD OVER 4")
             if self.snrflag:
                 self.snr_vals.sort(reverse=True)
-                total = sum(self.snr_vals[:min(len(self.snr_vals), 3)])
-                numsats = min(len(self.snr_vals), 3)
+                total = sum(self.snr_vals[:min(len(self.snr_vals), 4)])
+                numsats = min(len(self.snr_vals), 4)
                 self.gps_data['snr'] = total / numsats if numsats > 0 else 0
                 self.gps_data['num_sv'] = num_sv
         # Add other parsed_data.identities as needed
