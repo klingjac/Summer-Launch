@@ -6,6 +6,10 @@ import os
 from ADS_class import ADS_Sensors
 from datetime import datetime
 
+def write_to_log_file(log_file, message):
+    with open(log_file, 'a') as file:
+        file.write(message + '\n')
+
 class ADSSensorDataLogger:
     def __init__(self):
         self.ads_sensors = ADS_Sensors()
@@ -108,7 +112,7 @@ class ADSSensorDataLogger:
                 time.sleep(0.2)
         except Exception as e:
             self.alive_flag.clear()
-            print(f"Exception in ADS logger: {e}")
+            write_to_log_file('/home/logger/flight_logging/ADS_logs/OPV_log.txt', str(e))
         finally:
             self.cleanup_gpio() #Necessary to prevent dumb stuff from happening
     

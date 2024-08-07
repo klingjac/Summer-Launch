@@ -203,7 +203,7 @@ class Beacon_Transmitter:
                                 byte_value = int(value * conversion_funcs[i]).to_bytes(byte_lengths[i], 'little', signed=signed_unsigned[i])
                             except:
                                 continue
-                            byte_value = bytearray(byte_lengths[i])  # if cannot convert to bytes, create bytearray filled with 0s
+                            #byte_value = bytearray(byte_lengths[i])  # if cannot convert to bytes, create bytearray filled with 0s
                             telemetry_list_bytes.append(byte_value)
 
                         self.beacon = bytes().join(telemetry_list_bytes)

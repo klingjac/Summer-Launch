@@ -9,6 +9,14 @@ import csv
 from datetime import datetime
 import logging
 
+def write_to_log_file(log_file, message):
+    with open(log_file, 'a') as file:
+        file.write(message + '\n')
+
+def init_log_file(log_file, message):
+    with open(log_file, 'w') as file:
+        file.write(message + '\n')
+
 class OPV:
     def __init__(self):
         # Initialize Sensor Members
@@ -26,6 +34,7 @@ class OPV:
         # Directory Setup
         self.directory = "./OPV"
         os.makedirs(self.directory, exist_ok=True)
+        #init_log_file('/home/logger/flight_logging/OPV_logs/OPV_log.txt', "OPV Log")
 
     def generate_opv_file_name(self, directory):
         num_files = len([f for f in os.listdir(directory) if os.path.isfile(os.path.join(directory, f))])
@@ -108,5 +117,6 @@ class OPV:
             self.opv_loop_run()
         except Exception as e:
             self.alive_flag.clear()
-            print(f"Exception in OPV logger: {e}")
+            write_to_log_file('/home/logger/flight_logging/OPV_logs/OPV_log.txt', str(e))
+            
 

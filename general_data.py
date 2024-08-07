@@ -9,6 +9,10 @@ import csv
 import time
 import os
 
+def write_to_log_file(log_file, message):
+    with open(log_file, 'a') as file:
+        file.write(message + '\n')
+
 class Status_Data:
     def __init__(self, i2c_bus_number=2, tmp102_address=0x4B, bme680_address=0x77):
         self.eps = EddyEps(smbus_num=2)
