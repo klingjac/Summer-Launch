@@ -36,8 +36,8 @@ class ADSSensorDataLogger:
         GPIO.setup(self.IMU_INTERRUPT_PIN, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
         # Setup interrupts
-        GPIO.add_event_detect(self.MAG_TRICLOPS_INTERRUPT_PIN, GPIO.RISING, callback=self.safe_mag_triclops_interrupt_handler, bouncetime=1)
-        GPIO.add_event_detect(self.IMU_INTERRUPT_PIN, GPIO.RISING, callback=self.safe_imu_interrupt_handler, bouncetime=1)
+        GPIO.add_event_detect(self.MAG_TRICLOPS_INTERRUPT_PIN, GPIO.RISING, callback=self.safe_mag_interrupt_handler, bouncetime=1)
+        GPIO.add_event_detect(self.IMU_INTERRUPT_PIN, GPIO.RISING, callback=self.safe_imu_triclops_interrupt_handler, bouncetime=1)
 
     def cleanup_gpio(self):
         GPIO.remove_event_detect(self.MAG_TRICLOPS_INTERRUPT_PIN)
@@ -78,15 +78,18 @@ class ADSSensorDataLogger:
         self.ads_sensors.getTriclopsReading()
 
         # Write to CSV
-        self.csv_writer.writerow([
-            datetime.utcnow().isoformat(),
-            self.ads_sensors.magX, self.ads_sensors.magY, self.ads_sensors.magZ,
-            self.ads_sensors.accX, self.ads_sensors.accY, self.ads_sensors.accZ,
-            self.ads_sensors.gyroX, self.ads_sensors.gyroY, self.ads_sensors.gyroZ,
-            self.ads_sensors.tri1, self.ads_sensors.tri2, self.ads_sensors.tri3,
-            self.ads_sensors.GPS.gps_data['latitude'], self.ads_sensors.GPS.gps_data['longitude'], self.ads_sensors.GPS.gps_data['altitude'], self.ads_sensors.GPS.gps_data['timestamp']
-        ])
-        self.current_entries += 1
+        try: 
+            self.csv_writer.writerow([
+                datetime.utcnow().isoformat(),
+                self.ads_sensors.magX, self.ads_sensors.magY, self.ads_sensors.magZ,
+                self.ads_sensors.accX, self.ads_sensors.accY, self.ads_sensors.accZ,
+                self.ads_sensors.gyroX, self.ads_sensors.gyroY, self.ads_sensors.gyroZ,
+                self.ads_sensors.tri1, self.ads_sensors.tri2, self.ads_sensors.tri3,
+                self.ads_sensors.GPS.gps_data['latitude'], self.ads_sensors.GPS.gps_data['longitude'], self.ads_sensors.GPS.gps_data['altitude'], self.ads_sensors.GPS.gps_data['timestamp']
+            ])
+            self.current_entries += 1
+        except:
+            return
 
         # Check if we need a new file
         if self.current_entries >= self.entries_per_file:
