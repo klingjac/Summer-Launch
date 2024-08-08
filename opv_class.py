@@ -81,23 +81,23 @@ class OPV:
             #ref_Voc calc
             fourth_col = [row[3] for row in data]
             subset = fourth_col[1:10]
-            self.ref_Voc = int((sum(subset)/9)*1000)
+            self.ref_Voc = (sum(subset)/9)/250
             #opv_Voc calc
             second_col = [row[1] for row in data]
             subset = second_col[1:10]
-            self.opv_Voc = int((sum(subset)/9)*1000)
+            self.opv_Voc = (sum(subset)/9)/250
             #opv_Isc components calc
             third_col = [row[2] for row in data]
             subset = second_col[-9:]
             subset2 = third_col[-9:]
             # I_sc = (nonsh - shunted)/6.8
-            opv_Vsc_ns = ((sum(subset)/9)*1000)/250
-            opv_Vsc_s = ((sum(subset2)/9)*1000)/250
-            self.opv_Isc = int(((opv_Vsc_ns - opv_Vsc_s)/6.8)*1000)
+            opv_Vsc_ns = ((sum(subset)/9))/250
+            opv_Vsc_s = ((sum(subset2)/9))/250
+            self.opv_Isc = (((opv_Vsc_ns - opv_Vsc_s)/6.8))
             # Time output
             finished = time.time()
-            self.recent_sweep_time = int(1000*(finished - start))
-            print(f"{self.recent_sweep_time/1000}")
+            self.recent_sweep_time = (finished - start)
+            print(f"{self.recent_sweep_time}")
             # Stop continuous conversion for all ADCs
             self.nons.stop_adc()
             self.shunted.stop_adc()
@@ -110,6 +110,10 @@ class OPV:
             print(file_path)
             self.start_stop_weened(file_path)
             self.alive_flag.set()  # Update alive flag
+            print(f"ref: {self.ref_Voc}")
+            print(f"voc: {self.opv_Voc}")
+            print(f"isc: {self.opv_Isc}")
+            print(f"time: {self.recent_sweep_time}")
             time.sleep(0.1)
 
     def run(self):

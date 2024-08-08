@@ -295,6 +295,8 @@ class QuadMag:
                 #print('returned bytes: ',returned_bytes_string)
                 # Stops the python program from attempting invalid string
                 # operations....
+                # if not returned_bytes_string:
+                #     continue
                 if (returned_bytes_string == '') or (returned_bytes_string[1] == "COMPLETE") or (returned_bytes_string == None):
                     #return_string = "\nContinuous measurement completed successfully!"
                     #break
@@ -341,7 +343,8 @@ class QuadMag:
                     self.magDataCV.notify()
                     self.magDataLock.release()
                     csvwriter.writerow(processed_data)
-                    self.current_reading = processed_data
+                    if total_measurements == 5:
+                        self.current_reading = processed_data
                     #write_file_raw.write(str(processed_data) + "\n")
                 else:
                     invalid_packet_count = invalid_packet_count + 1

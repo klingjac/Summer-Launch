@@ -1,1686 +1,0 @@
-INFO:WatchdogLogger:Started Status thread with ID 547597685184
-INFO:WatchdogLogger:Started Beacon_Transmitter thread with ID 547589292480
-INFO:WatchdogLogger:ADS thread died. Restarting...
-INFO:WatchdogLogger:ADS thread died. Restarting...
-INFO:WatchdogLogger:Started ADS thread with ID 547572507072
-INFO:WatchdogLogger:QuadMag thread died. Restarting...
-ERROR:pyubx2.ubxreader:Message GRMC invalid checksum  - should be 4D.
-ERROR:pyubx2.ubxreader:Message GNTG invalid checksum 2 - should be 1A.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GNGSA invalid checksum 1GNGS,A,,,,,,,,,,9.9,999999.9,36 - should be 49.
-ERROR:pyubx2.ubxreader:Message A1 invalid checksum $PGV,,00*$,1,01* - should be 7F.
-ERROR:pyubx2.ubxreader:Message V invalid checksum 76 - should be 57.
-ERROR:pyubx2.ubxreader:Message AGS invalid checksum  - should be 5D.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GNSA invalid checksum 30 - should be 31.
-ERROR:pyubx2.ubxreader:Message PGV invalid checksum  - should be 41.
-ERROR:pyubx2.ubxreader:Message GSV invalid checksum 7$GAGS1,,07*3BSV,1,1* - should be 6F.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GRM invalid checksum GVT,,,,,NE$NG,,,,,,,.99,,,* - should be 16.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GG invalid checksum 36 - should be 17.
-ERROR:pyubx2.ubxreader:Message GPGSV invalid checksum 64$GS11,00,1*$SV,1,00,7GBGS,1,,0,*7 - should be 49.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GSA invalid checksum 3GGA,,,,,,,999999.,*3 - should be 32.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GLGSV invalid checksum  - should be 48.
-ERROR:pyubx2.ubxreader:Message GAGSV invalid checksum GBSV11,0016 - should be 42.
-ERROR:pyubx2.ubxreader:Message GG invalid checksum  - should be 00.
-ERROR:pyubx2.ubxreader:Message GMC invalid checksum  - should be 33.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message V invalid checksum 2EGNA,,,,0,999,,*56$GNGAA,,,,,,99.99,9,991$NSA1,,,,,99.9,99,9993GSA1,,,,,,,.,999,9.9,* - should be 7A.
-ERROR:pyubx2.ubxreader:Message GNG invalid checksum  - should be 3C.
-ERROR:pyubx2.ubxreader:Message S invalid checksum  - should be 7F.
-ERROR:pyubx2.ubxreader:Message GGV1 invalid checksum 3 - should be 52.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GRM invalid checksum 7 - should be 58.
-ERROR:pyubx2.ubxreader:Message GTG invalid checksum 2E - should be 54.
-ERROR:pyubx2.ubxreader:Message G invalid checksum 56 - should be 7E.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GPGS invalid checksum 6 - should be 32.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GTG invalid checksum  - should be 36.
-ERROR:pyubx2.ubxreader:Message G invalid checksum 3 - should be 28.
-ERROR:pyubx2.ubxreader:Message GG invalid checksum 6GNSA,1,,,,,,,,.99,99,.,13$GGA,1,,,999.99* - should be 02.
-ERROR:pyubx2.ubxreader:Message GNGS invalid checksum $GGS,A1,,,,,9.9,9.9999.99*3$GPGSV1,0,164$GGV1,00,18 - should be 31.
-ERROR:pyubx2.ubxreader:Message GNL invalid checksum  - should be 69.
-ERROR:pyubx2.ubxreader:Message GRC invalid checksum 37 - should be 34.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GNGG invalid checksum 3 - should be 22.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message A invalid checksum 64 - should be 13.
-ERROR:pyubx2.ubxreader:Message GV1 invalid checksum  - should be 3A.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GNGL invalid checksum 3$NT,,,,,N2E$GNGGA,,0,,9.,,,*GGS,A1,,,,,,,,9999,9999.99*GNGS,,,,,,,,,,,.99,.9,*3 - should be 61.
-ERROR:pyubx2.ubxreader:Message A invalid checksum 31$GNSA1,,,,,,,9.,9.999.9,*3 - should be 1B.
-ERROR:pyubx2.ubxreader:Message GS invalid checksum 64 - should be 39.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GNG invalid checksum 5 - should be 62.
-ERROR:pyubx2.ubxreader:Message VT invalid checksum EGA,,,0,00,9.9,,,,6$GNA,1,,,,,,,9999999.9,1*33 - should be 2E.
-ERROR:pyubx2.ubxreader:Message AA invalid checksum 3$GA,1,,,,,,,9999999933$NS,,,,,,,,99,9.9999,*3 - should be 09.
-ERROR:pyubx2.ubxreader:Message GNVTG invalid checksum 2GNGA,0,99,,*$GGSA,,,,,999,9.999,* - should be 60.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message S invalid checksum 6 - should be 65.
-ERROR:pyubx2.ubxreader:Message GNGA invalid checksum  - should be 0C.
-ERROR:pyubx2.ubxreader:Message MC invalid checksum 3 - should be 16.
-ERROR:pyubx2.ubxreader:Message GNG invalid checksum E - should be 62.
-ERROR:pyubx2.ubxreader:Message GNGSA invalid checksum 1 - should be 4B.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GPGS invalid checksum 64 - should be 32.
-ERROR:pyubx2.ubxreader:Message LGV invalid checksum 8 - should be 5D.
-ERROR:pyubx2.ubxreader:Message GG invalid checksum 5$SA,1,,,,,99,9999,33$GNSAA,1,,,,,9.99,9,.9230A,,,,,,9.99.99,9.93GSA,,,,,99999.94V,1,1GS110017$GV,10,7 - should be 2C.
-ERROR:pyubx2.ubxreader:Message GNRMV invalid checksum E - should be 5E.
-ERROR:pyubx2.ubxreader:Message GGS invalid checksum  - should be 7D.
-ERROR:pyubx2.ubxreader:Message GNGA invalid checksum 3$NG,,,,,,,9.9,99.9,9.993$GAA1,,,,,,9.,9.999,*3 - should be 27.
-ERROR:pyubx2.ubxreader:Message RC invalid checksum 3 - should be 47.
-ERROR:pyubx2.ubxreader:Message GV invalid checksum  - should be 73.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message S invalid checksum 31 - should be 05.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GS invalid checksum 4$LV1,0,1*8$GASV11,,3 - should be 25.
-ERROR:pyubx2.ubxreader:Message GS invalid checksum 7 - should be 09.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message VT invalid checksum 2 - should be 02.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GNGA invalid checksum 3 - should be 7D.
-ERROR:pyubx2.ubxreader:Message GGSA invalid checksum 6 - should be 34.
-ERROR:pyubx2.ubxreader:Message GPS11 invalid checksum 64$LG1,00*78$GA1,3$GGV,,,00,76 - should be 69.
-ERROR:pyubx2.ubxreader:Message GMC invalid checksum E - should be 35.
-ERROR:pyubx2.ubxreader:Message GA invalid checksum $GNGSAA1,,,,,999,9.9,.9,*SAA,,,,,,9999.99*1$GNGSA,A,,,,9.,.9999,46 - should be 2E.
-ERROR:pyubx2.ubxreader:Message GLGSV invalid checksum  - should be 7B.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GG invalid checksum 76GGL,,,VN7 - should be 31.
-ERROR:pyubx2.ubxreader:Message MC invalid checksum $NG,,,,,9.9,,*$NGA,A1,,,,,,99,9.,.913$GNSA1,,,,,,,99,9.99.9,*3 - should be 76.
-ERROR:pyubx2.ubxreader:Message GGA invalid checksum 6 - should be 43.
-ERROR:pyubx2.ubxreader:Message GGS invalid checksum 6$GLSV,,,,111*9$AS,,,0773 - should be 7F.
-ERROR:pyubx2.ubxreader:Message GGA invalid checksum $GNGSA1,,,,,,,,999999,9913 - should be 6D.
-ERROR:pyubx2.ubxreader:Message GNGA invalid checksum 1$GGSAA,,,,,,,,,99,9.99.9436 - should be 30.
-ERROR:pyubx2.ubxreader:Message GLSV110 invalid checksum E - should be 22.
-ERROR:pyubx2.ubxreader:Message GPGV1 invalid checksum 3 - should be 71.
-ERROR:pyubx2.ubxreader:Message GLL invalid checksum A - should be 6B.
-INFO:WatchdogLogger:Started QuadMag thread with ID 547771728320
-INFO:WatchdogLogger:ADS thread died. Restarting...
-INFO:WatchdogLogger:Started ADS thread with ID 547554148800
-INFO:WatchdogLogger:QuadMag thread died. Restarting...
-ERROR:pyubx2.ubxreader:Message GGV invalid checksum 7$GNVT,,,,NE - should be 42.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GNGGA invalid checksum 56GGSA,,,,,99999.,3 - should be 73.
-ERROR:pyubx2.ubxreader:Message GS invalid checksum 3 - should be 38.
-ERROR:pyubx2.ubxreader:Message GSV invalid checksum 4$GLGS,,101,,22,17 - should be 6E.
-ERROR:pyubx2.ubxreader:Message GC invalid checksum 5$G,A,,,,,,,,,,999999,9.9,1*NS,A1,,,,,,99.9,999,9.,*0 - should be 7A.
-ERROR:pyubx2.ubxreader:Message GSAA invalid checksum 1$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36 - should be 2F.
-ERROR:pyubx2.ubxreader:Message MV invalid checksum  - should be 52.
-ERROR:pyubx2.ubxreader:Message A invalid checksum GSA,,,,,999,92 - should be 67.
-ERROR:pyubx2.ubxreader:Message GN invalid checksum 6GG1,*6$GLS1,1 - should be 4C.
-ERROR:pyubx2.ubxreader:Message GAV invalid checksum 3V1,,07 - should be 50.
-ERROR:pyubx2.ubxreader:Message G invalid checksum  - should be 11.
-ERROR:pyubx2.ubxreader:Message GN invalid checksum N,, - should be 09.
-ERROR:pyubx2.ubxreader:Message GGS invalid checksum 6NGL,,NACV,,,,37$GG,,,,N*2$,,0099,,6N,A,,,,,,,,9,99991 - should be 52.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GGS1 invalid checksum 3,,,,,,,,9.V11,01*GLS,,* - should be 59.
-ERROR:pyubx2.ubxreader:Message GPS invalid checksum 73 - should be 1F.
-ERROR:pyubx2.ubxreader:Message C invalid checksum 7 - should be 6F.
-ERROR:pyubx2.ubxreader:Message GB1 invalid checksum $G,,,,V,NRM,,,V$V,,, - should be 34.
-ERROR:pyubx2.ubxreader:Message GSA invalid checksum $GS,A,1,,,,,9999,*$S,,1,,,,.9999*$GS1,1* - should be 7B.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GG invalid checksum 6 - should be 1C.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message LG invalid checksum C - should be 12.
-ERROR:pyubx2.ubxreader:Message GGAA1 invalid checksum 3 - should be 21.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GGLL invalid checksum GRMC,V,,,,NV* - should be 2C.
-ERROR:pyubx2.ubxreader:Message GNVTG invalid checksum 2E - should be 4C.
-ERROR:pyubx2.ubxreader:Message GNGA invalid checksum 0 - should be 16.
-ERROR:pyubx2.ubxreader:Message GNGA invalid checksum  - should be 59.
-ERROR:pyubx2.ubxreader:Message GNA invalid checksum 36 - should be 74.
-ERROR:pyubx2.ubxreader:Message P invalid checksum 4 - should be 7C.
-ERROR:pyubx2.ubxreader:Message LV11 invalid checksum AGG,,1,0,7*3$GBGSV,1,1,00,1*76 - should be 35.
-ERROR:pyubx2.ubxreader:Message MV invalid checksum 3 - should be 61.
-ERROR:pyubx2.ubxreader:Message GN invalid checksum $NA,1,,,,999,1 - should be 43.
-ERROR:pyubx2.ubxreader:Message GA invalid checksum 6$A1,,,,9.,99,*3S,,,,,9990GS,,,,,9999999*3GNA,1,,,.99.*6 - should be 3D.
-ERROR:pyubx2.ubxreader:Message GGSA invalid checksum 6 - should be 52.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GA invalid checksum NA,,1,,,,,9,.92 - should be 3F.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum 5NA,,,,,,99991$GA,,,,,999999993$GA,,,,9.9999,3$GA,,,,,99,9,.994PG,,0,*LGV,9*$,,103B1,1*6GL,,,$C,V,,,,*3GVT,,,,N - should be 69.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum GG1,,77G,11,, - should be 7C.
-ERROR:pyubx2.ubxreader:Message VG invalid checksum  - should be 13.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GNS invalid checksum NA1,,,,,,9999999*61,0,4$LS,1,,1*E$AS,07*73GGSV,,00$GL,VN*A$N,,,,,N37NT,,,2ENG,,,9,,,,,*6GNSA,,9.,,933GG1,,9.99,9230 - should be 76.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GNG invalid checksum 6 - should be 6D.
-ERROR:pyubx2.ubxreader:Message GV invalid checksum EGN,,99,,,*$NGA,A1,,,,,9.99.9.*3$NGS1,,,9,9999,*3$NS,A1,,,,9999,1$GGS,A1,,,,,9,9.9994*S,0$GV,101,,,GV,,0,*7 - should be 11.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum  - should be 4D.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Message GV invalid checksum GS,,00,7*73$GSV1,07 - should be 59.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message A invalid checksum  - should be 6D.
-ERROR:pyubx2.ubxreader:Message GA invalid checksum 3 - should be 52.
-ERROR:pyubx2.ubxreader:Message GNA invalid checksum $NS,1,,,,,..3NA,,,,99.99,*3 - should be 64.
-ERROR:pyubx2.ubxreader:Message GS invalid checksum 7GV,1, - should be 7F.
-ERROR:pyubx2.ubxreader:Message PV invalid checksum ,,1,1,,,2,A$AS,0073$B,00*7$N,N$C,,,,, - should be 06.
-ERROR:pyubx2.ubxreader:Message T invalid checksum  - should be 3B.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GA invalid checksum 0GS,,,,99999999*1$GGSA1,,,,,,9.,.,.,4*3GG,101G,078AGS, - should be 32.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message V invalid checksum 4$LGSV1,1,,0,$V,,1003GG10,1$GLL,VAGRM,,,,,,,,* - should be 56.
-ERROR:pyubx2.ubxreader:Message RMC invalid checksum $T,,,,,EGGA,0,099,$GGSA,,,,,.,9,99,3 - should be 26.
-ERROR:pyubx2.ubxreader:Message GGS invalid checksum $GA1,,,,99.,9.3 - should be 44.
-ERROR:pyubx2.ubxreader:Message GV invalid checksum 73V,17 - should be 29.
-ERROR:pyubx2.ubxreader:Message G invalid checksum GA,000,99,,*6 - should be 09.
-ERROR:pyubx2.ubxreader:Message M invalid checksum 7T,$,,,99,,5$A,,,,,,999.9913NA,,,,9.9,99,,* - should be 37.
-ERROR:pyubx2.ubxreader:Message V invalid checksum $G,,V*7 - should be 66.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum 6GG1,,,,9999.9,3G,,,,99999992*0$GAA,,,,,.,,1 - should be 75.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$*'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-INFO:WatchdogLogger:Started QuadMag thread with ID 547771728320
-INFO:WatchdogLogger:ADS thread died. Restarting...
-INFO:WatchdogLogger:Started ADS thread with ID 546928845248
-INFO:WatchdogLogger:QuadMag thread died. Restarting...
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GGS invalid checksum 3$G,,1,,,,9,.9999* - should be 21.
-ERROR:pyubx2.ubxreader:Message A invalid checksum  - should be 00.
-ERROR:pyubx2.ubxreader:Message GS invalid checksum GL,1,1,$V,,07*73$GV1,*7GL,,,,*7 - should be 38.
-ERROR:pyubx2.ubxreader:Message RMV invalid checksum E$NGA,,,099,,56$GA,,,,,,9999,99,3N,,,.99.2 - should be 39.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GGSA invalid checksum 3GSAA1,,,,,,9999999GA1,,,9999993 - should be 36.
-ERROR:pyubx2.ubxreader:Message GA invalid checksum GPG1,6L,1,1,,0,1*E$GAGSV,1,1,00,7*73 - should be 28.
-ERROR:pyubx2.ubxreader:Message SA invalid checksum G,,9, - should be 10.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GG invalid checksum G1,,,99993NA,,,,999.999,23NA,,999,A1,,,,,999,9.996 - should be 32.
-ERROR:pyubx2.ubxreader:Message G invalid checksum $S,,,,9,9,.93*31GNGS,,,,*,4 - should be 74.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum 7G,,7GC,,,,V*,,,,,NGGA,,,009,,,6NGSAA,,,,,,99A,,,,,,GG1,,,.9*,,99.9V6 - should be 3C.
-ERROR:pyubx2.ubxreader:Message GS invalid checksum 7,B,1NL,,,AMV,,,,$NV,ENG,.99*$1,,,99.,9,3N,,,9.9999.99,2*SA,,,99,.3A,,,99,99.99,99*36G,*G1,1*7 - should be 3E.
-ERROR:pyubx2.ubxreader:Message PG1 invalid checksum $,10* - should be 0F.
-ERROR:pyubx2.ubxreader:Message TG invalid checksum GS,A,,,,,.99.,1* - should be 34.
-ERROR:pyubx2.ubxreader:Message A invalid checksum GSA,,994*6 - should be 4B.
-ERROR:pyubx2.ubxreader:Message R invalid checksum V,,,E0.1,,,,99,99,$,,,9992*3NSA,,,,,,999931$NA,,,,,9,9.9$V,* - should be 04.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GA1 invalid checksum E$,0,,,,56 - should be 74.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message RMC invalid checksum N,N,,.99,GN,9,1*GA,,,,,,,99.99999,2*3NGA,,9999,9,3 - should be 5C.
-ERROR:pyubx2.ubxreader:Message G invalid checksum $A,,9,99.3V,,LG,1,,8 - should be 19.
-ERROR:pyubx2.ubxreader:Message GGS invalid checksum 7$,1*7 - should be 48.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message A invalid checksum  - should be 70.
-ERROR:pyubx2.ubxreader:Message GNGA invalid checksum $SA,A,1,,,,,99,99* - should be 34.
-ERROR:pyubx2.ubxreader:Message A invalid checksum 6 - should be 4E.
-ERROR:pyubx2.ubxreader:Message GV1 invalid checksum 3 - should be 26.
-ERROR:pyubx2.ubxreader:Message GS1 invalid checksum 7 - should be 0D.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum  - should be 3B.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum 3G,A,,,,,99,,1,,,9946PSV,, - should be 2B.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$0'.
-ERROR:pyubx2.ubxreader:Message VTG invalid checksum GSA,,,,,9991$,A,,,99.999,$,99.3GA,,.99.9.,3G10*6G004D$GSV11,77G,1,0,*GLL,,VN - should be 09.
-ERROR:pyubx2.ubxreader:Message G invalid checksum 7A,00,3SV,17$G,,7$C,,,G,*2 - should be 5E.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GG invalid checksum 3GGS,1,,99..,GNA,1,,99,99 - should be 0F.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GG invalid checksum GA,,,,,99, - should be 15.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$0'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum  - should be 64.
-ERROR:pyubx2.ubxreader:Message S invalid checksum $GS,,,,,,,.9.9PG11 - should be 5B.
-ERROR:pyubx2.ubxreader:Message G invalid checksum 7 - should be 47.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GVTG invalid checksum  - should be 78.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message PS invalid checksum 64 - should be 33.
-ERROR:pyubx2.ubxreader:Message GN invalid checksum GAGV,,,*73 - should be 1E.
-ERROR:pyubx2.ubxreader:Message GG invalid checksum 37 - should be 31.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GG invalid checksum  - should be 00.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message RMV invalid checksum ,,,GGG, - should be 49.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Message A invalid checksum 1A,,,,,.9.9943$GG,0,$V,01,18A7BSV,,7$G,N - should be 5E.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GS11 invalid checksum ,V7AGC,,,3$N,NG,,,9,,,,5 - should be 27.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum  - should be 36.
-ERROR:pyubx2.ubxreader:Message S invalid checksum 7 - should be 70.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GTG invalid checksum  - should be 6E.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message S invalid checksum ,*GRCV,,,,G,,,0099, - should be 44.
-ERROR:pyubx2.ubxreader:Message S invalid checksum 64 - should be 7B.
-ERROR:pyubx2.ubxreader:Message GGA0 invalid checksum $G,,,,9,.,3$,1,,,9.,999,*$,,,,99.93A,,.94GS,,,V,7 - should be 64.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GGS invalid checksum 31$GNSAA,1,,,,,,,,,,999,999936 - should be 44.
-ERROR:pyubx2.ubxreader:Message GS invalid checksum $,11,1,,,,1*7 - should be 24.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GNV invalid checksum 5$NG,,,,,,,,,.999.99.,GNGA,A1,,,,,,99.9999.99,99.2* - should be 11.
-ERROR:pyubx2.ubxreader:Message GNS invalid checksum 4 - should be 12.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message A invalid checksum 0G,1,,,.99.91GNA,,,,999110*GS,,1GS,00, - should be 57.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-INFO:WatchdogLogger:Started QuadMag thread with ID 547771728320
-INFO:WatchdogLogger:ADS thread died. Restarting...
-INFO:WatchdogLogger:Started ADS thread with ID 546912059840
-INFO:WatchdogLogger:QuadMag thread died. Restarting...
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GS invalid checksum G,999 - should be 0B.
-ERROR:pyubx2.ubxreader:Message GNAA invalid checksum  - should be 00.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum 3$G,,,,,,,.9 - should be 20.
-ERROR:pyubx2.ubxreader:Message G invalid checksum 30GA,,,9,999, - should be 45.
-ERROR:pyubx2.ubxreader:Message SA invalid checksum ,,,1 - should be 78.
-ERROR:pyubx2.ubxreader:Message S1 invalid checksum DGS173$V,VAGNRMC,,,,N3G,,,2A,00,9,,*NA,1,,,,,9.91 - should be 52.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message V invalid checksum 7 - should be 16.
-ERROR:pyubx2.ubxreader:Message V invalid checksum $NS,,.,99GGS1,,*6G,,0,,$GSV,1,1,,* - should be 2B.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum ,,,0.,,5 - should be 45.
-ERROR:pyubx2.ubxreader:Message GNGSA invalid checksum  - should be 5E.
-ERROR:pyubx2.ubxreader:Message G invalid checksum LGV,,61*GV,1,7*GV,* - should be 50.
-ERROR:pyubx2.ubxreader:Message GNMCV invalid checksum  - should be 1F.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GNSA invalid checksum 30 - should be 46.
-ERROR:pyubx2.ubxreader:Message GNGAA invalid checksum 31 - should be 73.
-ERROR:pyubx2.ubxreader:Message GA invalid checksum 6 - should be 25.
-ERROR:pyubx2.ubxreader:Message GV invalid checksum 7E$GAGSV,1,1,07*73$GG,,001*6 - should be 14.
-ERROR:pyubx2.ubxreader:Message GNGL invalid checksum  - should be 78.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message T invalid checksum A,,0,99,*56 - should be 54.
-ERROR:pyubx2.ubxreader:Message G invalid checksum 3 - should be 7B.
-ERROR:pyubx2.ubxreader:Message A invalid checksum $G,1,1 - should be 59.
-ERROR:pyubx2.ubxreader:Message GS0 invalid checksum E - should be 3F.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$7'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Message GNRM invalid checksum  - should be 6F.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GA invalid checksum 30 - should be 3F.
-ERROR:pyubx2.ubxreader:Message GNGA invalid checksum 3 - should be 0F.
-ERROR:pyubx2.ubxreader:Message GPG invalid checksum $GLS,1,0,,0*C - should be 60.
-ERROR:pyubx2.ubxreader:Message GA11077GS invalid checksum 6$GNGLL,,,,,,V,N*7A - should be 0F.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum  - should be 13.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message SA invalid checksum 3$SA,,,,,9.9,999,2GG,,,,,,9999,9.1GGA1,,,,,,999999994*SV,10*GLSV11,,,* - should be 12.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GNLL invalid checksum $GVT,NEG,099,,$GSA,,1,,,,9999,9.,13$NA,,1,,,,,,9.9,9,9.,3 - should be 5A.
-ERROR:pyubx2.ubxreader:Message GA invalid checksum 33$GNGSA,1,,,,,,,,9.,9.99.9,*3 - should be 11.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GV11 invalid checksum 3 - should be 0A.
-ERROR:pyubx2.ubxreader:Message S invalid checksum 6$LV,,,,,,1DAS,0,GS,016$NL,,,7 - should be 7E.
-ERROR:pyubx2.ubxreader:Message GG invalid checksum ,,99,99,.3GNG,,,,9.9.,N1,,99.99$GP,,1,6 - should be 39.
-ERROR:pyubx2.ubxreader:Message G09 invalid checksum ,,,,9999,3$G,A,,,.9999,2*0,,,,999,999.,331GAA,,,9,S1$SV,,,0AS*7V,06* - should be 62.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum 6 - should be 47.
-ERROR:pyubx2.ubxreader:Message GG invalid checksum N,V7N,,*7G,,NEGN,,,,9,5$NA,1,,,,9.999*,A,,,,9,0G,,99.3SA,,,,,,,.. - should be 18.
-ERROR:pyubx2.ubxreader:Message GLG invalid checksum 7$,V,NAGNR,,N,7 - should be 52.
-ERROR:pyubx2.ubxreader:Message MV invalid checksum VT,,E$G,,09,A,,,,99,.1 - should be 37.
-ERROR:pyubx2.ubxreader:Message GGSAA1 invalid checksum 641,2,,3,,7 - should be 61.
-ERROR:pyubx2.ubxreader:Message GN invalid checksum GPV1V,,,4,1*FGAV1 - should be 75.
-ERROR:pyubx2.ubxreader:Message G1 invalid checksum 7$BV,1GGL,,,, - should be 71.
-ERROR:pyubx2.ubxreader:Message RC invalid checksum 7N,,NE - should be 11.
-ERROR:pyubx2.ubxreader:Message GTG invalid checksum  - should be 37.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GG invalid checksum  - should be 1C.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum 2EA,,009.9,6$NGS,1,,,,,9.,99.,*3GG,,,9,9.9.2*30 - should be 47.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message A invalid checksum NG,,0999,,5GGS,,,,,99913NGA,,,,,,,999.9*30 - should be 60.
-ERROR:pyubx2.ubxreader:Message A invalid checksum PV11, - should be 29.
-ERROR:pyubx2.ubxreader:Message GGS invalid checksum E - should be 38.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message V invalid checksum  - should be 14.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message T invalid checksum  - should be 28.
-ERROR:pyubx2.ubxreader:Message GA1 invalid checksum 3 - should be 28.
-ERROR:pyubx2.ubxreader:Message GAA invalid checksum 3 - should be 09.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GV invalid checksum 4 - should be 0C.
-ERROR:pyubx2.ubxreader:Message LS invalid checksum 3$GBGSV,1,1,00,1*76 - should be 28.
-ERROR:pyubx2.ubxreader:Message GNGSA invalid checksum  - should be 65.
-ERROR:pyubx2.ubxreader:Message R invalid checksum  - should be 6A.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GNVG invalid checksum E$GGA,,,,00,9.9,,5$GAA,,,,,,,99,.9,99991* - should be 34.
-ERROR:pyubx2.ubxreader:Message S invalid checksum 0 - should be 0F.
-ERROR:pyubx2.ubxreader:Message GNAA1 invalid checksum  - should be 27.
-ERROR:pyubx2.ubxreader:Message GGSA1 invalid checksum 6 - should be 24.
-ERROR:pyubx2.ubxreader:Message GAGSV invalid checksum NL,,,,V,N - should be 52.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GVT invalid checksum  - should be 0B.
-ERROR:pyubx2.ubxreader:Message GA invalid checksum 3$A,1,,,,,,999.99990$GSA,,,,,,,,,,9.9,9.999.9,3 - should be 3F.
-ERROR:pyubx2.ubxreader:Message GA1 invalid checksum 36$GPSV,1,0,*64 - should be 35.
-ERROR:pyubx2.ubxreader:Message BGS invalid checksum 6$G,,,,,N* - should be 56.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GNV invalid checksum 37GVTG,,,,N*2NA,,,,,9,,,,*6$GNS1,,,,,,9999.9999,13 - should be 11.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum G,,,,,N - should be 11.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message G1 invalid checksum 7A,,1,,73$B,1,01* - should be 57.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message LS invalid checksum GV,0,17$L,,,,* - should be 72.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GS1 invalid checksum 4 - should be 08.
-ERROR:pyubx2.ubxreader:Message GNGA invalid checksum 6G,16GGV,8 - should be 1E.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GNA invalid checksum 3$GSA,A,1,,,,,,,.99999*30$GNA,,,,,,9,99.9,31$GNS,,,,,,9.,9.9PV0$LS,107GV,1,0GS,01$,,,GM,,,N,3$GNG,,,N*NG,,0,99,,5GNS,,,9.9,991 - should be 66.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GA invalid checksum NS,,,999.9993GGSA,A,1,,,,,,,,,,,,9.99,99.9999$NA1,,,,,,,9999.99,*6 - should be 06.
-ERROR:pyubx2.ubxreader:Message SV1 invalid checksum 6 - should be 04.
-ERROR:pyubx2.ubxreader:Message GLG invalid checksum 78$,1,003GSV11*$GNGLL,,,,,,V,N*7A - should be 7D.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GNGSA invalid checksum 3 - should be 72.
-ERROR:pyubx2.ubxreader:Message GNA invalid checksum 56 - should be 5D.
-ERROR:pyubx2.ubxreader:Message GNGSA invalid checksum 1 - should be 7A.
-ERROR:pyubx2.ubxreader:Message GPGV invalid checksum 4$G,,1,178$GGS1,7 - should be 07.
-ERROR:pyubx2.ubxreader:Message G invalid checksum 7 - should be 77.
-ERROR:pyubx2.ubxreader:Message GL invalid checksum 7$GVG,,*$GA,,,999,,,56$GS,A,,,,,,,,9.99.,99,1*3 - should be 2C.
-ERROR:pyubx2.ubxreader:Message GA1 invalid checksum $GPGS1100,6 - should be 22.
-ERROR:pyubx2.ubxreader:Message L invalid checksum 78$GAV1,0*3 - should be 61.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GNGA invalid checksum 6 - should be 06.
-ERROR:pyubx2.ubxreader:Message GAA1 invalid checksum  - should be 65.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$*'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum 3$10,1N,,,,A - should be 6A.
-ERROR:pyubx2.ubxreader:Message GT invalid checksum $NG,,0,,99, - should be 13.
-ERROR:pyubx2.ubxreader:Message MC invalid checksum 2G,,,0,0099,,GA,,,,99,99,3 - should be 1F.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum 56$NS,A,,,,99.9,.99.1*3GGA,1,,,,99999.992*GNSA,A,,,,,,..9*3GNG,,,,,9,99,4 - should be 47.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$\r'.
-ERROR:pyubx2.ubxreader:Message GNGGA invalid checksum 6NSA,,,,,9999991 - should be 5F.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Message GG invalid checksum 3GNGS,,,,,,,,99,99.9,*3 - should be 56.
-ERROR:pyubx2.ubxreader:Message SA invalid checksum  - should be 69.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GV invalid checksum GNGL,A$GMC,7$GG,,,,,2EGNGA,,,0,0., - should be 10.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message S1 invalid checksum 1 - should be 33.
-ERROR:pyubx2.ubxreader:Message S invalid checksum G,1,078 - should be 7D.
-ERROR:pyubx2.ubxreader:Message GA invalid checksum GAG10*SV1,* - should be 30.
-ERROR:pyubx2.ubxreader:Message GGA invalid checksum  - should be 73.
-ERROR:pyubx2.ubxreader:Message GBG invalid checksum A$,,,N7GVT,EGN,,,99,,,,56$GS,1,,,,,,,999,.99.9,13$GS,,,,,,,,,99999.930 - should be 00.
-ERROR:pyubx2.ubxreader:Message GGA1 invalid checksum 3 - should be 5C.
-ERROR:pyubx2.ubxreader:Message MV invalid checksum 7 - should be 4D.
-ERROR:pyubx2.ubxreader:Message GLGSV invalid checksum E$GGA,,0,999,,56$NA,,1,,,,9.99.99.913 - should be 2A.
-ERROR:pyubx2.ubxreader:Message GNSA invalid checksum GNGA,,,,,,,,,,9999999999.,3*31 - should be 3D.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-INFO:WatchdogLogger:Started QuadMag thread with ID 547771728320
-INFO:WatchdogLogger:ADS thread died. Restarting...
-INFO:WatchdogLogger:Started ADS thread with ID 546895274432
-INFO:WatchdogLogger:QuadMag thread died. Restarting...
-ERROR:pyubx2.ubxreader:Message RM invalid checksum 2E$NG,,,,,00999,,,5$GNA,,,,,,,,,9.9,99,991*3 - should be 7D.
-ERROR:pyubx2.ubxreader:Message GNGA invalid checksum 0$G,A,1,,,,,,,,,99,99.9999,1 - should be 5A.
-ERROR:pyubx2.ubxreader:Message S invalid checksum 4 - should be 2B.
-ERROR:pyubx2.ubxreader:Message PV1 invalid checksum 7$GGS,,0176$NL,,,,*7 - should be 74.
-ERROR:pyubx2.ubxreader:Message MC invalid checksum 7 - should be 40.
-ERROR:pyubx2.ubxreader:Message GNT invalid checksum 6 - should be 2D.
-ERROR:pyubx2.ubxreader:Message GGS invalid checksum 3 - should be 0F.
-ERROR:pyubx2.ubxreader:Message GNA invalid checksum 0 - should be 5F.
-ERROR:pyubx2.ubxreader:Message GGSA1 invalid checksum 6 - should be 6B.
-ERROR:pyubx2.ubxreader:Message L invalid checksum 73$BGV,110,1*76 - should be 11.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GGG invalid checksum 5 - should be 5B.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GN invalid checksum  - should be 76.
-ERROR:pyubx2.ubxreader:Message GG invalid checksum 7$SV,1,0*$GGSV1,,0,*6 - should be 31.
-ERROR:pyubx2.ubxreader:Message LL invalid checksum 7 - should be 4E.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message VTG invalid checksum ENG,,009,*SA,,1,,,,,,,999.,3GNS,,,,.,.,99,30 - should be 27.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message SV invalid checksum 6S,,,8 - should be 35.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message A invalid checksum G,,,9,9.9,9604 - should be 54.
-ERROR:pyubx2.ubxreader:Message GSV invalid checksum L101*8G10$BG,1*,,NR,,,,,,,,V7GT,EG,0,,,,5GA1,,,,,,3 - should be 5F.
-ERROR:pyubx2.ubxreader:Message V invalid checksum $G,,,G,,,*6$,,9,99..*3SA1,,,99,92* - should be 34.
-ERROR:pyubx2.ubxreader:Message G invalid checksum  - should be 5F.
-ERROR:pyubx2.ubxreader:Message GAGV invalid checksum $G,, - should be 0B.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GNT invalid checksum GA,,099,5GNGSA,A,,,,,99,.,3NG,,,,.,0 - should be 71.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Message A invalid checksum G,GLG,,17$GG11073 - should be 6D.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum ,V,,,N, - should be 6F.
-ERROR:pyubx2.ubxreader:Message GSAA invalid checksum 4,1,700,76 - should be 20.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message V1 invalid checksum 6 - should be 5F.
-ERROR:pyubx2.ubxreader:Message T invalid checksum 6$S,*GGS1,7AGV100*GBS,,1017$GLL,,,,V,NA - should be 66.
-ERROR:pyubx2.ubxreader:Message GNM invalid checksum 7GNG,,,,,,N2E - should be 0A.
-ERROR:pyubx2.ubxreader:Message VT invalid checksum $GNGA,,,0099,,,*6 - should be 2E.
-ERROR:pyubx2.ubxreader:Message GGA invalid checksum 0 - should be 5A.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GSA invalid checksum 6$GPGV1,1004$LS1,,017$ASV,,100,*3 - should be 5F.
-ERROR:pyubx2.ubxreader:Message BSV invalid checksum 6 - should be 77.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GNMC invalid checksum 37 - should be 49.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GNGA invalid checksum 3 - should be 23.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message V invalid checksum 7GA,,17*73$GBGS,1,10,7 - should be 32.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GNT invalid checksum $NG,,,00,99,,,*56 - should be 5D.
-ERROR:pyubx2.ubxreader:Message G invalid checksum 3 - should be 50.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GNGSA invalid checksum 3 - should be 7F.
-ERROR:pyubx2.ubxreader:Message CV invalid checksum 3 - should be 6B.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum 5$S1,,,,9,913,A,9999.*0$GNS,,,99,9,N,,,,,,9999.46 - should be 1C.
-ERROR:pyubx2.ubxreader:Message V invalid checksum GS,0GS* - should be 4B.
-ERROR:pyubx2.ubxreader:Message V invalid checksum $NRMC,,,,,,N,*3$NT,,,,,N2E - should be 22.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message SAA invalid checksum 3 - should be 7D.
-ERROR:pyubx2.ubxreader:Message GG invalid checksum $GSA,,,,.99,9.9,931 - should be 1F.
-ERROR:pyubx2.ubxreader:Message T invalid checksum  - should be 23.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message A invalid checksum  - should be 43.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GN invalid checksum G,,,17,,,N - should be 34.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GNS invalid checksum  - should be 63.
-ERROR:pyubx2.ubxreader:Message A1 invalid checksum 3AA,,999.9.,GG0,6G,*8,7 - should be 49.
-ERROR:pyubx2.ubxreader:Message VTG invalid checksum E - should be 69.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Message GG invalid checksum S,,,,99999,* - should be 67.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Message S1 invalid checksum 1GSA,,,,,9.99G1,064GS,,GS,$,1, - should be 3C.
-ERROR:pyubx2.ubxreader:Message GM invalid checksum  - should be 44.
-ERROR:pyubx2.ubxreader:Message GNGSA1 invalid checksum 1*LGS1 - should be 0C.
-ERROR:pyubx2.ubxreader:Message GB1 invalid checksum $GNG,,,V,*A - should be 18.
-ERROR:pyubx2.ubxreader:Message G invalid checksum N1,,99.0,9999.3$GGS1,999,*P,64 - should be 4C.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$6'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum $L,,, - should be 62.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum 37G,,2 - should be 3D.
-ERROR:pyubx2.ubxreader:Message SA invalid checksum 30 - should be 0C.
-ERROR:pyubx2.ubxreader:Message SA invalid checksum 6 - should be 34.
-ERROR:pyubx2.ubxreader:Message GS invalid checksum BGS - should be 3D.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GG invalid checksum 6 - should be 00.
-ERROR:pyubx2.ubxreader:Message GGA invalid checksum 33 - should be 70.
-ERROR:pyubx2.ubxreader:Message GNS invalid checksum 36 - should be 69.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum $GNGAA,,,,,9.99.,9.9,*0$GNSA1,,,,,,99999931 - should be 47.
-ERROR:pyubx2.ubxreader:Message GNGA invalid checksum 3$S10*6$LGSV,1,0017AS,10*73 - should be 26.
-ERROR:pyubx2.ubxreader:Message GGV invalid checksum 76$G,,N* - should be 2A.
-ERROR:pyubx2.ubxreader:Message GMC invalid checksum  - should be 60.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message RC invalid checksum  - should be 67.
-ERROR:pyubx2.ubxreader:Message GGA invalid checksum 3GG,,,9.2*GA,,,99.9,*1 - should be 5F.
-ERROR:pyubx2.ubxreader:Message S invalid checksum  - should be 7F.
-ERROR:pyubx2.ubxreader:Message V invalid checksum E - should be 56.
-ERROR:pyubx2.ubxreader:Message GNGSA invalid checksum 3 - should be 6F.
-ERROR:pyubx2.ubxreader:Message GNS invalid checksum  - should be 47.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Message GA invalid checksum 33GS,,,,,99,.2*3GS,A,,,,,,,99.,99,33SAA,,.,9936 - should be 11.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GA invalid checksum $GN,,,,,,999.994G0,*4 - should be 72.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$0'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message A invalid checksum N,,,999,9$GGSA1,,9999$,,,,99GA,,,9, - should be 54.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum 37 - should be 6C.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$2'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum GSA,A,,,,9999*,,,,99*N,,,, - should be 5B.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$\r'.
-ERROR:pyubx2.ubxreader:Message GG invalid checksum 56,,,,,,,9.,.93A,,,,9.9,9, - should be 15.
-ERROR:pyubx2.ubxreader:Message GNSA invalid checksum 30$GSA1,,,,,9,,1$GNGS,,,,,9999,994 - should be 0C.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message A.GS1 invalid checksum GA,1,,,,9993GSA,1,,,,,,9999999.,3 - should be 2B.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message MC invalid checksum 37 - should be 74.
-ERROR:pyubx2.ubxreader:Message GNSA invalid checksum 3 - should be 22.
-ERROR:pyubx2.ubxreader:Message GG invalid checksum 1 - should be 33.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum 64 - should be 5B.
-ERROR:pyubx2.ubxreader:Message G1 invalid checksum 78 - should be 77.
-ERROR:pyubx2.ubxreader:Message GAGV invalid checksum 73B,0,*6$G,,*$NMC,,,,,,,V*7 - should be 10.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GA invalid checksum 3 - should be 28.
-ERROR:pyubx2.ubxreader:Message GGSAA invalid checksum  - should be 41.
-ERROR:pyubx2.ubxreader:Message GA invalid checksum 6 - should be 24.
-ERROR:pyubx2.ubxreader:Message GGSV invalid checksum 3 - should be 04.
-ERROR:pyubx2.ubxreader:Message SA invalid checksum 3 - should be 53.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message M invalid checksum 3$NV,,,,,*2$GG,,,0,0999,,,,*6GNG,1,,,,,,,999999.13$GNGA1,,,,,9.9,.9,990GGSAA,1,,,,,,,,,9.,99.,999*3$N1,,,,,,,99,93NMCV,,,,V - should be 55.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GGA invalid checksum $NS,,,,,9.9.9999S,1*S1,01*AV,7$GGS,1GG,,7$,V,,,,,, - should be 63.
-ERROR:pyubx2.ubxreader:Message VG invalid checksum 2E - should be 73.
-ERROR:pyubx2.ubxreader:Message GNA invalid checksum 6 - should be 73.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message R invalid checksum  - should be 4A.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message VG invalid checksum $S,,,.99,*3 - should be 25.
-ERROR:pyubx2.ubxreader:Message GA invalid checksum 6GV1101*6 - should be 11.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GS invalid checksum GA1,7*7GB1,0,,A - should be 24.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GA invalid checksum 5GSA,,,99,13NSA,,,,,,99.GA,9,99,3,,99.9,.99 - should be 1A.
-ERROR:pyubx2.ubxreader:Message A1 invalid checksum PG0*64$LG078,07* - should be 4C.
-ERROR:pyubx2.ubxreader:Message GV11SV invalid checksum GA,,1,$GL,,*7 - should be 38.
-INFO:WatchdogLogger:Started QuadMag thread with ID 547771728320
-INFO:WatchdogLogger:ADS thread died. Restarting...
-INFO:WatchdogLogger:Started ADS thread with ID 546467475904
-INFO:WatchdogLogger:QuadMag thread died. Restarting...
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GG invalid checksum PG0,* - should be 70.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Message GV117GA invalid checksum 7$G,,0 - should be 26.
-ERROR:pyubx2.ubxreader:Message GSV11 invalid checksum 76N,,V*7A - should be 7C.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$\r'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GTG invalid checksum 2GN,009,,,*$GNS,,,,,,9,9.99993GNG,,1,,,,,99,.,.9 - should be 78.
-ERROR:pyubx2.ubxreader:Message A invalid checksum 3V,,1 - should be 0A.
-ERROR:pyubx2.ubxreader:Message LSV1 invalid checksum $A1073 - should be 54.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GG invalid checksum  - should be 2C.
-ERROR:pyubx2.ubxreader:Message GS invalid checksum 1 - should be 71.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GS invalid checksum 36 - should be 5F.
-ERROR:pyubx2.ubxreader:Message GGS11 invalid checksum  - should be 4E.
-ERROR:pyubx2.ubxreader:Message GBS invalid checksum NGL,,,VNA - should be 67.
-ERROR:pyubx2.ubxreader:Message GNG invalid checksum 6$NSAA,,,,,99,999.,1 - should be 52.
-ERROR:pyubx2.ubxreader:Message GS invalid checksum 6GGV,0*$GLS11017$GGV1,,0,*3 - should be 18.
-ERROR:pyubx2.ubxreader:Message C invalid checksum  - should be 15.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GGG invalid checksum 3 - should be 0E.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum  - should be 4A.
-ERROR:pyubx2.ubxreader:Message GG9 invalid checksum 33 - should be 63.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message RM invalid checksum G1,999.,9,1,1007 - should be 5E.
-ERROR:pyubx2.ubxreader:Message G invalid checksum $G07$B,,1*76$GL,V7 - should be 0C.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message V invalid checksum GA,.5$,,,999.33SA,999 - should be 34.
-ERROR:pyubx2.ubxreader:Message GA1 invalid checksum GPG1,GSV0,1* - should be 44.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message A invalid checksum N,1,,,,,,,9.,99993 - should be 41.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message SAA invalid checksum  - should be 6A.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GNT invalid checksum GA,A,,,,,,9999GG,,,,,,,999999.93$NSA,,,,99999,.,36M,,,NT,2E - should be 69.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$\r'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message A invalid checksum 3$GS1,1,0*NL,,,,,NA - should be 4F.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum  - should be 25.
-ERROR:pyubx2.ubxreader:Message GNA invalid checksum 0GNA,,,,,,999999,31NGA,,,,,9.9999.4* - should be 0C.
-ERROR:pyubx2.ubxreader:Message G invalid checksum 64 - should be 2A.
-ERROR:pyubx2.ubxreader:Message BGSV invalid checksum 76 - should be 31.
-ERROR:pyubx2.ubxreader:Message GNGLL invalid checksum 7A - should be 34.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GA invalid checksum 3 - should be 49.
-ERROR:pyubx2.ubxreader:Message GS invalid checksum 0 - should be 6C.
-ERROR:pyubx2.ubxreader:Message GNGA invalid checksum 6 - should be 23.
-ERROR:pyubx2.ubxreader:Message PV110 invalid checksum 6 - should be 37.
-ERROR:pyubx2.ubxreader:Message LGV invalid checksum 7 - should be 18.
-ERROR:pyubx2.ubxreader:Message AS invalid checksum 76 - should be 0B.
-ERROR:pyubx2.ubxreader:Message GNTG invalid checksum  - should be 36.
-ERROR:pyubx2.ubxreader:Message GNS invalid checksum 3$GNA,,,,,,,9.9999999,230 - should be 4F.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GGA invalid checksum 36 - should be 53.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message T invalid checksum 31GNS1,,,,,9.9* - should be 19.
-ERROR:pyubx2.ubxreader:Message S invalid checksum GS,,.9$A,9999$,1,11,3,,1, - should be 7D.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum ,,09,,,$,1,,,,,,999.G,,,,,,,9.9,*3 - should be 47.
-ERROR:pyubx2.ubxreader:Message L1 invalid checksum GC,,,,,,,,N3,,,NE,,,9,56NGSAA,,,,,.99,91*3$1,,,99,99$SA,,,,9.3 - should be 7F.
-ERROR:pyubx2.ubxreader:Message GG invalid checksum  - should be 30.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message SV invalid checksum 7N,,,*N,,, - should be 7A.
-ERROR:pyubx2.ubxreader:Message GA invalid checksum G,9,9996 - should be 3D.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GL invalid checksum G,0,9.99,,$,1,,,,,99*A,,,,9.99,92*NA,,,,,,999,1,,,,.99,,,,A1G6,,* - should be 1C.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GNG invalid checksum  - should be 66.
-ERROR:pyubx2.ubxreader:Message VT invalid checksum  - should be 78.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GN1 invalid checksum $,B1,ARC,N,N,,E$GG,.,,,5GGSA.,.,3NA,,,,,9G,,.91,A1,,99.99GS,,,9LG1107AV*GS,11NCV,N$GG,,0,99.,6G,,,,9.9*33GNA,A,1,,,,,.9,99.9,2*30NGA,,,,,,9..99 - should be 47.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GA invalid checksum G,112,,, - should be 04.
-ERROR:pyubx2.ubxreader:Message V18 invalid checksum 37GV,,*E$A,9NAA,1,9.99.,$,,,,,.992*0$G,A,,,,,,,,,999*S,1,,,,,999S,10,0,$LG8A,, - should be 33.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message PV invalid checksum 6GS,,00*7G100,773B,1,1,00*76L,$N,,,,NN,2GG,,.9,*56$,,,99,9..9, - should be 34.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Message GA invalid checksum A1,,.9,,,,99,99 - should be 46.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message S invalid checksum V, - should be 7F.
-ERROR:pyubx2.ubxreader:Message G invalid checksum 7GA0*$GSV0,6G,,*A - should be 5A.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GV invalid checksum 7 - should be 0D.
-ERROR:pyubx2.ubxreader:Message GA invalid checksum 3G,,,,,,9.99.,0NA,,,,,,9,999,331$GA1,,,,,,99.,,6GPGSV1,28,,,,1LS1,8GASV103 - should be 33.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GNT invalid checksum E$GA,,0,0,9.,,,,*6$GA,A,,,,,9.99,9.9,9991*3 - should be 71.
-ERROR:pyubx2.ubxreader:Message GS invalid checksum 30 - should be 57.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GA invalid checksum 0$GGS,A,,,,,,,,,,9999.99,9.993*GAA,,,,,.999.993$G,1,,8,03,1 - should be 3F.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GA invalid checksum 1 - should be 06.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum 5 - should be 62.
-ERROR:pyubx2.ubxreader:Message G invalid checksum  - should be 3B.
-ERROR:pyubx2.ubxreader:Message A invalid checksum 3SA,,,99.,0GA1,,9.9,.93$,,,,,,,,9999.9,946 - should be 6D.
-ERROR:pyubx2.ubxreader:Message SV invalid checksum  - should be 7D.
-ERROR:pyubx2.ubxreader:Message S invalid checksum  - should be 2F.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GGA invalid checksum 6,1,,1E - should be 76.
-ERROR:pyubx2.ubxreader:Message GS invalid checksum SA1,,,,,,,9,9.92*30,1,,99,*G,,9999,GSV1,06GL1,1,7GA,13 - should be 01.
-ERROR:pyubx2.ubxreader:Message A invalid checksum $SV,,7*$V,176,7 - should be 1F.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GNAA invalid checksum 3G,99.9.30 - should be 01.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$0'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message T invalid checksum 3 - should be 0C.
-ERROR:pyubx2.ubxreader:Message SV invalid checksum 7 - should be 28.
-ERROR:pyubx2.ubxreader:Message S1 invalid checksum V,6 - should be 2D.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum G,,,9999,9, - should be 6B.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$*'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum 0 - should be 7E.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GL0 invalid checksum G,G,,*7,2E,,569.91*3 - should be 10.
-ERROR:pyubx2.ubxreader:Message CTG invalid checksum N,,,99.1 - should be 7A.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message G9 invalid checksum  - should be 2C.
-ERROR:pyubx2.ubxreader:Message GA invalid checksum GV,NGL,,N,,,N7 - should be 06.
-ERROR:pyubx2.ubxreader:Message B invalid checksum 5 - should be 2B.
-ERROR:pyubx2.ubxreader:Message L invalid checksum 3GG,A,1,,,,,,,,,999.,9,*0 - should be 30.
-ERROR:pyubx2.ubxreader:Message SA invalid checksum 1$GNSAA1,,,,,999,.9,99,*3$GPG,0* - should be 54.
-ERROR:pyubx2.ubxreader:Message GLS11 invalid checksum  - should be 58.
-ERROR:pyubx2.ubxreader:Message GMCV invalid checksum GV,* - should be 51.
-ERROR:pyubx2.ubxreader:Message GS invalid checksum 7AN,,,V7$N,,,,,NG,,0,9.9,,N,1,,,,9.999933 - should be 3C.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GG invalid checksum $GGA,,,,,9,9.99.9,1GS,A,,,99.999*30$GSA,,9.,99933S,1,,,,,99,.9.94 - should be 00.
-ERROR:pyubx2.ubxreader:Message GA invalid checksum 3$100 - should be 11.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum  - should be 25.
-ERROR:pyubx2.ubxreader:Message GNT invalid checksum NGA,,,,99999,*3 - should be 1A.
-ERROR:pyubx2.ubxreader:Message GSA1 invalid checksum 3 - should be 1D.
-ERROR:pyubx2.ubxreader:Message GNS invalid checksum $PG11,1 - should be 04.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Message LGSV invalid checksum 8GAGV,1,*7GBS1007GNLL,,,* - should be 0F.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-INFO:WatchdogLogger:Started QuadMag thread with ID 547771728320
-INFO:WatchdogLogger:ADS thread died. Restarting...
-INFO:WatchdogLogger:Started ADS thread with ID 546450690496
-INFO:WatchdogLogger:QuadMag thread died. Restarting...
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$\r'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum 56 - should be 47.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GNG invalid checksum 3G1,,,*3A,1,9.31$SA,,9GSV0 - should be 7F.
-ERROR:pyubx2.ubxreader:Message GN invalid checksum 36G1,1*64GS,17 - should be 1B.
-ERROR:pyubx2.ubxreader:Message L invalid checksum ,7*,01 - should be 51.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message V invalid checksum 3NV,,,EGA,0.,,,GA,,,,991*3 - should be 7A.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GNV invalid checksum  - should be 7D.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GN invalid checksum 2G,$A.,33 - should be 47.
-ERROR:pyubx2.ubxreader:Message A0B invalid checksum  - should be 1F.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message AGS073$ invalid checksum 7LL,,VNCV,N,,,$A,3,,2GN,,,.999S,,,9999*,,7,B,1*,V*7C*,A,9,,,*1,,999*$,999S,,,,.99*3,,,9993,4$7G1,73,00,1,AC,,E,,,9* - should be 69.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum  - should be 1F.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$7'.
-ERROR:pyubx2.ubxreader:Message V invalid checksum ,, - should be 49.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GS invalid checksum ,,,,99*N, - should be 38.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum G,,,,,999,6 - should be 69.
-ERROR:pyubx2.ubxreader:Message GNS invalid checksum GA1,,,99.,9931NA1,,,.,9$S,1,0, - should be 45.
-ERROR:pyubx2.ubxreader:Message GGV3$G1 invalid checksum L,7A,,,7 - should be 1B.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum VT,,,,*GG,,,,0,,* - should be 39.
-ERROR:pyubx2.ubxreader:Message A invalid checksum  - should be 56.
-ERROR:pyubx2.ubxreader:Message M invalid checksum GS00, - should be 22.
-ERROR:pyubx2.ubxreader:Message A invalid checksum 1,0*$V,3BV,11,,$GNL,N*7A - should be 08.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message R invalid checksum E - should be 73.
-ERROR:pyubx2.ubxreader:Message GA invalid checksum $GA,,,,,99,.9*3 - should be 7D.
-ERROR:pyubx2.ubxreader:Message GN invalid checksum 6GV,,*64 - should be 39.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GRCV invalid checksum 7 - should be 62.
-ERROR:pyubx2.ubxreader:Message GA invalid checksum GGL,,N7NM,,,,,,V3$GNTG,,,,*E - should be 26.
-ERROR:pyubx2.ubxreader:Message GGA invalid checksum 5 - should be 73.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GNV invalid checksum 2E - should be 11.
-ERROR:pyubx2.ubxreader:Message GGA invalid checksum 6 - should be 73.
-ERROR:pyubx2.ubxreader:Message GNS invalid checksum 30$GNGSA,1,,,,,,,9.999,933$GGAA1,,,,,9999,99,*36 - should be 19.
-ERROR:pyubx2.ubxreader:Message PS invalid checksum 3 - should be 23.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GNV invalid checksum $,* - should be 73.
-ERROR:pyubx2.ubxreader:Message GSA invalid checksum GA,A,,9,99* - should be 30.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message SV064L invalid checksum G,V,,,,,V,, - should be 09.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum  - should be 45.
-ERROR:pyubx2.ubxreader:Message G invalid checksum  - should be 0C.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GS invalid checksum A,,,.331 - should be 31.
-ERROR:pyubx2.ubxreader:Message GNGS invalid checksum GN,99.,9,6P,00 - should be 0A.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message V invalid checksum $B1,1$GACV3,,N*,7,E - should be 22.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GG invalid checksum 56 - should be 2C.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GA invalid checksum $MC,,,, - should be 36.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message MC invalid checksum 2EN,00.9,6$GS,,,,,..1S,,,,,99,99.20NA1,,,999,*GA,,999,.96GG, - should be 30.
-ERROR:pyubx2.ubxreader:Message S invalid checksum 7$G1,,3 - should be 51.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GA invalid checksum 0$GGA1,,,,,99,.,.9331GGS,,,,,,,9999999993 - should be 0F.
-ERROR:pyubx2.ubxreader:Message LSV invalid checksum  - should be 49.
-ERROR:pyubx2.ubxreader:Message C invalid checksum GNVG,,*2$GG,,,.9,6$NA,,,,,,,999,.9*33GS,,,9999,.*30,,,,,,,9,93 - should be 43.
-ERROR:pyubx2.ubxreader:Message S invalid checksum GS,11,0,4$LS,,*78$G,,0,7 - should be 68.
-ERROR:pyubx2.ubxreader:Message GN invalid checksum  - should be 73.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GNAA invalid checksum 3NG,,,,,,,,9999.9,9.9,* - should be 01.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$9'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum , - should be 0E.
-ERROR:pyubx2.ubxreader:Message G invalid checksum 37N,,,,$,,,$A,,9,3 - should be 47.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message S invalid checksum 33 - should be 7F.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Message TGN invalid checksum ,A,,9999G,,,,,99.99,*3G1,,,,,,99.9.,99.99G,,,991, - should be 5F.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$7'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message A invalid checksum ,996,*V3 - should be 47.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message RMV invalid checksum T, - should be 49.
-ERROR:pyubx2.ubxreader:Message GNG invalid checksum 33 - should be 24.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$0'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Message SA invalid checksum GG4,1S00* - should be 7D.
-ERROR:pyubx2.ubxreader:Message G invalid checksum  - should be 45.
-ERROR:pyubx2.ubxreader:Message GNV invalid checksum G,,00,99,,$,999.,$SA,,,,,9, - should be 11.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message S1 invalid checksum 6,*AG1,7*$L,,,,*3,ENA,5A,1,,,99G199$,,99,.,31,9.9994* - should be 7E.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GNGAA invalid checksum $GNS,,,,,,9.,.99,3GGA,,,,,9.9436G,1,,1*64 - should be 46.
-ERROR:pyubx2.ubxreader:Message GVTG invalid checksum 2 - should be 02.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GA invalid checksum $PGV,V1 - should be 19.
-ERROR:pyubx2.ubxreader:Message GS invalid checksum 8$AS117 - should be 25.
-ERROR:pyubx2.ubxreader:Message G invalid checksum  - should be 5F.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GNVTG invalid checksum E$GA,,,0,099.9, - should be 60.
-ERROR:pyubx2.ubxreader:Message G invalid checksum  - should be 4D.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GGA invalid checksum 1 - should be 33.
-ERROR:pyubx2.ubxreader:Message GGSA invalid checksum 3 - should be 2E.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GPG1 invalid checksum 4LSV,$RC,,3G,,,,,,,,NG,,,09,,$NGAA,,,,,,9.993G,,,,999992G,,,,,,,,99,331 - should be 51.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message G1 invalid checksum  - should be 40.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$0'.
-ERROR:pyubx2.ubxreader:Message GN invalid checksum 31N,,,9,6S01,78S17* - should be 29.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$\r'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum 7 - should be 71.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$0'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum VSV,1 - should be 76.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message T invalid checksum 6G.9,,,,.,,* - should be 6A.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$9'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GNGL invalid checksum V,,,,,,NA91GS,,9,99,,,,,,99,99,3G,A,1,,,9,9911$,,3V,11,$, - should be 60.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$0'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum 30SA99G,,.9 - should be 4D.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message A invalid checksum 0 - should be 15.
-INFO:WatchdogLogger:Started QuadMag thread with ID 547771728320
-INFO:WatchdogLogger:ADS thread died. Restarting...
-bus = 2
-bus = <smbus2.smbus2.SMBus object at 0x7f7febbeb0>, fd = 6, addr = 105
-temp: 0
-temp: 1
-Serial port /dev/ttyAMA0 was opened successfully
-
-command=b'\x01\x00\xc8\x04\x01\x00\x00\x00\x00\x00'
-./OPV/31_1723064316.csv
-Printing to data_storage/test_1_37Hz.csv
-
-bytearray(b'\xab\xcd"\x01\x00E\x03\x11\x00\xf5\xac\xff\xff\xf94\xb1p')
-this is telem data: bytearray(b'\xab\xcd"\x01\x00E\x03\x11\x00\xf5\xac\xff\xff\xf94\xb1p')
-bus = 2
-bus = <smbus2.smbus2.SMBus object at 0x7f7fe55eb0>, fd = 10, addr = 105
-Issue with beaconing
-bytearray(b'\xab\xcd"\x01\x00E\x03\x11\x00\xf5\xac\xff\xff\xf94\xb1p')
-this is telem data: bytearray(b'\xab\xcd"\x01\x00E\x03\x11\x00\xf5\xac\xff\xff\xf94\xb1p')
-temp: 0
-temp: 1
-Test: 0, <class 'int'> False
-bus = 2
-bus = <smbus2.smbus2.SMBus object at 0x7f7fe55e20>, fd = 11, addr = 105
-temp: 0
-temp: 1
-2.636
-./OPV/32_1723064319.csv
-2.872
-./OPV/33_1723064322.csv
-2.828
-./OPV/34_1723064325.csv
-2.741
-./OPV/35_1723064327.csv
-2.539
-./OPV/36_1723064330.csv
-2.654
-./OPV/37_1723064333.csv
-2.475
-./OPV/38_1723064336.csv
-
-******Finished a continuous measurement******
-
-
-Expected Measurements: 740
-
-Missing Measurements: 117
-
-
-Invalid Packets Received: 0
-
-Serial port /dev/ttyAMA0 was opened successfully
-
-command=b'\x01\x00\xc8\x03\x01\x00\x00\x00\x00\x00'
-Printing to data_storage/test_1_75Hz.csv
-
-2.835
-./OPV/39_1723064339.csv
-2.892
-./OPV/40_1723064342.csv
-3.109
-./OPV/41_1723064345.csv
-2.934
-./OPV/42_1723064348.csv
-2.871
-./OPV/43_1723064351.csv
-2.819
-./OPV/44_1723064354.csv
-
-******Finished a continuous measurement******
-
-
-Expected Measurements: 1500
-
-Missing Measurements: 233
-
-
-Invalid Packets Received: 0
-
-Serial port /dev/ttyAMA0 was opened successfully
-
-command=b'\x01\x00\xc8\x04\x01\x00\x00\x00\x00\x00'
-bus = 2
-bus = <smbus2.smbus2.SMBus object at 0x7f7fe26c10>, fd = 36, addr = 105
-temp: 0
-temp: 1
-2.453
-Printing to data_storage/test_1_37Hz.csv
-
-./OPV/45_1723064356.csv
-2.755
-./OPV/46_1723064359.csv
-2.64
-./OPV/47_1723064362.csv
-2.765
-./OPV/48_1723064365.csv
-2.792
-./OPV/49_1723064368.csv
-2.507
-./OPV/50_1723064370.csv
-2.66
-./OPV/51_1723064373.csv
-2.748
-./OPV/52_1723064376.csv
-
-******Finished a continuous measurement******
-
-
-Expected Measurements: 740
-
-Missing Measurements: 105
-
-
-Invalid Packets Received: 0
-
-Serial port /dev/ttyAMA0 was opened successfully
-
-command=b'\x01\x00\xc8\x03\x01\x00\x00\x00\x00\x00'
-Printing to data_storage/test_1_75Hz.csv
-
-2.983
-./OPV/53_1723064379.csv
-2.834
-./OPV/54_1723064382.csv
-2.875
-./OPV/55_1723064385.csv
-3.187
-./OPV/56_1723064389.csv
-2.787
-./OPV/57_1723064391.csv
-2.721
-./OPV/58_1723064394.csv
-
-******Finished a continuous measurement******
-
-
-Expected Measurements: 1500
-
-Missing Measurements: 232
-
-
-Invalid Packets Received: 0
-
-Serial port /dev/ttyAMA0 was opened successfully
-
-command=b'\x01\x00\xc8\x04\x01\x00\x00\x00\x00\x00'
-Printing to data_storage/test_1_37Hz.csv
-
-bus = 2
-bus = <smbus2.smbus2.SMBus object at 0x7f7fe26910>, fd = 46, addr = 105
-temp: 0
-temp: 1
-2.595
-./OPV/59_1723064397.csv
-2.737
-./OPV/60_1723064400.csv
-2.733
-./OPV/61_1723064403.csv
-2.842
-./OPV/62_1723064406.csv
-2.849
-./OPV/63_1723064409.csv
-2.488
-./OPV/64_1723064411.csv
-2.517
-./OPV/65_1723064414.csv
-2.341
-./OPV/66_1723064416.csv
-
-******Finished a continuous measurement******
-
-
-Expected Measurements: 740
-
-Missing Measurements: 105
-
-
-Invalid Packets Received: 0
-
-Serial port /dev/ttyAMA0 was opened successfully
-
-command=b'\x01\x00\xc8\x03\x01\x00\x00\x00\x00\x00'
-Printing to data_storage/test_1_75Hz.csv
-
-2.944
-./OPV/67_1723064420.csv
-2.771
-./OPV/68_1723064422.csv
-2.912
-./OPV/69_1723064425.csv
-3.109
-./OPV/70_1723064429.csv
-3.275
-./OPV/71_1723064432.csv
-2.722
-./OPV/72_1723064435.csv
-
-******Finished a continuous measurement******
-
-
-Expected Measurements: 1500
-
-Missing Measurements: 231
-
-
-Invalid Packets Received: 0
-
-Serial port /dev/ttyAMA0 was opened successfully
-
-command=b'\x01\x00\xc8\x04\x01\x00\x00\x00\x00\x00'
-bus = 2
-bus = <smbus2.smbus2.SMBus object at 0x7f7ff155b0>, fd = 40, addr = 105
-temp: 0
-temp: 1
-Printing to data_storage/test_1_37Hz.csv
-
-2.618
-./OPV/73_1723064438.csv
-2.864
-./OPV/74_1723064441.csv
-2.809
-./OPV/75_1723064444.csv
-2.705
-./OPV/76_1723064446.csv
-2.707
-./OPV/77_1723064449.csv
-2.829
-./OPV/78_1723064452.csv
-2.7
-./OPV/79_1723064455.csv
-
-******Finished a continuous measurement******
-
-
-Expected Measurements: 740
-
-Missing Measurements: 105
-
-
-Invalid Packets Received: 0
-
-Serial port /dev/ttyAMA0 was opened successfully
-
-command=b'\x01\x00\xc8\x03\x01\x00\x00\x00\x00\x00'
-Printing to data_storage/test_1_75Hz.csv
-
-2.422
-./OPV/80_1723064458.csv
-3.159
-./OPV/81_1723064461.csv
-3.024
-./OPV/82_1723064464.csv
-3.106
-./OPV/83_1723064467.csv
-3.154
-./OPV/84_1723064471.csv
-3.087
-./OPV/85_1723064474.csv
-2.617
-./OPV/86_1723064477.csv
-
-******Finished a continuous measurement******
-
-
-Expected Measurements: 1500
-
-Missing Measurements: 231
-
-
-Invalid Packets Received: 0
-
-Serial port /dev/ttyAMA0 was opened successfully
-
-command=b'\x01\x00\xc8\x04\x01\x00\x00\x00\x00\x00'
-bus = 2
-bus = <smbus2.smbus2.SMBus object at 0x7f7ff15790>, fd = 57, addr = 105
-temp: 0
-temp: 1
-Printing to data_storage/test_1_37Hz.csv
-
-2.694
-./OPV/87_1723064479.csv
-2.734
-./OPV/88_1723064482.csv
-2.814
-./OPV/89_1723064485.csv
-2.739
-./OPV/90_1723064488.csv
-3.174
-./OPV/91_1723064491.csv
-2.734
-./OPV/92_1723064494.csv
-2.587
-./OPV/93_1723064497.csv
-
-******Finished a continuous measurement******
-
-
-Expected Measurements: 740
-
-Missing Measurements: 105
-
-
-Invalid Packets Received: 0
-
-Serial port /dev/ttyAMA0 was opened successfully
-
-command=b'\x01\x00\xc8\x03\x01\x00\x00\x00\x00\x00'
-Printing to data_storage/test_1_75Hz.csv
-
-2.913
-./OPV/94_1723064500.csv
-3.135
-./OPV/95_1723064503.csv
-3.178
-./OPV/96_1723064507.csv
-3.101
-./OPV/97_1723064510.csv
-3.117
-./OPV/98_1723064513.csv
-2.898
-./OPV/99_1723064516.csv
-
-******Finished a continuous measurement******
-
-
-Expected Measurements: 1500
-
-Missing Measurements: 231
-
-
-Invalid Packets Received: 0
-
-Serial port /dev/ttyAMA0 was opened successfully
-
-command=b'\x01\x00\xc8\x04\x01\x00\x00\x00\x00\x00'
-bus = 2
-bus = <smbus2.smbus2.SMBus object at 0x7f7fe26880>, fd = 22, addr = 105
-temp: 0
-temp: 1
-Printing to data_storage/test_1_37Hz.csv
-
-2.645
-./OPV/100_1723064519.csv
-2.809
-./OPV/101_1723064522.csv
-2.795
-./OPV/102_1723064525.csv
-2.641
-./OPV/103_1723064528.csv
-2.649
-./OPV/104_1723064530.csv
-2.861
-./OPV/105_1723064533.csv
-2.666
-./OPV/106_1723064536.csv
-
-******Finished a continuous measurement******
-
-
-Expected Measurements: 740
-
-Missing Measurements: 105
-
-
-Invalid Packets Received: 0
-
-Serial port /dev/ttyAMA0 was opened successfully
-
-command=b'\x01\x00\xc8\x03\x01\x00\x00\x00\x00\x00'
-Printing to data_storage/test_1_75Hz.csv
-
-2.538
-./OPV/107_1723064539.csv
-3.12
-./OPV/108_1723064542.csv
-3.044
-./OPV/109_1723064545.csv
-3.39
-./OPV/110_1723064549.csv
-3.136
-./OPV/111_1723064552.csv
-3.084
-./OPV/112_1723064555.csv
-2.533
-./OPV/113_1723064558.csv
-
-******Finished a continuous measurement******
-
-
-Expected Measurements: 1500
-
-Missing Measurements: 232
-
-
-Invalid Packets Received: 0
-
-Serial port /dev/ttyAMA0 was opened successfully
-
-command=b'\x01\x00\xc8\x04\x01\x00\x00\x00\x00\x00'
-bus = 2
-bus = <smbus2.smbus2.SMBus object at 0x7f7f5f0b80>, fd = 75, addr = 105
-Printing to data_storage/test_1_37Hz.csv
-
-temp: 0
-temp: 1
-2.768
-./OPV/114_1723064561.csv
-2.765
-./OPV/115_1723064564.csv
-2.833
-./OPV/116_1723064567.csv
-2.68
-./OPV/117_1723064569.csv
-2.697
-./OPV/118_1723064572.csv
-2.746
-./OPV/119_1723064575.csv
-2.547
-./OPV/120_1723064578.csv
-
-******Finished a continuous measurement******
-
-
-Expected Measurements: 740
-
-Missing Measurements: 105
-
-
-Invalid Packets Received: 0
-
-Serial port /dev/ttyAMA0 was opened successfully
-
-command=b'\x01\x00\xc8\x03\x01\x00\x00\x00\x00\x00'
-Printing to data_storage/test_1_75Hz.csv
-
-2.803
-./OPV/121_1723064581.csv
-3.062
-./OPV/122_1723064584.csv
-3.159
-./OPV/123_1723064587.csv
-3.183
-./OPV/124_1723064591.csv
-3.1
-./OPV/125_1723064594.csv
-2.908
-./OPV/126_1723064597.csv
-
-******Finished a continuous measurement******
-
-
-Expected Measurements: 1500
-
-Missing Measurements: 231
-
-
-Invalid Packets Received: 0
-
-Serial port /dev/ttyAMA0 was opened successfully
-
-command=b'\x01\x00\xc8\x04\x01\x00\x00\x00\x00\x00'
-bus = 2
-bus = <smbus2.smbus2.SMBus object at 0x7f7ff15e20>, fd = 80, addr = 105INFO:WatchdogLogger:Started ADS thread with ID 546433905088
-INFO:WatchdogLogger:QuadMag thread died. Restarting...
-ERROR:pyubx2.ubxreader:Message A1 invalid checksum 30 - should be 49.
-ERROR:pyubx2.ubxreader:Message C invalid checksum $A,,0,99,,,,6$NG,,,,,,99.,.91GNG,A,,,9,9,992S,,,,,,99993 - should be 2E.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GGA invalid checksum 5$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33 - should be 7A.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GSA invalid checksum 6 - should be 64.
-ERROR:pyubx2.ubxreader:Message PS1114$L invalid checksum 3 - should be 4F.
-ERROR:pyubx2.ubxreader:Message GSV invalid checksum 76 - should be 6E.
-ERROR:pyubx2.ubxreader:Message M invalid checksum E - should be 3C.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GG invalid checksum $NSAA1,,,,,,,99,99,99,*3$NS,,,,,,,,,99,.9,99,*0GGS,,,,,,,,,9999.9999,*3$GN,,,,,,,,,46 - should be 1C.
-ERROR:pyubx2.ubxreader:Message PS invalid checksum 4 - should be 2F.
-ERROR:pyubx2.ubxreader:Message G1 invalid checksum 8 - should be 5A.
-ERROR:pyubx2.ubxreader:Message G invalid checksum 2E - should be 25.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GS invalid checksum ,9994* - should be 33.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GNA invalid checksum 64GG,,,N,,0,*$NA,99,99993S,,,,,,,999,3 - should be 4F.
-ERROR:pyubx2.ubxreader:Message R invalid checksum ,,,A - should be 54.
-ERROR:pyubx2.ubxreader:Message A invalid checksum $SL,1,,GG,0* - should be 56.
-Exception in thread Thread-28:
-Traceback (most recent call last):
-  File "/home/logger/flight_logging/lib/gps_lib.py", line 41, in gps_scan
-    raw_data, parsed_data = ubr.read()  # Read from GPS
-  File "/home/logger/.local/lib/python3.9/site-packages/pyubx2/ubxreader.py", line 167, in read
-    (raw_data, parsed_data) = self._parse_nmea(bytehdr)
-  File "/home/logger/.local/lib/python3.9/site-packages/pyubx2/ubxreader.py", line 251, in _parse_nmea
-    byten = self._read_line()  # NMEA protocol is CRLF-terminated
-  File "/home/logger/.local/lib/python3.9/site-packages/pyubx2/ubxreader.py", line 320, in _read_line
-    data = self._stream.readline()  # NMEA protocol is CRLF-terminated
-  File "/home/logger/.local/lib/python3.9/site-packages/serial/serialposix.py", line 595, in read
-    raise SerialException(
-serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/lib/python3.9/threading.py", line 954, in _bootstrap_inner
-    self.run()
-  File "/usr/lib/python3.9/threading.py", line 892, in run
-    self._target(*self._args, **self._kwargs)
-  File "/home/logger/flight_logging/lib/gps_lib.py", line 51, in gps_scan
-    file.write(f"Unknown Error: {e} {parsed_data} {raw_data}\n")
-UnboundLocalError: local variable 'parsed_data' referenced before assignment
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum G,9,,,,,999, - should be 25.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Message GA invalid checksum ,,R,V,*,.,56S99*,9*,,,9.,9,9.96 - should be 13.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$0'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GSA invalid checksum 6G1,,,, - should be 2E.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GNGSA invalid checksum 30 - should be 66.
-ERROR:pyubx2.ubxreader:Message GNGSA invalid checksum 36GPGV1,10*6$GLGSV,1,1,0,,06,,,,4,*9$AV,1007*73GGV,,101*76$GNGLL,,,N7 - should be 5C.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GGA invalid checksum 6 - should be 41.
-ERROR:pyubx2.ubxreader:Message GSA1 invalid checksum 3 - should be 64.
-ERROR:pyubx2.ubxreader:Message GNS invalid checksum 31 - should be 54.
-ERROR:pyubx2.ubxreader:Message GSA invalid checksum 6GPSV1,,,*64 - should be 5A.
-ERROR:pyubx2.ubxreader:Message G invalid checksum 79 - should be 3C.
-ERROR:pyubx2.ubxreader:Message GNRC invalid checksum 2 - should be 6B.
-ERROR:pyubx2.ubxreader:Message GGG invalid checksum 6 - should be 47.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GA invalid checksum $GSA,1,,,,,,9,99,99,*31 - should be 3E.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GG invalid checksum  - should be 39.
-ERROR:pyubx2.ubxreader:Message GA invalid checksum  - should be 27.
-ERROR:pyubx2.ubxreader:Message GSA invalid checksum 6 - should be 19.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum 5GG,,,99993S1,,,,,,9.99990AA,,,,,9,31,A,,,,,,99* - should be 52.
-ERROR:pyubx2.ubxreader:Message GAGS invalid checksum 3 - should be 0E.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$2'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message C invalid checksum 3 - should be 64.
-ERROR:pyubx2.ubxreader:Message A invalid checksum S,9*,,,91$A,,,99,S60,09, - should be 00.
-ERROR:pyubx2.ubxreader:Message S invalid checksum  - should be 48.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message G1 invalid checksum ,,G,,*2E,,G,99,999,1,,,9*1,9.93N,9.9,1*$1, - should be 75.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum A,,9.9*GS,,.999GNG,A,.99.9*$,993V,GS,,,*G,,NG,VNR, - should be 62.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum S,,,9 - should be 21.
-ERROR:pyubx2.ubxreader:Message A invalid checksum .999930,,,9,9,999.9,V - should be 60.
-ERROR:pyubx2.ubxreader:Message GN invalid checksum G,0,,* - should be 2A.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$\n'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$*'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Message SV1 invalid checksum 7 - should be 42.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum 3$4,,,,731,1,GCV,V,,GG,5S,9.9991,9.,A,,,9999$A1.,6$PS001,0*7 - should be 7A.
-ERROR:pyubx2.ubxreader:Message G invalid checksum 0S,,91,,,9431,11S773GV1$L,* - should be 6B.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$0'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message A07$BGV invalid checksum 7 - should be 01.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GVG invalid checksum E$GA,,,,,0.9,,,*5GG,A1,,,,,,9.999,99,*3 - should be 34.
-ERROR:pyubx2.ubxreader:Message GNA invalid checksum 0 - should be 7A.
-ERROR:pyubx2.ubxreader:Message GNGSAA invalid checksum 6G,1*$GLGSV,1,1,02,,,,05,,,,06,1*79 - should be 31.
-ERROR:pyubx2.ubxreader:Message GTG invalid checksum 2 - should be 36.
-ERROR:pyubx2.ubxreader:Message GRMC invalid checksum 56 - should be 54.
-ERROR:pyubx2.ubxreader:Message GSA invalid checksum 3 - should be 40.
-ERROR:pyubx2.ubxreader:Message GS invalid checksum 3 - should be 2C.
-ERROR:pyubx2.ubxreader:Message GNAA invalid checksum 31 - should be 14.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message PGS invalid checksum 6 - should be 59.
-ERROR:pyubx2.ubxreader:Message G invalid checksum  - should be 6B.
-ERROR:pyubx2.ubxreader:Message C invalid checksum 3 - should be 7A.
-ERROR:pyubx2.ubxreader:Message GNGSAA invalid checksum 31 - should be 33.
-ERROR:pyubx2.ubxreader:Message RM invalid checksum 7 - should be 33.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message M invalid checksum N,,,,,,,,,N*2EG,,,0,99,,G,,991,,,,99.92*3 - should be 4D.
-ERROR:pyubx2.ubxreader:Message GNA956A invalid checksum  - should be 50.
-ERROR:pyubx2.ubxreader:Message GNGSA invalid checksum GGLV008* - should be 4C.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum *6G,,,,,,,N,,NNG.,,,,, - should be 5A.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$9'.
-ERROR:pyubx2.ubxreader:Message GT invalid checksum G,961,,,,,,,$G,,999,,,.,1$V01,6F - should be 13.
-ERROR:pyubx2.ubxreader:Message GNGS invalid checksum 36GGV,1LG7GA1,1, - should be 72.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$$'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$0'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$*'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GNA invalid checksum 33A,1,,,9999GA,,,,,G,99*G,1010*60GLGS1,1030G,$,,,G,,N*GNG,,,GA,,,,.$,,,9G,93* - should be 64.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GN invalid checksum P1,1,61G0,13G7,,,,,7NVT,,,,,,, - should be 7B.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Message GNGG9G.9N invalid checksum ,1,9 - should be 12.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$*'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$0'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Message GA invalid checksum 3 - should be 67.
-ERROR:pyubx2.ubxreader:Message SA invalid checksum 36 - should be 18.
-ERROR:pyubx2.ubxreader:Message GNM invalid checksum 9 - should be 09.
-ERROR:pyubx2.ubxreader:Message LG invalid checksum E - should be 20.
-ERROR:pyubx2.ubxreader:Message GS invalid checksum L,N* - should be 2D.
-ERROR:pyubx2.ubxreader:Message RV invalid checksum GNG,,,*$NGG,0,,,*$GA,,,,,,,,,99,.99* - should be 66.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message GN invalid checksum 56 - should be 13.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum 0A1,,99999,9,,.999,*,10,,V,1D - should be 34.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$\r'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$1'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$N'.
-ERROR:pyubx2.ubxreader:Message G invalid checksum LL,ACV,TG - should be 78.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$0'.
-ERROR:pyubx2.ubxreader:Unknown protocol header b'$,'.
-INFO:WatchdogLogger:Started QuadMag thread with ID 547771728320
-INFO:WatchdogLogger:ADS thread died. Restarting...
-Segmentation fault

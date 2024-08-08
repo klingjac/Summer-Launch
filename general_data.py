@@ -131,6 +131,7 @@ class Status_Data:
             self.tmp102_temp, self.bme680_temp, self.bme680_pressure
         ])
         self.csv_file.flush()  # Ensure data is written to the file
+        
 
     def run(self):
         self.create_new_csv_file()

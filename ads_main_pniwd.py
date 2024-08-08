@@ -112,7 +112,7 @@ class ADSSensorDataLogger:
                 time.sleep(0.2)
         except Exception as e:
             self.alive_flag.clear()
-            write_to_log_file('/home/logger/flight_logging/ADS_logs/OPV_log.txt', str(e))
+            write_to_log_file('/home/logger/flight_logging/ADS_logs/ADS_log.txt', str(e))
         finally:
             self.cleanup_gpio() #Necessary to prevent dumb stuff from happening
     

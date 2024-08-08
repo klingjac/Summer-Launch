@@ -128,6 +128,7 @@ class Beacon_Transmitter:
                 
                 free_memory = self.instances["Status"].free_memory
                 free_storage = self.instances["Status"].free_disk_space
+                print(f"free storage: {free_storage}")
                 CPUtemp = self.instances["Status"].cpu_temp
                 Vbattraw = self.instances["Status"].VbattRaw
                 Ibattraw = self.instances["Status"].IbattRaw
@@ -159,9 +160,13 @@ class Beacon_Transmitter:
                 QMtemp = dict["QMtemp"]
 
                 recent_sweep_time = self.instances["OPV"].recent_sweep_time
+                print(f"recent sweep time: {recent_sweep_time}")
                 ref_Voc = self.instances["OPV"].ref_Voc
+                print(f"rev voc: {ref_Voc}")
                 opv_Voc = self.instances["OPV"].opv_Voc
+                print(f"open voc: {opv_Voc}")
                 opv_Isc = self.instances["OPV"].opv_Isc
+                print(f"open Isc: {opv_Isc}")
 
                 GPSfix = self.instances["ADS"].ads_sensors.GPS.gps_data['fix']
                 UNIXtime = 1722546568
@@ -185,28 +190,32 @@ class Beacon_Transmitter:
                 except Exception as e:
                     telemetry_list_nums = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
                     pass
-
+                print(f"Telem list: {telemetry_list_nums}")
                 telem_time_elapsed = time.time() - self.last_telem
                 if telem_time_elapsed > beacon_interval:
                     self.last_telem = time.time()
 
                     try:
+                        
                         signed_unsigned = [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0]
 
-                        byte_lengths = [2, 2, 4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 2, 2, 2, 2, 1, 4, 2, 2, 2, 2, 2, 1, 4, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 2, 2, 2]
+                        #byte_lengths = [2, 2, 4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 2, 2, 2, 2, 1, 4, 2, 2, 2, 2, 2, 1, 4, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 2, 2, 2]
 
-                        conversion_funcs = [1*100, 1*100, 1*100, 1*100, 1*100, 1*100, 1*100, 1*100, 1*100, 1*100, 1*100, 1*100, 1*100, 1*100, 1*100, 1*10, 1*1000, 1*1000, 1*1000, 1*1000, 1*1000, 1*1000, 1*1000, 1*1000, 1*1000, 1*1000, 1*1000, 1*1000, 1*10, 1*1000, (1*1000)*250, (1*1000)*250, 1*1000, 1, 1, 1, 1*100, 1*100, 1*100, 1, 1*100, 1*100, 1*100, 1*100, 1*100, 1*100, 1, 1, 1]
+                        byte_lengths = [2,2,4,2,2,2,2,2,2,2,2,2,2,2,2,2,4,4,4,4,4,4,4,4,4,4,4,4,4,2,2,2,2,1,4,2,2,2,2,2,4,4,4,4,4,4,2,2,2]
+                        
+
+                        conversion_funcs = [1*100, 1*100/1000, 1*100, 1*100, 1*100, 1*100, 1*100, 1*100, 1*100, 1*100, 1*100, 1*100, 1*100, 1*100, 1*100, 1*10, 1*1000, 1*1000, 1*1000, 1*1000, 1*1000, 1*1000, 1*1000, 1*1000, 1*1000, 1*1000, 1*1000, 1*1000, 1*10, 1*1000, (1*1000), (1*1000), 1*1000, 1, 1, 1, 1*100, 1*100, 1*100, 1, 1*100, 1*100, 1*100, 1*100, 1*100, 1*100, 1, 1, 1]
 
                         telemetry_list_bytes = []
                         for i, value in enumerate(telemetry_list_nums):
                             try:
                                 byte_value = int(value * conversion_funcs[i]).to_bytes(byte_lengths[i], 'little', signed=signed_unsigned[i])
                             except:
-                                continue
-                            #byte_value = bytearray(byte_lengths[i])  # if cannot convert to bytes, create bytearray filled with 0s
+                                byte_value = bytearray(byte_lengths[i])  # if cannot convert to bytes, create bytearray filled with 0s
                             telemetry_list_bytes.append(byte_value)
 
                         self.beacon = bytes().join(telemetry_list_bytes)
+                        print(f"beacon length: {len(self.beacon)}")
                     except Exception as e:
                         self.beacon = bytes(0)
                         pass

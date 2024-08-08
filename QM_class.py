@@ -4,6 +4,7 @@ import os
 import glob
 import numpy as np
 import pandas as pd
+import time
 
 def write_to_log_file(log_file, message):
     with open(log_file, 'a') as file:
@@ -34,10 +35,9 @@ class QuadMag_logger:
                 self.QuadMag.setfilename(name)
                 self.QuadMag.CollectData(0)
                 i += 1
-
                 self.alive_flag.set()  # Update alive flag
             except Exception as e:
-                write_to_log_file('/home/logger/flight_logging/QM_logs/OPV_log.txt', str(e))
+                write_to_log_file('/home/logger/flight_logging/QM_logs/QM_log.txt', str(e))
 
     def run(self):
         self.RunQM()
