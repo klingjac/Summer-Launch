@@ -100,8 +100,9 @@ class ADS_Sensors():
 
     def getTriclopsReading(self):
         data = self.triclops.get_data() 
-        
+        #print(f"tri data: {data}")
         byte_convert = [point * self.sun_ref/self.MaxCounts for point in data]
+        #print(f"tri data: {byte_convert}")
         self.tri1 = byte_convert[0]
         self.tri2 = byte_convert[1]
         self.tri3 = byte_convert[2]

@@ -1,3 +1,4 @@
+import os
 import serial
 from serial import Serial
 import time
@@ -20,14 +21,39 @@ class GPSScanner:
         self.posflag = False
         self.snrflag = False
         self.snr_vals = []
-        with open("gps_log.txt", "w", newline='') as file:
-            file.write("")
+        
+        self.line_count = 0
+        self.current_file = None
+        self.ensure_directory_exists()
+        self.open_new_log_file()
+    
+    def ensure_directory_exists(self):
+        if not os.path.exists("gps_data"):
+            os.makedirs("gps_data")
+    
+    def get_next_filename(self):
+        files = [f for f in os.listdir("gps_data") if os.path.isfile(os.path.join("gps_data", f))]
+        next_file_index = len(files)
+        return os.path.join("gps_data", f"{next_file_index}_gps.txt")
+    
+    def open_new_log_file(self):
+        if self.current_file:
+            self.current_file.close()
+        filename = self.get_next_filename()
+        self.current_file = open(filename, "w", newline='')
+        self.line_count = 0
+    
+    def write_to_log(self, message):
+        self.current_file.write(message)
+        self.current_file.write("\n")
+        self.line_count += 1
+        if self.line_count >= 1000:
+            self.open_new_log_file()
     
     def gps_scan(self):
         try:
             stream = Serial('/dev/ttyACM0', baudrate=38400, timeout=1)  # Adjust port as needed
-            with open("gps_log.txt", "a", newline='') as file:
-                file.write(f"GPS SCAN ENTERED\n")
+            self.write_to_log("GPS SCAN ENTERED")
             ubr = UBXReader(stream, protfilter=pyubx2.UBX_PROTOCOL + pyubx2.NMEA_PROTOCOL)
             while True:
                 time.sleep(5)  # Update GPS data once every x seconds
@@ -44,17 +70,13 @@ class GPSScanner:
                             if self.posflag and self.snrflag:
                                 break  # Once valid data is received, sleep until next update interval
                     except (UBXMessageError, UBXParseError) as e:
-                        with open("gps_log.txt", "a", newline='') as file:
-                            file.write(f"UBX Error: {e} {parsed_data} {raw_data}\n")
+                        self.write_to_log(f"UBX Error: {e} {parsed_data} {raw_data}")
                     except Exception as e:
-                        with open("gps_log.txt", "a", newline='') as file:
-                            file.write(f"Unknown Error: {e} {parsed_data} {raw_data}\n")
-                    with open("gps_log.txt", "a", newline='') as file:
-                        file.write(f"raw: {raw_data}, parsed: {parsed_data}\n")
+                        self.write_to_log(f"Unknown Error: {e} {parsed_data} {raw_data}")
+                    self.write_to_log(f"raw: {raw_data}, parsed: {parsed_data}")
         except (ValueError, IOError, serial.SerialException) as err:
             print(f"Failed to read GPS data: {err} {parsed_data}")
-            with open("gps_log.txt", "a", newline='') as file:
-                file.write(f"GPS scan failed: {err}\n")
+            self.write_to_log(f"GPS scan failed: {err}")
     
     def update_gps_data(self, parsed_data):
         if parsed_data.identity == 'GNGGA' and not self.posflag:
@@ -67,16 +89,13 @@ class GPSScanner:
             timestamp = parsed_data.time if parsed_data.time is not None else '000000'
             self.gps_data['timestamp'] = timestamp
             if self.gps_data['fix'] == 0 and fix_quality == 1:
-                with open("gps_log.txt", "a", newline='') as file:
-                    file.write(f"GPS FIX RECEIVED AT: {parsed_data}\n")
+                self.write_to_log(f"GPS FIX RECEIVED AT: {parsed_data}")
             elif self.gps_data['fix'] == 1 and fix_quality == 0:
-                with open("gps_log.txt", "a", newline='') as file:
-                    file.write(f"GPS FIX LOST AT: {parsed_data}\n")
+                self.write_to_log(f"GPS FIX LOST AT: {parsed_data}")
             self.gps_data['fix'] = fix_quality
             if fix_quality == 0:  # If no fix, the read was not successful
                 return
-            with open("gps_log.txt", "a", newline='') as file:
-                file.write(str(parsed_data) + "\n")  # Log NMEA string only if there is a fix (otherwise it is useless)
+            self.write_to_log(str(parsed_data))  # Log NMEA string only if there is a fix (otherwise it is useless)
             self.gps_data['latitude'] = latitude
             self.gps_data['longitude'] = longitude
             self.gps_data['altitude'] = altitude
@@ -89,8 +108,7 @@ class GPSScanner:
             if num_sv == 0 or msg_num == 0:
                 return
             if self.gps_data['fix'] == 1:
-                with open("gps_log.txt", "a", newline='') as file:
-                    file.write(str(parsed_data) + "\n")
+                self.write_to_log(str(parsed_data))
             num_read = 4
             if msg_num == 1:
                 self.snr_vals = []

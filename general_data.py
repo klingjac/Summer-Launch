@@ -14,7 +14,7 @@ def write_to_log_file(log_file, message):
         file.write(message + '\n')
 
 class Status_Data:
-    def __init__(self, i2c_bus_number=2, tmp102_address=0x4B, bme680_address=0x77):
+    def __init__(self, rtc, i2c_bus_number=2, tmp102_address=0x4B, bme680_address=0x77):
         self.eps = EddyEps(smbus_num=2)
         self.i2c_bus = smbus2.SMBus(2)
         self.tmp102_address = tmp102_address
@@ -37,6 +37,7 @@ class Status_Data:
         self.bme680_temp = 0
         self.bme680_pressure = 0
         self.running = True
+        self.RTC = rtc
 
         # Initialize TMP102 sensor
         self.tmp102_sensor = TMP102(units='C', address=self.tmp102_address, busnum=2)
@@ -66,7 +67,7 @@ class Status_Data:
     def create_new_csv_file(self):
         if self.csv_file:
             self.csv_file.close()
-        timestamp = time.time()
+        timestamp = self.RTC.getTime()
         filename = os.path.join(self.data_dir, f"{timestamp}_status_data.csv")
         self.csv_file = open(filename, mode='w', newline='')
         self.csv_writer = csv.writer(self.csv_file)
@@ -121,7 +122,7 @@ class Status_Data:
         self.read_bme680()
 
     def log_status(self):
-        timestamp = time.time()
+        timestamp = self.RTC.getTime()
         self.csv_writer.writerow([
             timestamp,
             self.VbattRaw, self.IbattRaw, self.Vbatt, self.Ibatt, 

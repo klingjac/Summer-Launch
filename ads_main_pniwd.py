@@ -11,7 +11,7 @@ def write_to_log_file(log_file, message):
         file.write(message + '\n')
 
 class ADSSensorDataLogger:
-    def __init__(self):
+    def __init__(self, rtc):
         self.ads_sensors = ADS_Sensors()
         self.data_dir = "ADS_data"
         self.file_counter = 0
@@ -24,6 +24,7 @@ class ADSSensorDataLogger:
         self.running = True
         self.imu_status = True
         self.pni_status = True
+        self.RTC = rtc
 
         # GPIO setup and initialization
         self.setup_gpio()
@@ -51,11 +52,12 @@ class ADSSensorDataLogger:
     def create_new_csv_file(self):
         if self.csv_file:
             self.csv_file.close()
-        timestamp = time.time()
+        timestamp = self.RTC.getTime()
         filename = os.path.join(self.data_dir, f"{timestamp}_ads_data_{self.file_counter}.csv")
         self.csv_file = open(filename, mode='w', newline='')
         self.csv_writer = csv.writer(self.csv_file)
-        self.csv_writer.writerow(['Time', 'MagX', 'MagY', 'MagZ', 'AccX', 'AccY', 'AccZ', 'GyroX', 'GyroY', 'GyroZ', 'Tri1', 'Tri2', 'Tri3', 'Latitude', 'Longitude', 'Altitude', 'GPS_Time'])
+        self.csv_writer.writerow([timestamp])
+        self.csv_writer.writerow(['MagX', 'MagY', 'MagZ', 'AccX', 'AccY', 'AccZ', 'GyroX', 'GyroY', 'GyroZ', 'Tri1', 'Tri2', 'Tri3', 'Latitude', 'Longitude', 'Altitude', 'GPS_Time'])
         self.file_counter += 1
 
     def safe_mag_interrupt_handler(self, channel):
@@ -84,7 +86,6 @@ class ADSSensorDataLogger:
         # Write to CSV
         try: 
             self.csv_writer.writerow([
-                datetime.utcnow().isoformat(),
                 self.ads_sensors.magX, self.ads_sensors.magY, self.ads_sensors.magZ,
                 self.ads_sensors.accX, self.ads_sensors.accY, self.ads_sensors.accZ,
                 self.ads_sensors.gyroX, self.ads_sensors.gyroY, self.ads_sensors.gyroZ,

@@ -18,7 +18,7 @@ def init_log_file(log_file, message):
         file.write(message + '\n')
 
 class OPV:
-    def __init__(self):
+    def __init__(self, rtc):
         # Initialize Sensor Members
         self.dac = MCP4725(address=0x60)
         self.nons = ADS1015(address=0x4a)
@@ -34,12 +34,13 @@ class OPV:
         # Directory Setup
         self.directory = "./OPV"
         os.makedirs(self.directory, exist_ok=True)
+        self.RTC = rtc
         #init_log_file('/home/logger/flight_logging/OPV_logs/OPV_log.txt', "OPV Log")
 
     def generate_opv_file_name(self, directory):
         num_files = len([f for f in os.listdir(directory) if os.path.isfile(os.path.join(directory, f))])
-        unix_time = int(time.time())
-        file_name = f"{num_files}_{unix_time}.csv"
+        timestamp = self.RTC.getTime()
+        file_name = f"{num_files}_{timestamp}.csv"
         return os.path.join(directory, file_name)
 
     def tocsv(self, filename, data):

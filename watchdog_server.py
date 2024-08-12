@@ -8,6 +8,7 @@ import adafruit_rfm9x
 from datetime import datetime
 from digitalio import DigitalInOut, Direction, Pull
 from lib.encode import encode_rap
+from lib.RTC_Driver import RV_8803
 
 from ads_main_pniwd import ADSSensorDataLogger
 from opv_class import OPV
@@ -144,20 +145,20 @@ class Beacon_Transmitter:
                 bmetemp = self.instances["Status"].bme680_temp
                 bmepressure = self.instances["Status"].bme680_pressure
 
-                dict = parse_magnetometer_data(self.instances["QuadMag"].QuadMag.current_reading)
-                mag1x = dict["mag1x"]
-                mag1y = dict["mag1y"]
-                mag1z = dict["mag1z"]
-                mag2x = dict["mag2x"]
-                mag2y = dict["mag2y"]
-                mag2z = dict["mag2z"]
-                mag3x = dict["mag3x"]
-                mag3y = dict["mag3y"]
-                mag3z = dict["mag3z"]
-                mag4x = dict["mag4x"]
-                mag4y = dict["mag4y"]
-                mag4z = dict["mag4z"]
-                QMtemp = dict["QMtemp"]
+                #dict = parse_magnetometer_data(self.instances["QuadMag"].QuadMag.current_reading)
+                mag1x = 0 #dict["mag1x"]
+                mag1y = 0 #dict["mag1y"]
+                mag1z = 0 #dict["mag1z"]
+                mag2x = 0 #dict["mag2x"]
+                mag2y = 0 #dict["mag2y"]
+                mag2z = 0 #dict["mag2z"]
+                mag3x = 0 #dict["mag3x"]
+                mag3y = 0 #dict["mag3y"]
+                mag3z = 0 #dict["mag3z"]
+                mag4x = 0 #dict["mag4x"]
+                mag4y = 0 #dict["mag4y"]
+                mag4z = 0 #dict["mag4z"]
+                QMtemp = 0 #dict["QMtemp"]
 
                 recent_sweep_time = self.instances["OPV"].recent_sweep_time
                 print(f"recent sweep time: {recent_sweep_time}")
@@ -241,6 +242,7 @@ class Watchdog:
         self.instances = {}
         self.threads = {}
         self.beacon_transmitter = None
+        self.RTC = RV_8803()
 
     def monitor(self):
         while True:
@@ -266,14 +268,14 @@ class Watchdog:
     def spawn_instance(self, name):
         instance = None
         if name == "ADS":
-            instance = ADSSensorDataLogger()
+            instance = ADSSensorDataLogger(rtc = self.RTC)
         elif name == "OPV":
-            instance = OPV()
-        elif name == "QuadMag":
-            instance = QuadMag_logger()
+            instance = OPV(rtc = self.RTC)
+        #elif name == "QuadMag":
+        #    instance = QuadMag_logger(self.RTC)
         elif name == "Status":
-            eps = Status_Data()  # Replace with your actual EPS object initialization
-            instance = Status_Data(eps)
+            #eps = Status_Data(self.RTC)  # Replace with your actual EPS object initialization
+            instance = Status_Data(rtc = self.RTC)
 
         thread = threading.Thread(target=instance.run)
         thread.start()
@@ -290,7 +292,7 @@ class Watchdog:
         self.logger.info(f"Started Beacon_Transmitter thread with ID {beacon_thread.ident}")
 
     def start_monitoring(self):
-        for name in ["ADS", "QuadMag", "OPV", "Status"]:
+        for name in ["ADS", "OPV", "Status"]:
             self.instances[name] = self.spawn_instance(name)
 
         self.start_beacon_transmitter()
