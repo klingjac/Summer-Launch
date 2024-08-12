@@ -12,7 +12,7 @@ def write_to_log_file(log_file, message):
 
 class ADSSensorDataLogger:
     def __init__(self, rtc):
-        self.ads_sensors = ADS_Sensors()
+        self.ads_sensors = ADS_Sensors(rtc)
         self.data_dir = "ADS_data"
         self.file_counter = 0
         self.entries_per_file = 1000

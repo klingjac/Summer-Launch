@@ -63,7 +63,7 @@ class ADS_Sensors():
 
     
 
-    def __init__(self):
+    def __init__(self,rtc):
         #Initialize gyro as +- 8g and +- 2000 dps
         self.imu_gyro = ICM20948(i2c_addr=I2C_ADDR_ALT, i2c_bus=2)
         self.imu_gyro.set_accelerometer_full_scale(4) #Accelerometer scale range
@@ -91,8 +91,9 @@ class ADS_Sensors():
 
         self.sun_ref = 3 #For later Triclops Conversion
         self.MaxCounts = 1023
+        
 
-        self.GPS = GPSScanner()
+        self.GPS = GPSScanner(rtc)
 
         self.gps_thread = threading.Thread(target=self.GPS.gps_scan)
         self.gps_thread.start()

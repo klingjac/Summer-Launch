@@ -18459,3 +18459,19 @@
 2024-08-12 16:27:25,374 - WatchdogLogger - INFO - Started ADS thread with ID 546777842112
 2024-08-12 16:27:25,379 - WatchdogLogger - INFO - Status thread died. Restarting...
 2024-08-12 16:27:25,453 - WatchdogLogger - INFO - Started Status thread with ID 546769449408
+2024-08-12 16:42:34,369 - WatchdogLogger - INFO - Started ADS thread with ID 547776233920
+2024-08-12 16:42:34,399 - WatchdogLogger - INFO - Started OPV thread with ID 547548529088
+2024-08-12 16:42:34,466 - WatchdogLogger - INFO - Started Status thread with ID 547382968768
+2024-08-12 16:42:34,470 - WatchdogLogger - INFO - Started Beacon_Transmitter thread with ID 547374576064
+2024-08-12 16:43:34,531 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-12 16:43:35,446 - WatchdogLogger - INFO - Started Status thread with ID 547382968768
+2024-08-12 16:49:19,138 - WatchdogLogger - INFO - Started ADS thread with ID 548612444608
+2024-08-12 16:49:19,164 - WatchdogLogger - INFO - Started OPV thread with ID 548384739776
+2024-08-12 16:49:19,237 - WatchdogLogger - INFO - Started Status thread with ID 548010979776
+2024-08-12 16:49:19,243 - WatchdogLogger - INFO - Started Beacon_Transmitter thread with ID 548002587072
+2024-08-12 16:50:19,255 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-12 16:50:20,205 - WatchdogLogger - INFO - Started Status thread with ID 548010979776
+2024-08-12 16:52:20,269 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-12 16:52:21,966 - WatchdogLogger - INFO - Started Status thread with ID 548010979776
+2024-08-12 16:54:22,061 - WatchdogLogger - INFO - Status thread died. Restarting...
+2024-08-12 16:54:23,723 - WatchdogLogger - INFO - Started Status thread with ID 548010979776

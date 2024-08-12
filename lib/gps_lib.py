@@ -6,7 +6,7 @@ from pyubx2 import UBXReader, UBXMessageError, UBXParseError
 import pyubx2
 
 class GPSScanner:
-    def __init__(self):
+    def __init__(self, rtc):
         self.gps_data = {
             'timestamp': '000000',
             'latitude': 0,
@@ -26,6 +26,7 @@ class GPSScanner:
         self.current_file = None
         self.ensure_directory_exists()
         self.open_new_log_file()
+        self.RTC = rtc
     
     def ensure_directory_exists(self):
         if not os.path.exists("gps_data"):
@@ -77,6 +78,26 @@ class GPSScanner:
         except (ValueError, IOError, serial.SerialException) as err:
             print(f"Failed to read GPS data: {err} {parsed_data}")
             self.write_to_log(f"GPS scan failed: {err}")
+
+    def set_rtc_from_gps(self, rtc, parsed_data):
+        """
+        Sets the RTC time if a valid GPS time is found in the parsed_data.
+        This function should be called when the GPS data is parsed.
+        
+        :param rtc: The RTC object (e.g., RV_8803 instance)
+        :param parsed_data: The parsed GPS data
+        """
+        if parsed_data.identity == 'GNGGA' and parsed_data.time is not None:
+            # Extract hours, minutes, and seconds from the parsed GPS time
+            gps_time = parsed_data.time
+            hours = int(gps_time[:2])
+            minutes = int(gps_time[2:4])
+            seconds = int(gps_time[4:6])
+            
+            # Set the RTC time using the extracted time
+            rtc.setTime([seconds, minutes, hours])
+            print(f"RTC time set to {hours:02d}:{minutes:02d}:{seconds:02d} based on GPS time.")
+
     
     def update_gps_data(self, parsed_data):
         if parsed_data.identity == 'GNGGA' and not self.posflag:
@@ -88,6 +109,7 @@ class GPSScanner:
             fix_quality = parsed_data.quality if parsed_data.quality is not None else 0
             timestamp = parsed_data.time if parsed_data.time is not None else '000000'
             self.gps_data['timestamp'] = timestamp
+            self.set_rtc_from_gps(self.RTC, parsed_data)
             if self.gps_data['fix'] == 0 and fix_quality == 1:
                 self.write_to_log(f"GPS FIX RECEIVED AT: {parsed_data}")
             elif self.gps_data['fix'] == 1 and fix_quality == 0:

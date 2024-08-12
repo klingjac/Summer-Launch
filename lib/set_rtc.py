@@ -1,4 +1,4 @@
-from RTC_Driver import RV_8803  # Assuming the class is saved in a file named rv_8803.py
+from RTC_Driver import RV_8803  # Assuming the class is saved in a file named RTC_Driver.py
 import time
 import datetime
 
@@ -17,11 +17,13 @@ def main():
         now.isoweekday() % 7 + 1,  # Convert isoweekday (1=Monday, 7=Sunday) to weekday (1=Sunday, 7=Saturday)
         now.day,
         now.month,
-        now.year % 100  # Convert year to two-digit format
+        now.year
     ]
+    print(f"time array : {time_array}")
     
     # Set the RTC time using the time array
     rtc.setFullTime(time_array)
+    print(f"RTC time {rtc.getFullTime()}")
     
     print("RTC time has been set successfully to the Raspberry Pi system time (UTC).")
 
