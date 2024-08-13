@@ -111,10 +111,10 @@ class OPV:
             print(file_path)
             self.start_stop_weened(file_path)
             self.alive_flag.set()  # Update alive flag
-            print(f"ref: {self.ref_Voc}")
-            print(f"voc: {self.opv_Voc}")
-            print(f"isc: {self.opv_Isc}")
-            print(f"time: {self.recent_sweep_time}")
+            #print(f"ref: {self.ref_Voc}")
+            #print(f"voc: {self.opv_Voc}")
+            #print(f"isc: {self.opv_Isc}")
+            #print(f"time: {self.recent_sweep_time}")
             time.sleep(0.1)
 
     def run(self):

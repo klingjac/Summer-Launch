@@ -6,6 +6,8 @@ rm -rf ADS_logs
 rm -rf OPV_logs
 rm -rf QM_logs
 rm -rf gps_data
+rm -rf Beacon_logs
+mkdir Beacon_logs
 mkdir gps_data
 mkdir QM_logs
 mkdir OPV_logs

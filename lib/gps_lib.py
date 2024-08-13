@@ -27,6 +27,7 @@ class GPSScanner:
         self.ensure_directory_exists()
         self.open_new_log_file()
         self.RTC = rtc
+        self.running = True
     
     def ensure_directory_exists(self):
         if not os.path.exists("gps_data"):
@@ -50,31 +51,41 @@ class GPSScanner:
         self.line_count += 1
         if self.line_count >= 1000:
             self.open_new_log_file()
+
+    
     
     def gps_scan(self):
         try:
             stream = Serial('/dev/ttyACM0', baudrate=38400, timeout=1)  # Adjust port as needed
             self.write_to_log("GPS SCAN ENTERED")
             ubr = UBXReader(stream, protfilter=pyubx2.UBX_PROTOCOL + pyubx2.NMEA_PROTOCOL)
-            while True:
-                time.sleep(5)  # Update GPS data once every x seconds
-                stream.reset_input_buffer()  # Clear stale messages from the sleep period
-                starttime = time.time()
-                self.posflag = False
-                self.snrflag = False
-                self.snr_vals = []
-                while time.time() - starttime < 5:  # Scan for a maximum of x seconds
-                    try:
-                        raw_data, parsed_data = ubr.read()  # Read from GPS
-                        if parsed_data:
-                            self.update_gps_data(parsed_data)
-                            if self.posflag and self.snrflag:
-                                break  # Once valid data is received, sleep until next update interval
-                    except (UBXMessageError, UBXParseError) as e:
-                        self.write_to_log(f"UBX Error: {e} {parsed_data} {raw_data}")
-                    except Exception as e:
-                        self.write_to_log(f"Unknown Error: {e} {parsed_data} {raw_data}")
-                    self.write_to_log(f"raw: {raw_data}, parsed: {parsed_data}")
+            while self.running:
+                try:
+                    stream = Serial('/dev/ttyACM0', baudrate=38400, timeout=1)  # Adjust port as needed
+                    #self.write_to_log("GPS SCAN ENTERED")
+                    ubr = UBXReader(stream, protfilter=pyubx2.UBX_PROTOCOL + pyubx2.NMEA_PROTOCOL)
+                    time.sleep(2)  # Update GPS data once every x seconds
+                    # Clear stale messages from the sleep period
+                    starttime = time.time()
+                    self.posflag = False
+                    self.snrflag = False
+                    self.snr_vals = []
+                    while time.time() - starttime < 5:  # Scan for a maximum of x seconds
+                        try:
+                            raw_data, parsed_data = ubr.read()  # Read from GPS
+                            if parsed_data:
+                                self.update_gps_data(parsed_data)
+                                if self.posflag and self.snrflag:
+                                    break  # Once valid data is received, sleep until next update interval
+                        except (UBXMessageError, UBXParseError) as e:
+                            self.write_to_log(f"UBX Error: {e} {parsed_data} {raw_data}")
+                            
+                        except Exception as e:
+                            self.write_to_log(f"Unknown Error: {e} {parsed_data} {raw_data}")
+                            
+                        self.write_to_log(f"raw: {raw_data}, parsed: {parsed_data}")
+                except:
+                    continue
         except (ValueError, IOError, serial.SerialException) as err:
             print(f"Failed to read GPS data: {err} {parsed_data}")
             self.write_to_log(f"GPS scan failed: {err}")

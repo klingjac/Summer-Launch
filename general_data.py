@@ -10,7 +10,7 @@ import time
 import os
 
 def write_to_log_file(log_file, message):
-    with open(log_file, 'a') as file:
+    with open(log_file, 'a') as file, open(log_file, 'a') as file:
         file.write(message + '\n')
 
 class Status_Data:
@@ -38,6 +38,7 @@ class Status_Data:
         self.bme680_pressure = 0
         self.running = True
         self.RTC = rtc
+        self.items_written = 0
 
         # Initialize TMP102 sensor
         self.tmp102_sensor = TMP102(units='C', address=self.tmp102_address, busnum=2)
@@ -67,23 +68,37 @@ class Status_Data:
     def create_new_csv_file(self):
         if self.csv_file:
             self.csv_file.close()
+        
+        # Get timestamp from RTC
         timestamp = self.RTC.getTime()
-        filename = os.path.join(self.data_dir, f"{timestamp}_status_data.csv")
+
+        # Count the number of files in the directory
+        num_files = len([f for f in os.listdir(self.data_dir) if os.path.isfile(os.path.join(self.data_dir, f))])
+
+        # Create a new filename using the format {time}_{num_items_in_dir}_status_data.csv
+        filename = os.path.join(self.data_dir, f"{timestamp}_{num_files}_status_data.csv")
+        
+        # Open a new CSV file
         self.csv_file = open(filename, mode='w', newline='')
         self.csv_writer = csv.writer(self.csv_file)
+        
+        # Write the header row
         self.csv_writer.writerow(['Time', 'VbattRaw', 'IbattRaw', 'Vbatt', 'Ibatt', 'V3v3', 'I3v3', 'V5v0', 'I5v0', 'T3v3', 'T5v0', 'Free Memory', 'Free Disk Space', 'CPU Temperature', 'TMP102 Temperature', 'BME680 Temperature', 'BME680 Pressure'])
+        
+        # Reset the items_written counter
+        self.items_written = 0
 
     def update_eps_values(self):
-        self.VbattRaw = self.eps.get_voltage_vbatt_raw() #or 0
-        self.IbattRaw = self.eps.get_current_vbatt_raw() #or 0
-        self.V3v3 = self.eps.get_voltage_3v3() #or 0
-        self.I3v3 = self.eps.get_current_3v3() #or 0
-        self.V5v0 = self.eps.get_voltage_5v0() #or 0
-        self.I5v0 = self.eps.get_current_5v0() #or 0
-        self.Vbatt = self.eps.get_voltage_vbatt() #or 0
-        self.Ibatt = self.eps.get_current_vbatt() #or 0
-        self.T3v3 = self.eps.get_temp_3v3_reg() #or 0
-        self.T5v0 = self.eps.get_temp_5v0_reg() #or 0
+        self.VbattRaw = self.eps.get_voltage_vbatt_raw()  # or 0
+        self.IbattRaw = self.eps.get_current_vbatt_raw()  # or 0
+        self.V3v3 = self.eps.get_voltage_3v3()  # or 0
+        self.I3v3 = self.eps.get_current_3v3()  # or 0
+        self.V5v0 = self.eps.get_voltage_5v0()  # or 0
+        self.I5v0 = self.eps.get_current_5v0()  # or 0
+        self.Vbatt = self.eps.get_voltage_vbatt()  # or 0
+        self.Ibatt = self.eps.get_current_vbatt()  # or 0
+        self.T3v3 = self.eps.get_temp_3v3_reg()  # or 0
+        self.T5v0 = self.eps.get_temp_5v0_reg()  # or 0
 
     def update_system_values(self):
         self.free_memory = psutil.virtual_memory().available / (1024 * 1024)  # Convert bytes to MB
@@ -133,6 +148,12 @@ class Status_Data:
         ])
         self.csv_file.flush()  # Ensure data is written to the file
         
+        # Increment the item counter
+        self.items_written += 1
+
+        # Check if the file has reached 1000 items
+        if self.items_written >= 1000:
+            self.create_new_csv_file()
 
     def run(self):
         self.create_new_csv_file()
@@ -140,7 +161,7 @@ class Status_Data:
             self.alive_flag.is_set()
             self.update_all_values()
             self.log_status()
-            time.sleep(5)
+            time.sleep(1)
 
     def stop(self):
         self.alive_flag.clear()

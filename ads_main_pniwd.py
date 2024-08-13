@@ -102,12 +102,25 @@ class ADSSensorDataLogger:
             self.current_entries = 0
 
     def run(self):
+        reset_sensors = False
+        retry_read_m = False
         try:
             self.ads_sensors.getMagReading()
             while self.running:
                 #self.alive_flag.set()  # Update alive flag
                 if self.imu_status and self.pni_status:
                     self.alive_flag.set()
+                    retry_read_m = False
+                    reset_sensors = False
+                elif not self.pni_status and not retry_read_m:
+                    write_to_log_file('/home/logger/flight_logging/ADS_logs/ADS_log.txt', "Mag reading may have missed -- Attempting Read to Re-init")
+                    self.ads_sensors.getMagReading()
+                    retry_read_m = True
+                elif not reset_sensors:
+                    self.ads_sensors.GPS.running = False #Ensure only 1 GPS thread is running
+                    self.ads_sensors = ADS_Sensors(self.RTC)
+                    reset_sensors = True
+                
                 self.imu_status = False
                 self.pni_status = False
                 time.sleep(0.2)

@@ -1,11 +1,12 @@
 import threading
 import time
 import logging
+import os
 # Imports for lora:
 import busio
 import board
 import adafruit_rfm9x
-from datetime import datetime
+import datetime
 from digitalio import DigitalInOut, Direction, Pull
 from lib.encode import encode_rap
 from lib.RTC_Driver import RV_8803
@@ -110,9 +111,13 @@ def send_ping_response():
 
 prev_packet = None
 
+def write_to_log_file(log_file, message):
+    with open(log_file, 'a') as file:
+        file.write(message + '\n')
+
 
 class Beacon_Transmitter:
-    def __init__(self, instances, logger):
+    def __init__(self, instances, logger, rtc):
         self.instances = instances
         self.logger = logger
         self.running = True
@@ -120,6 +125,7 @@ class Beacon_Transmitter:
         self.beacon = bytes(0)
         self.alive_flag = threading.Event()
         self.alive_flag.set()
+        self.RTC = rtc
 
     def run(self):
         while self.running:
@@ -161,16 +167,35 @@ class Beacon_Transmitter:
                 QMtemp = 0 #dict["QMtemp"]
 
                 recent_sweep_time = self.instances["OPV"].recent_sweep_time
-                print(f"recent sweep time: {recent_sweep_time}")
+                #print(f"recent sweep time: {recent_sweep_time}")
                 ref_Voc = self.instances["OPV"].ref_Voc
-                print(f"rev voc: {ref_Voc}")
+                #print(f"rev voc: {ref_Voc}")
                 opv_Voc = self.instances["OPV"].opv_Voc
-                print(f"open voc: {opv_Voc}")
+                #print(f"open voc: {opv_Voc}")
                 opv_Isc = self.instances["OPV"].opv_Isc
-                print(f"open Isc: {opv_Isc}")
+                #print(f"open Isc: {opv_Isc}")
+                try:
+                    GPSfix = self.instances["ADS"].ads_sensors.GPS.gps_data['fix']
+                    # % operations to assert datetime bounds
+                    seconds = int(self.RTC.getSeconds()) - 1
+                    seconds = seconds % 60
+                    minutes = int(self.RTC.getMinutes()) - 1
+                    minutes = minutes % 60
+                    hours = int(self.RTC.getHours()) - 1
+                    hours = hours % 24
+                    #print(f"hours: {hours}")
+                    day = int(self.RTC.getDate())
+                    month = int(self.RTC.getMonth())
+                    year = int(self.RTC.getYear()) + 2000  # Assuming the RTC returns year as two digits
 
-                GPSfix = self.instances["ADS"].ads_sensors.GPS.gps_data['fix']
-                UNIXtime = 1722546568
+                    # Create a datetime object from the RTC time
+                    rtc_time = datetime.datetime(year, month, day, hours, minutes, seconds)
+
+                    # Convert the datetime object to Unix time
+                    UNIXtime = int(time.mktime(rtc_time.timetuple()))
+                except:
+                    UNIXtime = 1723563543
+
                 GPSnumSats = self.instances["ADS"].ads_sensors.GPS.gps_data['num_sv']
                 Alt = self.instances["ADS"].ads_sensors.GPS.gps_data['altitude']
                 Lat = self.instances["ADS"].ads_sensors.GPS.gps_data['latitude']
@@ -191,7 +216,7 @@ class Beacon_Transmitter:
                 except Exception as e:
                     telemetry_list_nums = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
                     pass
-                print(f"Telem list: {telemetry_list_nums}")
+                #print(f"Telem list: {telemetry_list_nums}")
                 telem_time_elapsed = time.time() - self.last_telem
                 if telem_time_elapsed > beacon_interval:
                     self.last_telem = time.time()
@@ -216,13 +241,13 @@ class Beacon_Transmitter:
                             telemetry_list_bytes.append(byte_value)
 
                         self.beacon = bytes().join(telemetry_list_bytes)
-                        print(f"beacon length: {len(self.beacon)}")
+                        #print(f"beacon length: {len(self.beacon)}")
                     except Exception as e:
                         self.beacon = bytes(0)
                         pass
 
                 rap = encode_rap(BEACON_FLAG, self.beacon)  # add RAP packets
-                print(rap)
+                #print(rap)
                 if beacon_enabled:
                     downlink_telemetry_beacon(rap)
                     packet = None
@@ -232,8 +257,9 @@ class Beacon_Transmitter:
                 sleep_time = beacon_interval - elapsed_time
                 if sleep_time > 0:
                     time.sleep(sleep_time)
-            except:
-                print("Issue with beaconing")
+            except Exception as e:
+                write_to_log_file('/home/logger/flight_logging/Beacon_logs/Beacon_log.txt', str(e))
+                time.sleep(10)
 
 
 class Watchdog:
@@ -245,6 +271,12 @@ class Watchdog:
         self.RTC = RV_8803()
 
     def monitor(self):
+        ADS = 0
+        OPV = 0
+        Beacon = 0
+        General = 0
+
+
         while True:
             try:
                 for name, instance in self.instances.items():
@@ -253,6 +285,12 @@ class Watchdog:
                         instance.stop()
                         self.threads[name].join()  # Ensure the thread has finished
                         self.instances[name] = self.spawn_instance(name)
+                        if name == "ADS":
+                            ADS += 1
+                        elif name == "OPV":
+                            OPV += 1
+                        elif name == "Status":
+                            General += 1
                     instance.alive_flag.clear()
 
                 if not self.beacon_transmitter.alive_flag.is_set():
@@ -260,32 +298,39 @@ class Watchdog:
                     self.beacon_transmitter.stop()
                     self.threads["Beacon_Transmitter"].join()
                     self.start_beacon_transmitter()
+                    Beacon += 1
 
                 time.sleep(60)  # Adjust the sleep duration as needed
+
+                if ADS == 5 or OPV == 5 or Beacon == 5 or General == 5:
+                    os.system("sudo reboot now")
             except:
-                continue
+                os.system("sudo reboot now")
 
     def spawn_instance(self, name):
-        instance = None
-        if name == "ADS":
-            instance = ADSSensorDataLogger(rtc = self.RTC)
-        elif name == "OPV":
-            instance = OPV(rtc = self.RTC)
-        #elif name == "QuadMag":
-        #    instance = QuadMag_logger(self.RTC)
-        elif name == "Status":
-            #eps = Status_Data(self.RTC)  # Replace with your actual EPS object initialization
-            instance = Status_Data(rtc = self.RTC)
+        try:
+            instance = None
+            if name == "ADS":
+                instance = ADSSensorDataLogger(rtc = self.RTC)
+            elif name == "OPV":
+                instance = OPV(rtc = self.RTC)
+            #elif name == "QuadMag":
+            #    instance = QuadMag_logger(self.RTC)
+            elif name == "Status":
+                #eps = Status_Data(self.RTC)  # Replace with your actual EPS object initialization
+                instance = Status_Data(rtc = self.RTC)
 
-        thread = threading.Thread(target=instance.run)
-        thread.start()
-        self.threads[name] = thread
+            thread = threading.Thread(target=instance.run)
+            thread.start()
+            self.threads[name] = thread
 
-        self.logger.info(f"Started {name} thread with ID {thread.ident}")
-        return instance
+            self.logger.info(f"Started {name} thread with ID {thread.ident}")
+            return instance
+        except:
+            return None
 
     def start_beacon_transmitter(self):
-        self.beacon_transmitter = Beacon_Transmitter(self.instances, self.logger)
+        self.beacon_transmitter = Beacon_Transmitter(self.instances, self.logger, rtc = self.RTC)
         beacon_thread = threading.Thread(target=self.beacon_transmitter.run)
         beacon_thread.start()
         self.threads["Beacon_Transmitter"] = beacon_thread

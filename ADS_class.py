@@ -65,16 +65,32 @@ class ADS_Sensors():
 
     def __init__(self,rtc):
         #Initialize gyro as +- 8g and +- 2000 dps
-        self.imu_gyro = ICM20948(i2c_addr=I2C_ADDR_ALT, i2c_bus=2)
-        self.imu_gyro.set_accelerometer_full_scale(4) #Accelerometer scale range
-        self.imu_gyro.set_gyro_full_scale(1000) #Gyro scale range
+        try:
+            try: 
+                self.imu_gyro = ICM20948(i2c_addr=I2C_ADDR_ALT, i2c_bus=2)
+                self.imu_gyro.set_accelerometer_full_scale(4) #Accelerometer scale range
+                self.imu_gyro.set_gyro_full_scale(1000) #Gyro scale range
 
-        self.imu_gyro.set_accelerometer_sample_rate(75) #accelerometer rate
-        self.imu_gyro.set_gyro_sample_rate(75) #gyro rate
-        
-        #Initialize rm3100 mag, use sampling rate of 37hz by default
-        self.magnetometer = PniRm3100()
-        self.magnetometer.assign_device_addr(self.mag_addr)
+                self.imu_gyro.set_accelerometer_sample_rate(75) #accelerometer rate
+                self.imu_gyro.set_gyro_sample_rate(75) #gyro rate
+                
+                #Initialize rm3100 mag, use sampling rate of 37hz by default
+                self.magnetometer = PniRm3100()
+                self.magnetometer.assign_device_addr(self.mag_addr)
+            except: 
+                time.sleep(1)
+                self.imu_gyro = ICM20948(i2c_addr=I2C_ADDR_ALT, i2c_bus=2)
+                self.imu_gyro.set_accelerometer_full_scale(4) #Accelerometer scale range
+                self.imu_gyro.set_gyro_full_scale(1000) #Gyro scale range
+
+                self.imu_gyro.set_accelerometer_sample_rate(75) #accelerometer rate
+                self.imu_gyro.set_gyro_sample_rate(75) #gyro rate
+                
+                #Initialize rm3100 mag, use sampling rate of 37hz by default
+                self.magnetometer = PniRm3100()
+                self.magnetometer.assign_device_addr(self.mag_addr)
+        except:
+            os.system("sudo reboot now")
 
         self.magnetometer.print_status_statements = False
         self.magnetometer.print_debug_statements = False
