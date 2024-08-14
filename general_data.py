@@ -158,7 +158,7 @@ class Status_Data:
     def run(self):
         self.create_new_csv_file()
         while self.running:
-            self.alive_flag.is_set()
+            self.alive_flag.set()
             self.update_all_values()
             self.log_status()
             time.sleep(1)

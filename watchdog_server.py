@@ -177,11 +177,11 @@ class Beacon_Transmitter:
                 try:
                     GPSfix = self.instances["ADS"].ads_sensors.GPS.gps_data['fix']
                     # % operations to assert datetime bounds
-                    seconds = int(self.RTC.getSeconds()) - 1
+                    seconds = int(self.RTC.getSeconds())
                     seconds = seconds % 60
-                    minutes = int(self.RTC.getMinutes()) - 1
+                    minutes = int(self.RTC.getMinutes())
                     minutes = minutes % 60
-                    hours = int(self.RTC.getHours()) - 1
+                    hours = int(self.RTC.getHours())
                     hours = hours % 24
                     #print(f"hours: {hours}")
                     day = int(self.RTC.getDate())
@@ -280,8 +280,12 @@ class Watchdog:
         while True:
             try:
                 for name, instance in self.instances.items():
+                    if instance == None:
+                        print("Nonetype Instance")
+                        continue
                     if not instance.alive_flag.is_set():
                         self.logger.info(f"{name} thread died. Restarting...")
+                        time.sleep(2)
                         instance.stop()
                         self.threads[name].join()  # Ensure the thread has finished
                         self.instances[name] = self.spawn_instance(name)
@@ -303,8 +307,11 @@ class Watchdog:
                 time.sleep(60)  # Adjust the sleep duration as needed
 
                 if ADS == 5 or OPV == 5 or Beacon == 5 or General == 5:
+                    print(f"Watchdog reboot 1: ADS: {ADS}, OPV: {OPV}, Beacon: {Beacon}, General: {General}")
                     os.system("sudo reboot now")
-            except:
+                    
+            except Exception as e:
+                print(f"Watchdog reboot 2 -- Error: {e}")
                 os.system("sudo reboot now")
 
     def spawn_instance(self, name):
@@ -326,7 +333,8 @@ class Watchdog:
 
             self.logger.info(f"Started {name} thread with ID {thread.ident}")
             return instance
-        except:
+        except Exception as e:
+            print(f"Error Starting instance: {e}")
             return None
 
     def start_beacon_transmitter(self):
@@ -362,4 +370,9 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try: 
+        main()
+    except Exception as e:
+        print(f"Big Fatal Error: {e}")
+        os.system("sudo reboot now")
+        

@@ -1,0 +1,1000 @@
+GPS SCAN ENTERED
+raw: b'$GNRMC,192254.00,V,,,,,,,140824,,,N,V*1B\r\n', parsed: <NMEA(GNRMC, time=19:22:54, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:22:54, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192254.00,,,,,0,00,99.99,,,,,,*71\r\n'
+raw: b'$GNGGA,192254.00,,,,,0,00,99.99,,,,,,*71\r\n', parsed: <NMEA(GNGGA, time=19:22:54, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,01,15,,,25,1*66\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=15, elv_01=, az_01=, cno_01=25, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192254.00,V,N*5D\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:22:54, status=V, posMode=N)>
+raw: b'$GNRMC,192255.00,V,,,,,,,140824,,,N,V*1A\r\n', parsed: <NMEA(GNRMC, time=19:22:55, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:22:55, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192255.00,,,,,0,00,99.99,,,,,,*70\r\n'
+raw: b'$GNGGA,192255.00,,,,,0,00,99.99,,,,,,*70\r\n', parsed: <NMEA(GNGGA, time=19:22:55, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,01,15,,,25,1*66\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=15, elv_01=, az_01=, cno_01=25, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192255.00,V,N*5C\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:22:55, status=V, posMode=N)>
+raw: b'$GNRMC,192256.00,V,,,,,,,140824,,,N,V*19\r\n', parsed: <NMEA(GNRMC, time=19:22:56, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:22:56, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192256.00,,,,,0,00,99.99,,,,,,*73\r\n'
+raw: b'$GNGGA,192256.00,,,,,0,00,99.99,,,,,,*73\r\n', parsed: <NMEA(GNGGA, time=19:22:56, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,01,15,,,25,1*66\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=15, elv_01=, az_01=, cno_01=25, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192256.00,V,N*5F\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:22:56, status=V, posMode=N)>
+raw: b'$GNRMC,192257.00,V,,,,,,,140824,,,N,V*18\r\n', parsed: <NMEA(GNRMC, time=19:22:57, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:22:57, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192257.00,,,,,0,00,99.99,,,,,,*72\r\n'
+raw: b'$GNGGA,192257.00,,,,,0,00,99.99,,,,,,*72\r\n', parsed: <NMEA(GNGGA, time=19:22:57, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,01,15,,,25,1*66\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=15, elv_01=, az_01=, cno_01=25, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192257.00,V,N*5E\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:22:57, status=V, posMode=N)>
+raw: b'$GNRMC,192258.00,V,,,,,,,140824,,,N,V*17\r\n', parsed: <NMEA(GNRMC, time=19:22:58, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:22:58, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192258.00,,,,,0,00,99.99,,,,,,*7D\r\n'
+raw: b'$GNGGA,192258.00,,,,,0,00,99.99,,,,,,*7D\r\n', parsed: <NMEA(GNGGA, time=19:22:58, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,01,15,,,25,1*66\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=15, elv_01=, az_01=, cno_01=25, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192258.00,V,N*51\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:22:58, status=V, posMode=N)>
+raw: b'$GNRMC,192259.00,V,,,,,,,140824,,,N,V*16\r\n', parsed: <NMEA(GNRMC, time=19:22:59, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:22:59, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192259.00,,,,,0,00,99.99,,,,,,*7C\r\n'
+raw: b'$GNGGA,192259.00,,,,,0,00,99.99,,,,,,*7C\r\n', parsed: <NMEA(GNGGA, time=19:22:59, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,01,15,,,25,1*66\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=15, elv_01=, az_01=, cno_01=25, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192259.00,V,N*50\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:22:59, status=V, posMode=N)>
+raw: b'$GNRMC,192300.00,V,,,,,,,140824,,,N,V*1B\r\n', parsed: <NMEA(GNRMC, time=19:23:00, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:00, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192300.00,,,,,0,00,99.99,,,,,,*71\r\n'
+raw: b'$GNGGA,192300.00,,,,,0,00,99.99,,,,,,*71\r\n', parsed: <NMEA(GNGGA, time=19:23:00, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,01,15,,,25,1*66\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=15, elv_01=, az_01=, cno_01=25, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192300.00,V,N*5D\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:00, status=V, posMode=N)>
+raw: b'$GNRMC,192301.00,V,,,,,,,140824,,,N,V*1A\r\n', parsed: <NMEA(GNRMC, time=19:23:01, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNRMC,192302.00,V,,,,,,,140824,,,N,V*19\r\n', parsed: <NMEA(GNRMC, time=19:23:02, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:02, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192302.00,,,,,0,00,99.99,,,,,,*73\r\n'
+raw: b'$GNGGA,192302.00,,,,,0,00,99.99,,,,,,*73\r\n', parsed: <NMEA(GNGGA, time=19:23:02, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,01,15,,,25,1*66\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=15, elv_01=, az_01=, cno_01=25, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192302.00,V,N*5F\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:02, status=V, posMode=N)>
+raw: b'$GNRMC,192303.00,V,,,,,,,140824,,,N,V*18\r\n', parsed: <NMEA(GNRMC, time=19:23:03, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:03, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192303.00,,,,,0,00,99.99,,,,,,*72\r\n'
+raw: b'$GNGGA,192303.00,,,,,0,00,99.99,,,,,,*72\r\n', parsed: <NMEA(GNGGA, time=19:23:03, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,01,15,,,25,1*66\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=15, elv_01=, az_01=, cno_01=25, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192303.00,V,N*5E\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:03, status=V, posMode=N)>
+raw: b'$GNRMC,192304.00,V,,,,,,,140824,,,N,V*1F\r\n', parsed: <NMEA(GNRMC, time=19:23:04, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:04, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192304.00,,,,,0,00,99.99,,,,,,*75\r\n'
+raw: b'$GNGGA,192304.00,,,,,0,00,99.99,,,,,,*75\r\n', parsed: <NMEA(GNGGA, time=19:23:04, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,01,15,,,24,1*67\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=15, elv_01=, az_01=, cno_01=24, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192304.00,V,N*59\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:04, status=V, posMode=N)>
+raw: b'$GNRMC,192305.00,V,,,,,,,140824,,,N,V*1E\r\n', parsed: <NMEA(GNRMC, time=19:23:05, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:05, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192305.00,,,,,0,00,99.99,,,,,,*74\r\n'
+raw: b'$GNGGA,192305.00,,,,,0,00,99.99,,,,,,*74\r\n', parsed: <NMEA(GNGGA, time=19:23:05, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,01,15,,,24,1*67\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=15, elv_01=, az_01=, cno_01=24, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192305.00,V,N*58\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:05, status=V, posMode=N)>
+raw: b'$GNRMC,192306.00,V,,,,,,,140824,,,N,V*1D\r\n', parsed: <NMEA(GNRMC, time=19:23:06, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:06, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192306.00,,,,,0,00,99.99,,,,,,*77\r\n'
+raw: b'$GNGGA,192306.00,,,,,0,00,99.99,,,,,,*77\r\n', parsed: <NMEA(GNGGA, time=19:23:06, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,01,15,,,24,1*67\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=15, elv_01=, az_01=, cno_01=24, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192306.00,V,N*5B\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:06, status=V, posMode=N)>
+raw: b'$GNRMC,192307.00,V,,,,,,,140824,,,N,V*1C\r\n', parsed: <NMEA(GNRMC, time=19:23:07, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:07, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192307.00,,,,,0,00,99.99,,,,,,*76\r\n'
+raw: b'$GNGGA,192307.00,,,,,0,00,99.99,,,,,,*76\r\n', parsed: <NMEA(GNGGA, time=19:23:07, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,01,15,,,23,1*60\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=15, elv_01=, az_01=, cno_01=23, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192307.00,V,N*5A\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:07, status=V, posMode=N)>
+raw: b'$GNRMC,192308.00,V,,,,,,,140824,,,N,V*13\r\n', parsed: <NMEA(GNRMC, time=19:23:08, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNRMC,192309.00,V,,,,,,,140824,,,N,V*12\r\n', parsed: <NMEA(GNRMC, time=19:23:09, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:09, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192309.00,,,,,0,00,99.99,,,,,,*78\r\n'
+raw: b'$GNGGA,192309.00,,,,,0,00,99.99,,,,,,*78\r\n', parsed: <NMEA(GNGGA, time=19:23:09, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,01,15,,,23,1*60\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=15, elv_01=, az_01=, cno_01=23, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192309.00,V,N*54\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:09, status=V, posMode=N)>
+raw: b'$GNRMC,192310.00,V,,,,,,,140824,,,N,V*1A\r\n', parsed: <NMEA(GNRMC, time=19:23:10, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:10, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192310.00,,,,,0,00,99.99,,,,,,*70\r\n'
+raw: b'$GNGGA,192310.00,,,,,0,00,99.99,,,,,,*70\r\n', parsed: <NMEA(GNGGA, time=19:23:10, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,01,15,,,23,1*60\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=15, elv_01=, az_01=, cno_01=23, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192310.00,V,N*5C\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:10, status=V, posMode=N)>
+raw: b'$GNRMC,192311.00,V,,,,,,,140824,,,N,V*1B\r\n', parsed: <NMEA(GNRMC, time=19:23:11, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:11, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192311.00,,,,,0,00,99.99,,,,,,*71\r\n'
+raw: b'$GNGGA,192311.00,,,,,0,00,99.99,,,,,,*71\r\n', parsed: <NMEA(GNGGA, time=19:23:11, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,01,15,,,22,1*61\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=15, elv_01=, az_01=, cno_01=22, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192311.00,V,N*5D\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:11, status=V, posMode=N)>
+raw: b'$GNRMC,192312.00,V,,,,,,,140824,,,N,V*18\r\n', parsed: <NMEA(GNRMC, time=19:23:12, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:12, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192312.00,,,,,0,00,99.99,,,,,,*72\r\n'
+raw: b'$GNGGA,192312.00,,,,,0,00,99.99,,,,,,*72\r\n', parsed: <NMEA(GNGGA, time=19:23:12, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,01,15,,,22,1*61\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=15, elv_01=, az_01=, cno_01=22, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192312.00,V,N*5E\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:12, status=V, posMode=N)>
+raw: b'$GNRMC,192313.00,V,,,,,,,140824,,,N,V*19\r\n', parsed: <NMEA(GNRMC, time=19:23:13, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:13, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192313.00,,,,,0,00,99.99,,,,,,*73\r\n'
+raw: b'$GNGGA,192313.00,,,,,0,00,99.99,,,,,,*73\r\n', parsed: <NMEA(GNGGA, time=19:23:13, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,01,15,,,23,1*60\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=15, elv_01=, az_01=, cno_01=23, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192313.00,V,N*5F\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:13, status=V, posMode=N)>
+raw: b'$GNRMC,192314.00,V,,,,,,,140824,,,N,V*1E\r\n', parsed: <NMEA(GNRMC, time=19:23:14, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:14, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192314.00,,,,,0,00,99.99,,,,,,*74\r\n'
+raw: b'$GNGGA,192314.00,,,,,0,00,99.99,,,,,,*74\r\n', parsed: <NMEA(GNGGA, time=19:23:14, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,01,15,,,23,1*60\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=15, elv_01=, az_01=, cno_01=23, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192314.00,V,N*58\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:14, status=V, posMode=N)>
+raw: b'$GNRMC,192315.00,V,,,,,,,140824,,,N,V*1F\r\n', parsed: <NMEA(GNRMC, time=19:23:15, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+raw: b'$GNRMC,192316.00,V,,,,,,,140824,,,N,V*1C\r\n', parsed: <NMEA(GNRMC, time=19:23:16, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:16, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192316.00,,,,,0,00,99.99,,,,,,*76\r\n'
+raw: b'$GNGGA,192316.00,,,,,0,00,99.99,,,,,,*76\r\n', parsed: <NMEA(GNGGA, time=19:23:16, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,01,15,,,22,1*61\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=15, elv_01=, az_01=, cno_01=22, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192316.00,V,N*5A\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:16, status=V, posMode=N)>
+raw: b'$GNRMC,192317.00,V,,,,,,,140824,,,N,V*1D\r\n', parsed: <NMEA(GNRMC, time=19:23:17, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:17, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192317.00,,,,,0,00,99.99,,,,,,*77\r\n'
+raw: b'$GNGGA,192317.00,,,,,0,00,99.99,,,,,,*77\r\n', parsed: <NMEA(GNGGA, time=19:23:17, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,01,15,,,22,1*61\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=15, elv_01=, az_01=, cno_01=22, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192317.00,V,N*5B\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:17, status=V, posMode=N)>
+raw: b'$GNRMC,192318.00,V,,,,,,,140824,,,N,V*12\r\n', parsed: <NMEA(GNRMC, time=19:23:18, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:18, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192318.00,,,,,0,00,99.99,,,,,,*78\r\n'
+raw: b'$GNGGA,192318.00,,,,,0,00,99.99,,,,,,*78\r\n', parsed: <NMEA(GNGGA, time=19:23:18, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,02,15,,,22,22,,,20,1*60\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=2, svid_01=15, elv_01=, az_01=, cno_01=22, svid_02=22, elv_02=, az_02=, cno_02=20, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192318.00,V,N*54\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:18, status=V, posMode=N)>
+raw: b'$GNRMC,192319.00,V,,,,,,,140824,,,N,V*13\r\n', parsed: <NMEA(GNRMC, time=19:23:19, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:19, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192319.00,,,,,0,00,99.99,,,,,,*79\r\n'
+raw: b'$GNGGA,192319.00,,,,,0,00,99.99,,,,,,*79\r\n', parsed: <NMEA(GNGGA, time=19:23:19, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,02,15,,,22,22,,,18,1*6B\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=2, svid_01=15, elv_01=, az_01=, cno_01=22, svid_02=22, elv_02=, az_02=, cno_02=18, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192319.00,V,N*55\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:19, status=V, posMode=N)>
+raw: b'$GNRMC,192320.00,V,,,,,,,140824,,,N,V*19\r\n', parsed: <NMEA(GNRMC, time=19:23:20, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:20, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192320.00,,,,,0,00,99.99,,,,,,*73\r\n'
+raw: b'$GNGGA,192320.00,,,,,0,00,99.99,,,,,,*73\r\n', parsed: <NMEA(GNGGA, time=19:23:20, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,02,15,,,22,22,,,16,1*65\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=2, svid_01=15, elv_01=, az_01=, cno_01=22, svid_02=22, elv_02=, az_02=, cno_02=16, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192320.00,V,N*5F\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:20, status=V, posMode=N)>
+raw: b'$GNRMC,192321.00,V,,,,,,,140824,,,N,V*18\r\n', parsed: <NMEA(GNRMC, time=19:23:21, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:21, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192321.00,,,,,0,00,99.99,,,,,,*72\r\n'
+raw: b'$GNGGA,192321.00,,,,,0,00,99.99,,,,,,*72\r\n', parsed: <NMEA(GNGGA, time=19:23:21, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,03,15,,,21,22,,,16,23,,,25,1*61\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=3, svid_01=15, elv_01=, az_01=, cno_01=21, svid_02=22, elv_02=, az_02=, cno_02=16, svid_03=23, elv_03=, az_03=, cno_03=25, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192321.00,V,N*5E\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:21, status=V, posMode=N)>
+raw: b'$GNRMC,192322.00,V,,,,,,,140824,,,N,V*1B\r\n', parsed: <NMEA(GNRMC, time=19:23:22, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:22, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192322.00,,,,,0,00,99.99,,,,,,*71\r\n'
+raw: b'$GNGGA,192322.00,,,,,0,00,99.99,,,,,,*71\r\n', parsed: <NMEA(GNGGA, time=19:23:22, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNRMC,192323.00,V,,,,,,,140824,,,N,V*1A\r\n', parsed: <NMEA(GNRMC, time=19:23:23, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:23, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192323.00,,,,,0,00,99.99,,,,,,*70\r\n'
+raw: b'$GNGGA,192323.00,,,,,0,00,99.99,,,,,,*70\r\n', parsed: <NMEA(GNGGA, time=19:23:23, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,04,15,,,21,22,,,15,23,,,18,24,,,20,1*6F\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=4, svid_01=15, elv_01=, az_01=, cno_01=21, svid_02=22, elv_02=, az_02=, cno_02=15, svid_03=23, elv_03=, az_03=, cno_03=18, svid_04=24, elv_04=, az_04=, cno_04=20, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192323.00,V,N*5C\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:23, status=V, posMode=N)>
+raw: b'$GNRMC,192324.00,V,,,,,,,140824,,,N,V*1D\r\n', parsed: <NMEA(GNRMC, time=19:23:24, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:24, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192324.00,,,,,0,00,99.99,,,,,,*77\r\n'
+raw: b'$GNGGA,192324.00,,,,,0,00,99.99,,,,,,*77\r\n', parsed: <NMEA(GNGGA, time=19:23:24, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,04,15,,,21,22,,,16,23,,,15,24,,,17,1*65\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=4, svid_01=15, elv_01=, az_01=, cno_01=21, svid_02=22, elv_02=, az_02=, cno_02=16, svid_03=23, elv_03=, az_03=, cno_03=15, svid_04=24, elv_04=, az_04=, cno_04=17, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192324.00,V,N*5B\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:24, status=V, posMode=N)>
+raw: b'$GNRMC,192325.00,V,,,,,,,140824,,,N,V*1C\r\n', parsed: <NMEA(GNRMC, time=19:23:25, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:25, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192325.00,,,,,0,00,99.99,,,,,,*76\r\n'
+raw: b'$GNGGA,192325.00,,,,,0,00,99.99,,,,,,*76\r\n', parsed: <NMEA(GNGGA, time=19:23:25, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,04,15,,,20,22,,,15,23,,,13,24,,,16,1*60\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=4, svid_01=15, elv_01=, az_01=, cno_01=20, svid_02=22, elv_02=, az_02=, cno_02=15, svid_03=23, elv_03=, az_03=, cno_03=13, svid_04=24, elv_04=, az_04=, cno_04=16, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192325.00,V,N*5A\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:25, status=V, posMode=N)>
+raw: b'$GNRMC,192326.00,V,,,,,,,140824,,,N,V*1F\r\n', parsed: <NMEA(GNRMC, time=19:23:26, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:26, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192326.00,,,,,0,00,99.99,,,,,,*75\r\n'
+raw: b'$GNGGA,192326.00,,,,,0,00,99.99,,,,,,*75\r\n', parsed: <NMEA(GNGGA, time=19:23:26, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,04,15,,,19,22,,,15,24,,,16,25,,,21,1*6D\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=4, svid_01=15, elv_01=, az_01=, cno_01=19, svid_02=22, elv_02=, az_02=, cno_02=15, svid_03=24, elv_03=, az_03=, cno_03=16, svid_04=25, elv_04=, az_04=, cno_04=21, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192326.00,V,N*59\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:26, status=V, posMode=N)>
+raw: b'$GNRMC,192327.00,V,,,,,,,140824,,,N,V*1E\r\n', parsed: <NMEA(GNRMC, time=19:23:27, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:27, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192327.00,,,,,0,00,99.99,,,,,,*74\r\n'
+raw: b'$GNGGA,192327.00,,,,,0,00,99.99,,,,,,*74\r\n', parsed: <NMEA(GNGGA, time=19:23:27, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,04,15,,,19,22,,,15,24,,,16,25,,,18,1*67\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=4, svid_01=15, elv_01=, az_01=, cno_01=19, svid_02=22, elv_02=, az_02=, cno_02=15, svid_03=24, elv_03=, az_03=, cno_03=16, svid_04=25, elv_04=, az_04=, cno_04=18, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192327.00,V,N*58\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:27, status=V, posMode=N)>
+raw: b'$GNRMC,192328.00,V,,,,,,,140824,,,N,V*11\r\n', parsed: <NMEA(GNRMC, time=19:23:28, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:28, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192328.00,,,,,0,00,99.99,,,,,,*7B\r\n'
+raw: b'$GNGGA,192328.00,,,,,0,00,99.99,,,,,,*7B\r\n', parsed: <NMEA(GNGGA, time=19:23:28, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,04,15,,,19,22,,,14,24,,,14,25,,,17,1*6B\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=4, svid_01=15, elv_01=, az_01=, cno_01=19, svid_02=22, elv_02=, az_02=, cno_02=14, svid_03=24, elv_03=, az_03=, cno_03=14, svid_04=25, elv_04=, az_04=, cno_04=17, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192328.00,V,N*57\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:28, status=V, posMode=N)>
+raw: b'$GNRMC,192329.00,V,,,,,,,140824,,,N,V*10\r\n', parsed: <NMEA(GNRMC, time=19:23:29, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:29, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192329.00,,,,,0,00,99.99,,,,,,*7A\r\n'
+raw: b'$GNGGA,192329.00,,,,,0,00,99.99,,,,,,*7A\r\n', parsed: <NMEA(GNGGA, time=19:23:29, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNRMC,192330.00,V,,,,,,,140824,,,N,V*18\r\n', parsed: <NMEA(GNRMC, time=19:23:30, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:30, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192330.00,,,,,0,00,99.99,,,,,,*72\r\n'
+raw: b'$GNGGA,192330.00,,,,,0,00,99.99,,,,,,*72\r\n', parsed: <NMEA(GNGGA, time=19:23:30, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,2,1,05,15,,,19,22,,,20,23,,,16,24,,,13,1*6E\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=1, numSV=5, svid_01=15, elv_01=, az_01=, cno_01=19, svid_02=22, elv_02=, az_02=, cno_02=20, svid_03=23, elv_03=, az_03=, cno_03=16, svid_04=24, elv_04=, az_04=, cno_04=13, signalID=1)>
+raw: b'$GPGSV,2,2,05,25,,,15,1*62\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=2, numSV=5, svid_01=25, elv_01=, az_01=, cno_01=15, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192330.00,V,N*5E\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:30, status=V, posMode=N)>
+raw: b'$GNRMC,192331.00,V,,,,,,,140824,,,N,V*19\r\n', parsed: <NMEA(GNRMC, time=19:23:31, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:31, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192331.00,,,,,0,00,99.99,,,,,,*73\r\n'
+raw: b'$GNGGA,192331.00,,,,,0,00,99.99,,,,,,*73\r\n', parsed: <NMEA(GNGGA, time=19:23:31, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,2,1,05,15,,,19,22,,,18,23,,,14,24,,,12,1*66\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=1, numSV=5, svid_01=15, elv_01=, az_01=, cno_01=19, svid_02=22, elv_02=, az_02=, cno_02=18, svid_03=23, elv_03=, az_03=, cno_03=14, svid_04=24, elv_04=, az_04=, cno_04=12, signalID=1)>
+raw: b'$GPGSV,2,2,05,25,,,14,1*63\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=2, numSV=5, svid_01=25, elv_01=, az_01=, cno_01=14, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192331.00,V,N*5F\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:31, status=V, posMode=N)>
+raw: b'$GNRMC,192332.00,V,,,,,,,140824,,,N,V*1A\r\n', parsed: <NMEA(GNRMC, time=19:23:32, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:32, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192332.00,,,,,0,00,99.99,,,,,,*70\r\n'
+raw: b'$GNGGA,192332.00,,,,,0,00,99.99,,,,,,*70\r\n', parsed: <NMEA(GNGGA, time=19:23:32, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,2,1,05,15,,,18,22,,,16,23,,,15,24,,,13,1*69\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=1, numSV=5, svid_01=15, elv_01=, az_01=, cno_01=18, svid_02=22, elv_02=, az_02=, cno_02=16, svid_03=23, elv_03=, az_03=, cno_03=15, svid_04=24, elv_04=, az_04=, cno_04=13, signalID=1)>
+raw: b'$GPGSV,2,2,05,25,,,13,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=2, numSV=5, svid_01=25, elv_01=, az_01=, cno_01=13, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192332.00,V,N*5C\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:32, status=V, posMode=N)>
+raw: b'$GNRMC,192333.00,V,,,,,,,140824,,,N,V*1B\r\n', parsed: <NMEA(GNRMC, time=19:23:33, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:33, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192333.00,,,,,0,00,99.99,,,,,,*71\r\n'
+raw: b'$GNGGA,192333.00,,,,,0,00,99.99,,,,,,*71\r\n', parsed: <NMEA(GNGGA, time=19:23:33, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,2,1,05,15,,,18,22,,,16,23,,,15,24,,,13,1*69\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=1, numSV=5, svid_01=15, elv_01=, az_01=, cno_01=18, svid_02=22, elv_02=, az_02=, cno_02=16, svid_03=23, elv_03=, az_03=, cno_03=15, svid_04=24, elv_04=, az_04=, cno_04=13, signalID=1)>
+raw: b'$GPGSV,2,2,05,25,,,14,1*63\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=2, numSV=5, svid_01=25, elv_01=, az_01=, cno_01=14, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192333.00,V,N*5D\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:33, status=V, posMode=N)>
+raw: b'$GNRMC,192334.00,V,,,,,,,140824,,,N,V*1C\r\n', parsed: <NMEA(GNRMC, time=19:23:34, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:34, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192334.00,,,,,0,00,99.99,,,,,,*76\r\n'
+raw: b'$GNGGA,192334.00,,,,,0,00,99.99,,,,,,*76\r\n', parsed: <NMEA(GNGGA, time=19:23:34, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,04,15,,,18,22,,,16,23,,,14,25,,,13,1*6B\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=4, svid_01=15, elv_01=, az_01=, cno_01=18, svid_02=22, elv_02=, az_02=, cno_02=16, svid_03=23, elv_03=, az_03=, cno_03=14, svid_04=25, elv_04=, az_04=, cno_04=13, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192334.00,V,N*5A\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:34, status=V, posMode=N)>
+raw: b'$GNRMC,192335.00,V,,,,,,,140824,,,N,V*1D\r\n', parsed: <NMEA(GNRMC, time=19:23:35, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:35, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192335.00,,,,,0,00,99.99,,,,,,*77\r\n'
+raw: b'$GNGGA,192335.00,,,,,0,00,99.99,,,,,,*77\r\n', parsed: <NMEA(GNGGA, time=19:23:35, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,2,1,06,15,,,18,22,,,15,23,,,14,24,,,21,1*69\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=1, numSV=6, svid_01=15, elv_01=, az_01=, cno_01=18, svid_02=22, elv_02=, az_02=, cno_02=15, svid_03=23, elv_03=, az_03=, cno_03=14, svid_04=24, elv_04=, az_04=, cno_04=21, signalID=1)>
+raw: b'$GPGSV,2,2,06,25,,,14,26,,,17,1*62\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=2, numSV=6, svid_01=25, elv_01=, az_01=, cno_01=14, svid_02=26, elv_02=, az_02=, cno_02=17, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192335.00,V,N*5B\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:35, status=V, posMode=N)>
+raw: b'$GNRMC,192336.00,V,,,,,,,140824,,,N,V*1E\r\n', parsed: <NMEA(GNRMC, time=19:23:36, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:36, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192336.00,,,,,0,00,99.99,,,,,,*74\r\n'
+raw: b'$GNGGA,192336.00,,,,,0,00,99.99,,,,,,*74\r\n', parsed: <NMEA(GNGGA, time=19:23:36, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNRMC,192337.00,V,,,,,,,140824,,,N,V*1F\r\n', parsed: <NMEA(GNRMC, time=19:23:37, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:37, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192337.00,,,,,0,00,99.99,,,,,,*75\r\n'
+raw: b'$GNGGA,192337.00,,,,,0,00,99.99,,,,,,*75\r\n', parsed: <NMEA(GNGGA, time=19:23:37, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,2,1,05,15,,,18,22,,,14,23,,,14,24,,,16,1*6F\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=1, numSV=5, svid_01=15, elv_01=, az_01=, cno_01=18, svid_02=22, elv_02=, az_02=, cno_02=14, svid_03=23, elv_03=, az_03=, cno_03=14, svid_04=24, elv_04=, az_04=, cno_04=16, signalID=1)>
+raw: b'$GPGSV,2,2,05,26,,,10,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=2, numSV=5, svid_01=26, elv_01=, az_01=, cno_01=10, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192337.00,V,N*59\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:37, status=V, posMode=N)>
+raw: b'$GNRMC,192338.00,V,,,,,,,140824,,,N,V*10\r\n', parsed: <NMEA(GNRMC, time=19:23:38, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:38, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192338.00,,,,,0,00,99.99,,,,,,*7A\r\n'
+raw: b'$GNGGA,192338.00,,,,,0,00,99.99,,,,,,*7A\r\n', parsed: <NMEA(GNGGA, time=19:23:38, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,2,1,05,15,,,17,22,,,14,23,,,14,24,,,16,1*60\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=1, numSV=5, svid_01=15, elv_01=, az_01=, cno_01=17, svid_02=22, elv_02=, az_02=, cno_02=14, svid_03=23, elv_03=, az_03=, cno_03=14, svid_04=24, elv_04=, az_04=, cno_04=16, signalID=1)>
+raw: b'$GPGSV,2,2,05,26,,,08,1*6D\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=2, numSV=5, svid_01=26, elv_01=, az_01=, cno_01=8, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192338.00,V,N*56\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:38, status=V, posMode=N)>
+raw: b'$GNRMC,192339.00,V,,,,,,,140824,,,N,V*11\r\n', parsed: <NMEA(GNRMC, time=19:23:39, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:39, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192339.00,,,,,0,00,99.99,,,,,,*7B\r\n'
+raw: b'$GNGGA,192339.00,,,,,0,00,99.99,,,,,,*7B\r\n', parsed: <NMEA(GNGGA, time=19:23:39, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,2,1,05,15,,,16,22,,,14,23,,,13,24,,,15,1*65\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=1, numSV=5, svid_01=15, elv_01=, az_01=, cno_01=16, svid_02=22, elv_02=, az_02=, cno_02=14, svid_03=23, elv_03=, az_03=, cno_03=13, svid_04=24, elv_04=, az_04=, cno_04=15, signalID=1)>
+raw: b'$GPGSV,2,2,05,26,,,07,1*62\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=2, numSV=5, svid_01=26, elv_01=, az_01=, cno_01=7, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192339.00,V,N*57\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:39, status=V, posMode=N)>
+raw: b'$GNRMC,192340.00,V,,,,,,,140824,,,N,V*1F\r\n', parsed: <NMEA(GNRMC, time=19:23:40, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:40, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192340.00,,,,,0,00,99.99,,,,,,*75\r\n'
+raw: b'$GNGGA,192340.00,,,,,0,00,99.99,,,,,,*75\r\n', parsed: <NMEA(GNGGA, time=19:23:40, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,2,1,06,15,,,16,22,,,13,23,,,14,24,,,15,1*66\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=1, numSV=6, svid_01=15, elv_01=, az_01=, cno_01=16, svid_02=22, elv_02=, az_02=, cno_02=13, svid_03=23, elv_03=, az_03=, cno_03=14, svid_04=24, elv_04=, az_04=, cno_04=15, signalID=1)>
+raw: b'$GPGSV,2,2,06,25,,,18,26,,,08,1*60\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=2, numSV=6, svid_01=25, elv_01=, az_01=, cno_01=18, svid_02=26, elv_02=, az_02=, cno_02=8, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192340.00,V,N*59\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:40, status=V, posMode=N)>
+raw: b'$GNRMC,192341.00,V,,,,,,,140824,,,N,V*1E\r\n', parsed: <NMEA(GNRMC, time=19:23:41, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:41, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192341.00,,,,,0,00,99.99,,,,,,*74\r\n'
+raw: b'$GNGGA,192341.00,,,,,0,00,99.99,,,,,,*74\r\n', parsed: <NMEA(GNGGA, time=19:23:41, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,2,1,06,15,,,16,22,,,24,23,,,14,24,,,16,1*61\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=1, numSV=6, svid_01=15, elv_01=, az_01=, cno_01=16, svid_02=22, elv_02=, az_02=, cno_02=24, svid_03=23, elv_03=, az_03=, cno_03=14, svid_04=24, elv_04=, az_04=, cno_04=16, signalID=1)>
+raw: b'$GPGSV,2,2,06,25,,,16,26,,,07,1*61\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=2, numSV=6, svid_01=25, elv_01=, az_01=, cno_01=16, svid_02=26, elv_02=, az_02=, cno_02=7, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192341.00,V,N*58\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:41, status=V, posMode=N)>
+raw: b'$GNRMC,192342.00,V,,,,,,,140824,,,N,V*1D\r\n', parsed: <NMEA(GNRMC, time=19:23:42, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:42, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192342.00,,,,,0,00,99.99,,,,,,*77\r\n'
+raw: b'$GNGGA,192342.00,,,,,0,00,99.99,,,,,,*77\r\n', parsed: <NMEA(GNGGA, time=19:23:42, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,2,1,05,15,,,16,22,,,21,24,,,14,25,,,15,1*62\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=1, numSV=5, svid_01=15, elv_01=, az_01=, cno_01=16, svid_02=22, elv_02=, az_02=, cno_02=21, svid_03=24, elv_03=, az_03=, cno_03=14, svid_04=25, elv_04=, az_04=, cno_04=15, signalID=1)>
+raw: b'$GPGSV,2,2,05,26,,,08,1*6D\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=2, numSV=5, svid_01=26, elv_01=, az_01=, cno_01=8, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192342.00,V,N*5B\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:42, status=V, posMode=N)>
+raw: b'$GNRMC,192343.00,V,,,,,,,140824,,,N,V*1C\r\n', parsed: <NMEA(GNRMC, time=19:23:43, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:43, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192343.00,,,,,0,00,99.99,,,,,,*76\r\n'
+raw: b'$GNGGA,192343.00,,,,,0,00,99.99,,,,,,*76\r\n', parsed: <NMEA(GNGGA, time=19:23:43, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNRMC,192344.00,V,,,,,,,140824,,,N,V*1B\r\n', parsed: <NMEA(GNRMC, time=19:23:44, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:44, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192344.00,,,,,0,00,99.99,,,,,,*71\r\n'
+raw: b'$GNGGA,192344.00,,,,,0,00,99.99,,,,,,*71\r\n', parsed: <NMEA(GNGGA, time=19:23:44, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,2,1,06,15,,,14,22,,,17,24,,,15,25,,,13,1*61\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=1, numSV=6, svid_01=15, elv_01=, az_01=, cno_01=14, svid_02=22, elv_02=, az_02=, cno_02=17, svid_03=24, elv_03=, az_03=, cno_03=15, svid_04=25, elv_04=, az_04=, cno_04=13, signalID=1)>
+raw: b'$GPGSV,2,2,06,26,,,07,28,,,23,1*6A\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=2, numSV=6, svid_01=26, elv_01=, az_01=, cno_01=7, svid_02=28, elv_02=, az_02=, cno_02=23, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192344.00,V,N*5D\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:44, status=V, posMode=N)>
+raw: b'$GNRMC,192345.00,V,,,,,,,140824,,,N,V*1A\r\n', parsed: <NMEA(GNRMC, time=19:23:45, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:45, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192345.00,,,,,0,00,99.99,,,,,,*70\r\n'
+raw: b'$GNGGA,192345.00,,,,,0,00,99.99,,,,,,*70\r\n', parsed: <NMEA(GNGGA, time=19:23:45, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,2,1,06,15,,,13,22,,,15,23,,,24,24,,,16,1*65\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=1, numSV=6, svid_01=15, elv_01=, az_01=, cno_01=13, svid_02=22, elv_02=, az_02=, cno_02=15, svid_03=23, elv_03=, az_03=, cno_03=24, svid_04=24, elv_04=, az_04=, cno_04=16, signalID=1)>
+raw: b'$GPGSV,2,2,06,25,,,13,28,,,20,1*6F\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=2, numSV=6, svid_01=25, elv_01=, az_01=, cno_01=13, svid_02=28, elv_02=, az_02=, cno_02=20, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192345.00,V,N*5C\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:45, status=V, posMode=N)>
+raw: b'$GNRMC,192346.00,V,,,,,,,140824,,,N,V*19\r\n', parsed: <NMEA(GNRMC, time=19:23:46, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:46, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192346.00,,,,,0,00,99.99,,,,,,*73\r\n'
+raw: b'$GNGGA,192346.00,,,,,0,00,99.99,,,,,,*73\r\n', parsed: <NMEA(GNGGA, time=19:23:46, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,04,15,,,12,23,,,20,25,,,12,28,,,18,1*63\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=4, svid_01=15, elv_01=, az_01=, cno_01=12, svid_02=23, elv_02=, az_02=, cno_02=20, svid_03=25, elv_03=, az_03=, cno_03=12, svid_04=28, elv_04=, az_04=, cno_04=18, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192346.00,V,N*5F\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:46, status=V, posMode=N)>
+raw: b'$GNRMC,192347.00,V,,,,,,,140824,,,N,V*18\r\n', parsed: <NMEA(GNRMC, time=19:23:47, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:47, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192347.00,,,,,0,00,99.99,,,,,,*72\r\n'
+raw: b'$GNGGA,192347.00,,,,,0,00,99.99,,,,,,*72\r\n', parsed: <NMEA(GNGGA, time=19:23:47, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,04,15,,,13,25,,,11,26,,,20,28,,,16,1*6A\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=4, svid_01=15, elv_01=, az_01=, cno_01=13, svid_02=25, elv_02=, az_02=, cno_02=11, svid_03=26, elv_03=, az_03=, cno_03=20, svid_04=28, elv_04=, az_04=, cno_04=16, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192347.00,V,N*5E\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:47, status=V, posMode=N)>
+raw: b'$GNRMC,192348.00,V,,,,,,,140824,,,N,V*17\r\n', parsed: <NMEA(GNRMC, time=19:23:48, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:48, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192348.00,,,,,0,00,99.99,,,,,,*7D\r\n'
+raw: b'$GNGGA,192348.00,,,,,0,00,99.99,,,,,,*7D\r\n', parsed: <NMEA(GNGGA, time=19:23:48, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,2,1,05,15,,,13,23,,,23,25,,,13,26,,,18,1*6C\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=1, numSV=5, svid_01=15, elv_01=, az_01=, cno_01=13, svid_02=23, elv_02=, az_02=, cno_02=23, svid_03=25, elv_03=, az_03=, cno_03=13, svid_04=26, elv_04=, az_04=, cno_04=18, signalID=1)>
+raw: b'$GPGSV,2,2,05,28,,,15,1*6F\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=2, numSV=5, svid_01=28, elv_01=, az_01=, cno_01=15, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192348.00,V,N*51\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:48, status=V, posMode=N)>
+raw: b'$GNRMC,192349.00,V,,,,,,,140824,,,N,V*16\r\n', parsed: <NMEA(GNRMC, time=19:23:49, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:49, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192349.00,,,,,0,00,99.99,,,,,,*7C\r\n'
+raw: b'$GNGGA,192349.00,,,,,0,00,99.99,,,,,,*7C\r\n', parsed: <NMEA(GNGGA, time=19:23:49, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,04,15,,,13,24,,,18,25,,,10,26,,,14,1*6E\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=4, svid_01=15, elv_01=, az_01=, cno_01=13, svid_02=24, elv_02=, az_02=, cno_02=18, svid_03=25, elv_03=, az_03=, cno_03=10, svid_04=26, elv_04=, az_04=, cno_04=14, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192349.00,V,N*50\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:49, status=V, posMode=N)>
+raw: b'$GNRMC,192350.00,V,,,,,,,140824,,,N,V*1E\r\n', parsed: <NMEA(GNRMC, time=19:23:50, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:50, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192350.00,,,,,0,00,99.99,,,,,,*74\r\n'
+raw: b'$GNGGA,192350.00,,,,,0,00,99.99,,,,,,*74\r\n', parsed: <NMEA(GNGGA, time=19:23:50, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,04,15,,,14,24,,,16,25,,,10,26,,,14,1*67\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=4, svid_01=15, elv_01=, az_01=, cno_01=14, svid_02=24, elv_02=, az_02=, cno_02=16, svid_03=25, elv_03=, az_03=, cno_03=10, svid_04=26, elv_04=, az_04=, cno_04=14, signalID=1)>
+raw: b'$GNRMC,192351.00,V,,,,,,,140824,,,N,V*1F\r\n', parsed: <NMEA(GNRMC, time=19:23:51, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:51, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192351.00,,,,,0,00,99.99,,,,,,*75\r\n'
+raw: b'$GNGGA,192351.00,,,,,0,00,99.99,,,,,,*75\r\n', parsed: <NMEA(GNGGA, time=19:23:51, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,04,15,,,15,24,,,14,25,,,12,26,,,12,1*60\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=4, svid_01=15, elv_01=, az_01=, cno_01=15, svid_02=24, elv_02=, az_02=, cno_02=14, svid_03=25, elv_03=, az_03=, cno_03=12, svid_04=26, elv_04=, az_04=, cno_04=12, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192351.00,V,N*59\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:51, status=V, posMode=N)>
+raw: b'$GNRMC,192352.00,V,,,,,,,140824,,,N,V*1C\r\n', parsed: <NMEA(GNRMC, time=19:23:52, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:52, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192352.00,,,,,0,00,99.99,,,,,,*76\r\n'
+raw: b'$GNGGA,192352.00,,,,,0,00,99.99,,,,,,*76\r\n', parsed: <NMEA(GNGGA, time=19:23:52, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,04,15,,,15,24,,,12,25,,,10,26,,,10,1*66\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=4, svid_01=15, elv_01=, az_01=, cno_01=15, svid_02=24, elv_02=, az_02=, cno_02=12, svid_03=25, elv_03=, az_03=, cno_03=10, svid_04=26, elv_04=, az_04=, cno_04=10, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192352.00,V,N*5A\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:52, status=V, posMode=N)>
+raw: b'$GNRMC,192353.00,V,,,,,,,140824,,,N,V*1D\r\n', parsed: <NMEA(GNRMC, time=19:23:53, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:53, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192353.00,,,,,0,00,99.99,,,,,,*77\r\n'
+raw: b'$GNGGA,192353.00,,,,,0,00,99.99,,,,,,*77\r\n', parsed: <NMEA(GNGGA, time=19:23:53, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,03,15,,,15,25,,,12,26,,,09,1*6E\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=3, svid_01=15, elv_01=, az_01=, cno_01=15, svid_02=25, elv_02=, az_02=, cno_02=12, svid_03=26, elv_03=, az_03=, cno_03=9, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192353.00,V,N*5B\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:53, status=V, posMode=N)>
+raw: b'$GNRMC,192354.00,V,,,,,,,140824,,,N,V*1A\r\n', parsed: <NMEA(GNRMC, time=19:23:54, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:54, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192354.00,,,,,0,00,99.99,,,,,,*70\r\n'
+raw: b'$GNGGA,192354.00,,,,,0,00,99.99,,,,,,*70\r\n', parsed: <NMEA(GNGGA, time=19:23:54, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,04,15,,,17,25,,,13,26,,,11,30,,,18,1*69\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=4, svid_01=15, elv_01=, az_01=, cno_01=17, svid_02=25, elv_02=, az_02=, cno_02=13, svid_03=26, elv_03=, az_03=, cno_03=11, svid_04=30, elv_04=, az_04=, cno_04=18, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192354.00,V,N*5C\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:54, status=V, posMode=N)>
+raw: b'$GNRMC,192355.00,V,,,,,,,140824,,,N,V*1B\r\n', parsed: <NMEA(GNRMC, time=19:23:55, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:55, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192355.00,,,,,0,00,99.99,,,,,,*71\r\n'
+raw: b'$GNGGA,192355.00,,,,,0,00,99.99,,,,,,*71\r\n', parsed: <NMEA(GNGGA, time=19:23:55, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,2,1,05,15,,,17,25,,,13,26,,,11,30,,,17,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=1, numSV=5, svid_01=15, elv_01=, az_01=, cno_01=17, svid_02=25, elv_02=, az_02=, cno_02=13, svid_03=26, elv_03=, az_03=, cno_03=11, svid_04=30, elv_04=, az_04=, cno_04=17, signalID=1)>
+raw: b'$GPGSV,2,2,05,31,,,22,1*63\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=2, numSV=5, svid_01=31, elv_01=, az_01=, cno_01=22, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192355.00,V,N*5D\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:55, status=V, posMode=N)>
+raw: b'$GNRMC,192356.00,V,,,,,,,140824,,,N,V*18\r\n', parsed: <NMEA(GNRMC, time=19:23:56, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:56, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192356.00,,,,,0,00,99.99,,,,,,*72\r\n'
+raw: b'$GNGGA,192356.00,,,,,0,00,99.99,,,,,,*72\r\n', parsed: <NMEA(GNGGA, time=19:23:56, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,2,1,05,15,,,17,25,,,13,26,,,11,30,,,16,1*65\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=1, numSV=5, svid_01=15, elv_01=, az_01=, cno_01=17, svid_02=25, elv_02=, az_02=, cno_02=13, svid_03=26, elv_03=, az_03=, cno_03=11, svid_04=30, elv_04=, az_04=, cno_04=16, signalID=1)>
+raw: b'$GPGSV,2,2,05,31,,,19,1*6B\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=2, numSV=5, svid_01=31, elv_01=, az_01=, cno_01=19, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192356.00,V,N*5E\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:56, status=V, posMode=N)>
+raw: b'$GNRMC,192357.00,V,,,,,,,140824,,,N,V*19\r\n', parsed: <NMEA(GNRMC, time=19:23:57, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:57, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192357.00,,,,,0,00,99.99,,,,,,*73\r\n'
+raw: b'$GNGGA,192357.00,,,,,0,00,99.99,,,,,,*73\r\n', parsed: <NMEA(GNGGA, time=19:23:57, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNRMC,192358.00,V,,,,,,,140824,,,N,V*16\r\n', parsed: <NMEA(GNRMC, time=19:23:58, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:58, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192358.00,,,,,0,00,99.99,,,,,,*7C\r\n'
+raw: b'$GNGGA,192358.00,,,,,0,00,99.99,,,,,,*7C\r\n', parsed: <NMEA(GNGGA, time=19:23:58, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,2,1,05,15,,,18,25,,,15,26,,,14,28,,,17,1*61\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=1, numSV=5, svid_01=15, elv_01=, az_01=, cno_01=18, svid_02=25, elv_02=, az_02=, cno_02=15, svid_03=26, elv_03=, az_03=, cno_03=14, svid_04=28, elv_04=, az_04=, cno_04=17, signalID=1)>
+raw: b'$GPGSV,2,2,05,31,,,13,1*61\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=2, numSV=5, svid_01=31, elv_01=, az_01=, cno_01=13, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192358.00,V,N*50\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:58, status=V, posMode=N)>
+raw: b'$GNRMC,192359.00,V,,,,,,,140824,,,N,V*17\r\n', parsed: <NMEA(GNRMC, time=19:23:59, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:23:59, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192359.00,,,,,0,00,99.99,,,,,,*7D\r\n'
+raw: b'$GNGGA,192359.00,,,,,0,00,99.99,,,,,,*7D\r\n', parsed: <NMEA(GNGGA, time=19:23:59, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,2,1,05,15,,,19,25,,,15,26,,,15,28,,,15,1*63\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=1, numSV=5, svid_01=15, elv_01=, az_01=, cno_01=19, svid_02=25, elv_02=, az_02=, cno_02=15, svid_03=26, elv_03=, az_03=, cno_03=15, svid_04=28, elv_04=, az_04=, cno_04=15, signalID=1)>
+raw: b'$GPGSV,2,2,05,31,,,13,1*61\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=2, numSV=5, svid_01=31, elv_01=, az_01=, cno_01=13, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192359.00,V,N*51\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:23:59, status=V, posMode=N)>
+raw: b'$GNRMC,192400.00,V,,,,,,,140824,,,N,V*1C\r\n', parsed: <NMEA(GNRMC, time=19:24:00, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:24:00, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192400.00,,,,,0,00,99.99,,,,,,*76\r\n'
+raw: b'$GNGGA,192400.00,,,,,0,00,99.99,,,,,,*76\r\n', parsed: <NMEA(GNGGA, time=19:24:00, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,2,1,05,15,,,19,25,,,14,26,,,15,28,,,14,1*63\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=1, numSV=5, svid_01=15, elv_01=, az_01=, cno_01=19, svid_02=25, elv_02=, az_02=, cno_02=14, svid_03=26, elv_03=, az_03=, cno_03=15, svid_04=28, elv_04=, az_04=, cno_04=14, signalID=1)>
+raw: b'$GPGSV,2,2,05,31,,,14,1*66\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=2, numSV=5, svid_01=31, elv_01=, az_01=, cno_01=14, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192400.00,V,N*5A\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:24:00, status=V, posMode=N)>
+raw: b'$GNRMC,192401.00,V,,,,,,,140824,,,N,V*1D\r\n', parsed: <NMEA(GNRMC, time=19:24:01, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:24:01, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192401.00,,,,,0,00,99.99,,,,,,*77\r\n'
+raw: b'$GNGGA,192401.00,,,,,0,00,99.99,,,,,,*77\r\n', parsed: <NMEA(GNGGA, time=19:24:01, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,2,1,05,15,,,19,25,,,13,26,,,14,28,,,14,1*65\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=1, numSV=5, svid_01=15, elv_01=, az_01=, cno_01=19, svid_02=25, elv_02=, az_02=, cno_02=13, svid_03=26, elv_03=, az_03=, cno_03=14, svid_04=28, elv_04=, az_04=, cno_04=14, signalID=1)>
+raw: b'$GPGSV,2,2,05,31,,,15,1*67\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=2, numSV=5, svid_01=31, elv_01=, az_01=, cno_01=15, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192401.00,V,N*5B\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:24:01, status=V, posMode=N)>
+raw: b'$GNRMC,192402.00,V,,,,,,,140824,,,N,V*1E\r\n', parsed: <NMEA(GNRMC, time=19:24:02, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:24:02, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192402.00,,,,,0,00,99.99,,,,,,*74\r\n'
+raw: b'$GNGGA,192402.00,,,,,0,00,99.99,,,,,,*74\r\n', parsed: <NMEA(GNGGA, time=19:24:02, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,2,1,05,15,,,20,25,,,13,26,,,14,28,,,12,1*69\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=1, numSV=5, svid_01=15, elv_01=, az_01=, cno_01=20, svid_02=25, elv_02=, az_02=, cno_02=13, svid_03=26, elv_03=, az_03=, cno_03=14, svid_04=28, elv_04=, az_04=, cno_04=12, signalID=1)>
+raw: b'$GPGSV,2,2,05,31,,,16,1*64\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=2, numSV=5, svid_01=31, elv_01=, az_01=, cno_01=16, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192402.00,V,N*58\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:24:02, status=V, posMode=N)>
+raw: b'$GNRMC,192403.00,V,,,,,,,140824,,,N,V*1F\r\n', parsed: <NMEA(GNRMC, time=19:24:03, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:24:03, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192403.00,,,,,0,00,99.99,,,,,,*75\r\n'
+raw: b'$GNGGA,192403.00,,,,,0,00,99.99,,,,,,*75\r\n', parsed: <NMEA(GNGGA, time=19:24:03, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,2,1,05,15,,,20,25,,,13,26,,,14,28,,,12,1*69\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=1, numSV=5, svid_01=15, elv_01=, az_01=, cno_01=20, svid_02=25, elv_02=, az_02=, cno_02=13, svid_03=26, elv_03=, az_03=, cno_03=14, svid_04=28, elv_04=, az_04=, cno_04=12, signalID=1)>
+raw: b'$GPGSV,2,2,05,31,,,14,1*66\r\n', parsed: <NMEA(GPGSV, numMsg=2, msgNum=2, numSV=5, svid_01=31, elv_01=, az_01=, cno_01=14, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192403.00,V,N*59\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:24:03, status=V, posMode=N)>
+raw: b'$GNRMC,192404.00,V,,,,,,,140824,,,N,V*18\r\n', parsed: <NMEA(GNRMC, time=19:24:04, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:24:04, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192404.00,,,,,0,00,99.99,,,,,,*72\r\n'
+raw: b'$GNGGA,192404.00,,,,,0,00,99.99,,,,,,*72\r\n', parsed: <NMEA(GNGGA, time=19:24:04, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,04,15,,,20,25,,,12,28,,,10,31,,,15,1*6F\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=4, svid_01=15, elv_01=, az_01=, cno_01=20, svid_02=25, elv_02=, az_02=, cno_02=12, svid_03=28, elv_03=, az_03=, cno_03=10, svid_04=31, elv_04=, az_04=, cno_04=15, signalID=1)>
+raw: b'$GNRMC,192405.00,V,,,,,,,140824,,,N,V*19\r\n', parsed: <NMEA(GNRMC, time=19:24:05, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:24:05, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192405.00,,,,,0,00,99.99,,,,,,*73\r\n'
+raw: b'$GNGGA,192405.00,,,,,0,00,99.99,,,,,,*73\r\n', parsed: <NMEA(GNGGA, time=19:24:05, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,04,15,,,20,25,,,12,28,,,11,31,,,15,1*6E\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=4, svid_01=15, elv_01=, az_01=, cno_01=20, svid_02=25, elv_02=, az_02=, cno_02=12, svid_03=28, elv_03=, az_03=, cno_03=11, svid_04=31, elv_04=, az_04=, cno_04=15, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192405.00,V,N*5F\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:24:05, status=V, posMode=N)>
+raw: b'$GNRMC,192406.00,V,,,,,,,140824,,,N,V*1A\r\n', parsed: <NMEA(GNRMC, time=19:24:06, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:24:06, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192406.00,,,,,0,00,99.99,,,,,,*70\r\n'
+raw: b'$GNGGA,192406.00,,,,,0,00,99.99,,,,,,*70\r\n', parsed: <NMEA(GNGGA, time=19:24:06, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,04,15,,,21,25,,,12,28,,,12,31,,,16,1*6F\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=4, svid_01=15, elv_01=, az_01=, cno_01=21, svid_02=25, elv_02=, az_02=, cno_02=12, svid_03=28, elv_03=, az_03=, cno_03=12, svid_04=31, elv_04=, az_04=, cno_04=16, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192406.00,V,N*5C\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:24:06, status=V, posMode=N)>
+raw: b'$GNRMC,192407.00,V,,,,,,,140824,,,N,V*1B\r\n', parsed: <NMEA(GNRMC, time=19:24:07, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:24:07, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192407.00,,,,,0,00,99.99,,,,,,*71\r\n'
+raw: b'$GNGGA,192407.00,,,,,0,00,99.99,,,,,,*71\r\n', parsed: <NMEA(GNGGA, time=19:24:07, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,03,15,,,21,28,,,13,31,,,16,1*6D\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=3, svid_01=15, elv_01=, az_01=, cno_01=21, svid_02=28, elv_02=, az_02=, cno_02=13, svid_03=31, elv_03=, az_03=, cno_03=16, signalID=1)>
+raw: b'$GLGSV,1,1,01,,,,25,1*7E\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=1, svid_01=, elv_01=, az_01=, cno_01=25, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192407.00,V,N*5D\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:24:07, status=V, posMode=N)>
+raw: b'$GNRMC,192408.00,V,,,,,,,140824,,,N,V*14\r\n', parsed: <NMEA(GNRMC, time=19:24:08, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:24:08, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192408.00,,,,,0,00,99.99,,,,,,*7E\r\n'
+raw: b'$GNGGA,192408.00,,,,,0,00,99.99,,,,,,*7E\r\n', parsed: <NMEA(GNGGA, time=19:24:08, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,02,15,,,21,31,,,15,1*67\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=2, svid_01=15, elv_01=, az_01=, cno_01=21, svid_02=31, elv_02=, az_02=, cno_02=15, signalID=1)>
+raw: b'$GLGSV,1,1,01,,,,22,1*79\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=1, svid_01=, elv_01=, az_01=, cno_01=22, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192408.00,V,N*52\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:24:08, status=V, posMode=N)>
+raw: b'$GNRMC,192409.00,V,,,,,,,140824,,,N,V*15\r\n', parsed: <NMEA(GNRMC, time=19:24:09, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:24:09, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192409.00,,,,,0,00,99.99,,,,,,*7F\r\n'
+raw: b'$GNGGA,192409.00,,,,,0,00,99.99,,,,,,*7F\r\n', parsed: <NMEA(GNGGA, time=19:24:09, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,02,15,,,22,31,,,14,1*65\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=2, svid_01=15, elv_01=, az_01=, cno_01=22, svid_02=31, elv_02=, az_02=, cno_02=14, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192409.00,V,N*53\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:24:09, status=V, posMode=N)>
+raw: b'$GNRMC,192410.00,V,,,,,,,140824,,,N,V*1D\r\n', parsed: <NMEA(GNRMC, time=19:24:10, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:24:10, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192410.00,,,,,0,00,99.99,,,,,,*77\r\n'
+raw: b'$GNGGA,192410.00,,,,,0,00,99.99,,,,,,*77\r\n', parsed: <NMEA(GNGGA, time=19:24:10, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,01,15,,,22,1*61\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=15, elv_01=, az_01=, cno_01=22, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192410.00,V,N*5B\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:24:10, status=V, posMode=N)>
+raw: b'$GNRMC,192411.00,V,,,,,,,140824,,,N,V*1C\r\n', parsed: <NMEA(GNRMC, time=19:24:11, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:24:11, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192411.00,,,,,0,00,99.99,,,,,,*76\r\n'
+raw: b'$GNGGA,192411.00,,,,,0,00,99.99,,,,,,*76\r\n', parsed: <NMEA(GNGGA, time=19:24:11, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,01,15,,,22,1*61\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=15, elv_01=, az_01=, cno_01=22, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192411.00,V,N*5A\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:24:11, status=V, posMode=N)>
+raw: b'$GNRMC,192412.00,V,,,,,,,140824,,,N,V*1F\r\n', parsed: <NMEA(GNRMC, time=19:24:12, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNRMC,192413.00,V,,,,,,,140824,,,N,V*1E\r\n', parsed: <NMEA(GNRMC, time=19:24:13, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:24:13, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192413.00,,,,,0,00,99.99,,,,,,*74\r\n'
+raw: b'$GNGGA,192413.00,,,,,0,00,99.99,,,,,,*74\r\n', parsed: <NMEA(GNGGA, time=19:24:13, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,01,15,,,22,1*61\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=15, elv_01=, az_01=, cno_01=22, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192413.00,V,N*58\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:24:13, status=V, posMode=N)>
+raw: b'$GNRMC,192414.00,V,,,,,,,140824,,,N,V*19\r\n', parsed: <NMEA(GNRMC, time=19:24:14, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:24:14, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192414.00,,,,,0,00,99.99,,,,,,*73\r\n'
+raw: b'$GNGGA,192414.00,,,,,0,00,99.99,,,,,,*73\r\n', parsed: <NMEA(GNGGA, time=19:24:14, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,01,15,,,22,1*61\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=1, svid_01=15, elv_01=, az_01=, cno_01=22, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192414.00,V,N*5F\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:24:14, status=V, posMode=N)>
+raw: b'$GNRMC,192415.00,V,,,,,,,140824,,,N,V*18\r\n', parsed: <NMEA(GNRMC, time=19:24:15, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>
+Unknown Error: 'datetime.time' object is not subscriptable <NMEA(GNGGA, time=19:24:15, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)> b'$GNGGA,192415.00,,,,,0,00,99.99,,,,,,*72\r\n'
+raw: b'$GNGGA,192415.00,,,,,0,00,99.99,,,,,,*72\r\n', parsed: <NMEA(GNGGA, time=19:24:15, lat=, NS=, lon=, EW=, quality=0, numSV=0, HDOP=99.99, alt=, altUnit=, sep=, sepUnit=, diffAge=, diffStation=)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,1*33\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=1)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,2*30\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=2)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,3*31\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=3)>
+raw: b'$GNGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99,4*36\r\n', parsed: <NMEA(GNGSA, opMode=A, navMode=1, svid_01=, svid_02=, svid_03=, svid_04=, svid_05=, svid_06=, svid_07=, svid_08=, svid_09=, svid_10=, svid_11=, svid_12=, PDOP=99.99, HDOP=99.99, VDOP=99.99, systemId=4)>
+raw: b'$GPGSV,1,1,02,15,,,23,32,,,21,1*61\r\n', parsed: <NMEA(GPGSV, numMsg=1, msgNum=1, numSV=2, svid_01=15, elv_01=, az_01=, cno_01=23, svid_02=32, elv_02=, az_02=, cno_02=21, signalID=1)>
+raw: b'$GLGSV,1,1,00,1*78\r\n', parsed: <NMEA(GLGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GAGSV,1,1,00,7*73\r\n', parsed: <NMEA(GAGSV, numMsg=1, msgNum=1, numSV=0, signalID=7)>
+raw: b'$GBGSV,1,1,00,1*76\r\n', parsed: <NMEA(GBGSV, numMsg=1, msgNum=1, numSV=0, signalID=1)>
+raw: b'$GNGLL,,,,,192415.00,V,N*5E\r\n', parsed: <NMEA(GNGLL, lat=, NS=, lon=, EW=, time=19:24:15, status=V, posMode=N)>
+raw: b'$GNRMC,192416.00,V,,,,,,,140824,,,N,V*1B\r\n', parsed: <NMEA(GNRMC, time=19:24:16, status=V, lat=, NS=, lon=, EW=, spd=, cog=, date=2024-08-14, mv=, mvEW=, posMode=N, navStatus=V)>
+raw: b'$GNVTG,,,,,,,,,N*2E\r\n', parsed: <NMEA(GNVTG, cogt=, cogtUnit=, cogm=, cogmUnit=, sogn=, sognUnit=, sogk=, sogkUnit=, posMode=N)>

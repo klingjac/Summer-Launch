@@ -90,6 +90,7 @@ class ADS_Sensors():
                 self.magnetometer = PniRm3100()
                 self.magnetometer.assign_device_addr(self.mag_addr)
         except:
+            print("ADS reboot")
             os.system("sudo reboot now")
 
         self.magnetometer.print_status_statements = False
