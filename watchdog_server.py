@@ -132,24 +132,44 @@ class Beacon_Transmitter:
             try:
                 start = time.time()
                 self.alive_flag.set()
-                
-                free_memory = self.instances["Status"].free_memory
-                free_storage = self.instances["Status"].free_disk_space
-                print(f"free storage: {free_storage}")
-                CPUtemp = self.instances["Status"].cpu_temp
-                Vbattraw = self.instances["Status"].VbattRaw
-                Ibattraw = self.instances["Status"].IbattRaw
-                V3v3 = self.instances["Status"].V3v3
-                I3v3 = self.instances["Status"].I3v3
-                V5v = self.instances["Status"].V5v0
-                I5v = self.instances["Status"].I5v0
-                Vbatt = self.instances["Status"].Vbatt
-                Ibatt = self.instances["Status"].Ibatt
-                T3v3 = self.instances["Status"].T3v3
-                T5v = self.instances["Status"].T5v0
-                batt_temp = self.instances["Status"].tmp102_temp
-                bmetemp = self.instances["Status"].bme680_temp
-                bmepressure = self.instances["Status"].bme680_pressure
+                try:
+                    free_memory = self.instances["Status"].free_memory
+                    free_storage = self.instances["Status"].free_disk_space
+                except:
+                    free_memory = 0
+                    free_storage = 0
+                try:
+                    CPUtemp = self.instances["Status"].cpu_temp
+                    Vbattraw = self.instances["Status"].VbattRaw
+                    Ibattraw = self.instances["Status"].IbattRaw
+                    V3v3 = self.instances["Status"].V3v3
+                    I3v3 = self.instances["Status"].I3v3
+                    V5v = self.instances["Status"].V5v0
+                    I5v = self.instances["Status"].I5v0
+                    Vbatt = self.instances["Status"].Vbatt
+                    Ibatt = self.instances["Status"].Ibatt
+                    T3v3 = self.instances["Status"].T3v3
+                    T5v = self.instances["Status"].T5v0
+                except:
+                    CPUtemp = 0
+                    Vbattraw = 0
+                    Ibattraw = 0
+                    V3v3 = 0
+                    I3v3 = 0
+                    V5v = 0
+                    I5v = 0
+                    Vbatt = 0
+                    Ibatt = 0
+                    T3v3 = 0
+                    T5v = 0
+                try:
+                    batt_temp = self.instances["Status"].tmp102_temp
+                    bmetemp = self.instances["Status"].bme680_temp
+                    bmepressure = self.instances["Status"].bme680_pressure
+                except:
+                    batt_temp = 0
+                    bmetemp = 0
+                    bmepressure = 0
 
                 #dict = parse_magnetometer_data(self.instances["QuadMag"].QuadMag.current_reading)
                 mag1x = 0 #dict["mag1x"]
@@ -165,15 +185,20 @@ class Beacon_Transmitter:
                 mag4y = 0 #dict["mag4y"]
                 mag4z = 0 #dict["mag4z"]
                 QMtemp = 0 #dict["QMtemp"]
-
-                recent_sweep_time = self.instances["OPV"].recent_sweep_time
-                #print(f"recent sweep time: {recent_sweep_time}")
-                ref_Voc = self.instances["OPV"].ref_Voc
-                #print(f"rev voc: {ref_Voc}")
-                opv_Voc = self.instances["OPV"].opv_Voc
-                #print(f"open voc: {opv_Voc}")
-                opv_Isc = self.instances["OPV"].opv_Isc
-                #print(f"open Isc: {opv_Isc}")
+                try:
+                    recent_sweep_time = self.instances["OPV"].recent_sweep_time
+                    #print(f"recent sweep time: {recent_sweep_time}")
+                    ref_Voc = self.instances["OPV"].ref_Voc
+                    #print(f"rev voc: {ref_Voc}")
+                    opv_Voc = self.instances["OPV"].opv_Voc
+                    #print(f"open voc: {opv_Voc}")
+                    opv_Isc = self.instances["OPV"].opv_Isc
+                    #print(f"open Isc: {opv_Isc}")
+                except:
+                    recent_sweep_time = 0
+                    ref_Voc = 0
+                    opv_Voc = 0
+                    opv_Isc = 0
                 try:
                     GPSfix = self.instances["ADS"].ads_sensors.GPS.gps_data['fix']
                     # % operations to assert datetime bounds
@@ -195,21 +220,42 @@ class Beacon_Transmitter:
                     UNIXtime = int(time.mktime(rtc_time.timetuple()))
                 except:
                     UNIXtime = 1723563543
-
-                GPSnumSats = self.instances["ADS"].ads_sensors.GPS.gps_data['num_sv']
-                Alt = self.instances["ADS"].ads_sensors.GPS.gps_data['altitude']
-                Lat = self.instances["ADS"].ads_sensors.GPS.gps_data['latitude']
-                Long = self.instances["ADS"].ads_sensors.GPS.gps_data['longitude']
-                loggingCN0 = self.instances["ADS"].ads_sensors.GPS.gps_data['snr']
-                magx = self.instances["ADS"].ads_sensors.magX
-                magy = self.instances["ADS"].ads_sensors.magY
-                magz = self.instances["ADS"].ads_sensors.magZ
-                gyrox = self.instances["ADS"].ads_sensors.gyroX
-                gyroy = self.instances["ADS"].ads_sensors.gyroY
-                gyroz = self.instances["ADS"].ads_sensors.gyroZ
-                tridiode1 = self.instances["ADS"].ads_sensors.tri1b
-                tridiode2 = self.instances["ADS"].ads_sensors.tri2b
-                tridiode3 = self.instances["ADS"].ads_sensors.tri3b
+                try:
+                    GPSnumSats = self.instances["ADS"].ads_sensors.GPS.gps_data['num_sv']
+                    Alt = self.instances["ADS"].ads_sensors.GPS.gps_data['altitude']
+                    Lat = self.instances["ADS"].ads_sensors.GPS.gps_data['latitude']
+                    Long = self.instances["ADS"].ads_sensors.GPS.gps_data['longitude']
+                    loggingCN0 = self.instances["ADS"].ads_sensors.GPS.gps_data['snr']
+                except:
+                    GPSnumSats = 0
+                    Alt = 0
+                    Lat = 0
+                    Long = 0
+                    loggingCN0 = 0
+                try: 
+                    magx = self.instances["ADS"].ads_sensors.magX
+                    magy = self.instances["ADS"].ads_sensors.magY
+                    magz = self.instances["ADS"].ads_sensors.magZ
+                except: 
+                    magx = 0
+                    magy = 0
+                    magz = 0
+                try:
+                    gyrox = self.instances["ADS"].ads_sensors.gyroX
+                    gyroy = self.instances["ADS"].ads_sensors.gyroY
+                    gyroz = self.instances["ADS"].ads_sensors.gyroZ
+                except:
+                    gyrox = 0
+                    gyroy = 0
+                    gyroz = 0
+                try:
+                    tridiode1 = self.instances["ADS"].ads_sensors.tri1b
+                    tridiode2 = self.instances["ADS"].ads_sensors.tri2b
+                    tridiode3 = self.instances["ADS"].ads_sensors.tri3b
+                except:
+                    tridiode1 = 0
+                    tridiode2 = 0
+                    tridiode3 = 0
 
                 try:
                     telemetry_list_nums = [free_memory, free_storage, CPUtemp, Vbattraw, Ibattraw, V3v3, I3v3, V5v, I5v, Vbatt, Ibatt, T3v3, T5v, batt_temp, bmetemp, bmepressure, mag1x, mag1y, mag1z, mag2x, mag2y, mag2z, mag3x, mag3y, mag3z, mag4x, mag4y, mag4z, QMtemp, recent_sweep_time, ref_Voc, opv_Voc, opv_Isc, GPSfix, UNIXtime, GPSnumSats, Alt, Lat, Long, loggingCN0, magx, magy, magz, gyrox, gyroy, gyroz, tridiode1, tridiode2, tridiode3]

@@ -89,7 +89,9 @@ class ADS_Sensors():
                 #Initialize rm3100 mag, use sampling rate of 37hz by default
                 self.magnetometer = PniRm3100()
                 self.magnetometer.assign_device_addr(self.mag_addr)
-        except:
+        except Exception as e:
+            print(f"Initialization issue: {e}")
+            time.sleep(10)
             print("ADS reboot")
             os.system("sudo reboot now")
 

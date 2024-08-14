@@ -1,6 +1,0 @@
-'NoneType' object has no attribute 'free_memory'
-'NoneType' object has no attribute 'free_memory'
-'NoneType' object has no attribute 'free_memory'
-'NoneType' object has no attribute 'free_memory'
-'NoneType' object has no attribute 'free_memory'
-'NoneType' object has no attribute 'free_memory'

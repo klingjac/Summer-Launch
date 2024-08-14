@@ -250,14 +250,14 @@ class ICM20948:
 
         if i2c_bus is None:
             from smbus2 import SMBus
-            print(f"bus = {3}")
+            #print(f"bus = {3}")
             self._bus = SMBus(bus=2)
         else:
             from smbus2 import SMBus
-            print(f"bus = {i2c_bus}")
+            #print(f"bus = {i2c_bus}")
             self._bus = SMBus(bus=i2c_bus)
 
-        print(f"bus = {self._bus}, fd = {self._bus.fd}, addr = {self._addr}")
+        #print(f"bus = {self._bus}, fd = {self._bus.fd}, addr = {self._addr}")
 
         self.bank(0)
         if not self.read(ICM20948_WHO_AM_I) == CHIP_ID:
@@ -290,11 +290,8 @@ class ICM20948:
 
         temp = self.read(0x11)
 
-        print(f"temp: {temp}")
 
         temp = temp | 0x01
-
-        print(f"temp: {temp}")
 
         self.bank(0)
 

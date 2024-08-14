@@ -116,14 +116,15 @@ class ADSSensorDataLogger:
                     write_to_log_file('/home/logger/flight_logging/ADS_logs/ADS_log.txt', "Mag reading may have missed -- Attempting Read to Re-init")
                     self.ads_sensors.getMagReading()
                     retry_read_m = True
-                elif not reset_sensors:
+                elif not reset_sensors: #Attempt to reinitialize the sensors before killing ADS instance
+                    write_to_log_file('/home/logger/flight_logging/ADS_logs/ADS_log.txt', "Attempting to Reinitialize Sensors")
                     self.ads_sensors.GPS.running = False #Ensure only 1 GPS thread is running
                     self.ads_sensors = ADS_Sensors(self.RTC)
                     reset_sensors = True
                 
                 self.imu_status = False
                 self.pni_status = False
-                time.sleep(0.2)
+                time.sleep(1)
         except Exception as e:
             self.alive_flag.clear()
             write_to_log_file('/home/logger/flight_logging/ADS_logs/ADS_log.txt', str(e))
@@ -132,3 +133,4 @@ class ADSSensorDataLogger:
     
     def stop(self):
         self.running = False
+        self.ads_sensors.GPS.running = False # Ensure that the GPS thread gets killed
