@@ -70,7 +70,10 @@ class Status_Data:
             self.csv_file.close()
         
         # Get timestamp from RTC
-        timestamp = self.RTC.getTime()
+        try:
+            timestamp = self.RTC.getTime()
+        except:
+            timestamp = time.time()
 
         # Count the number of files in the directory
         num_files = len([f for f in os.listdir(self.data_dir) if os.path.isfile(os.path.join(self.data_dir, f))])
@@ -137,7 +140,10 @@ class Status_Data:
         self.read_bme680()
 
     def log_status(self):
-        timestamp = self.RTC.getTime()
+        try:
+            timestamp = self.RTC.getTime()
+        except:
+            timestamp = time.time()
         self.csv_writer.writerow([
             timestamp,
             self.VbattRaw, self.IbattRaw, self.Vbatt, self.Ibatt, 

@@ -119,43 +119,60 @@ class ADS_Sensors():
 
 
     def getTriclopsReading(self):
-        data = self.triclops.get_data() 
-        #print(f"tri data: {data}")
-        byte_convert = [point * self.sun_ref/self.MaxCounts for point in data]
-        #print(f"tri data: {byte_convert}")
-        self.tri1 = byte_convert[0]
-        self.tri2 = byte_convert[1]
-        self.tri3 = byte_convert[2]
-        tri1b = data[0]
-        tri2b = data[1]
-        tri3b = data[2]
+        try:
+            data = self.triclops.get_data() 
+            #print(f"tri data: {data}")
+            byte_convert = [point * self.sun_ref/self.MaxCounts for point in data]
+            #print(f"tri data: {byte_convert}")
+            self.tri1 = byte_convert[0]
+            self.tri2 = byte_convert[1]
+            self.tri3 = byte_convert[2]
+            tri1b = data[0]
+            tri2b = data[1]
+            tri3b = data[2]
+        except:
+            self.tri1 = 0
+            self.tri2 = 0
+            self.tri3 = 0
 
 
     def getMagReading(self):
-        readings = self.magnetometer.read_meas() 
+        try:
+            readings = self.magnetometer.read_meas() 
 
-        # Relative magnetometer readings
-        magX = readings[0]
-        magY = readings[1]
-        magZ = readings[2]
+            # Relative magnetometer readings
+            magX = readings[0]
+            magY = readings[1]
+            magZ = readings[2]
 
-        # MC10 Orientation mag
-        self.magX = magY
-        self.magY = magX
-        self.magZ = -magZ
-
+            # MC10 Orientation mag
+            self.magX = magY
+            self.magY = magX
+            self.magZ = -magZ
+        except:
+            self.magX = 0
+            self.magY = 0
+            self.magZ = 0
     def getGyroReading(self):
-        #data = self.imu.read_bytes(ICM20948_ACCEL_XOUT_H + 6, 12) #Return the raw gyro readings, each is a raw 2 bytes
-        ax, ay, az, gx, gy, gz = self.imu_gyro.read_accelerometer_gyro_data()
+        try:
+            #data = self.imu.read_bytes(ICM20948_ACCEL_XOUT_H + 6, 12) #Return the raw gyro readings, each is a raw 2 bytes
+            ax, ay, az, gx, gy, gz = self.imu_gyro.read_accelerometer_gyro_data()
 
-        # MC10 relative gyro
-        self.gyroX = gy
-        self.gyroY = gx
-        self.gyroZ = gz
+            # MC10 relative gyro
+            self.gyroX = gy
+            self.gyroY = gx
+            self.gyroZ = gz
 
-        self.accX = ax
-        self.accY = ay
-        self.accZ = az
+            self.accX = ax
+            self.accY = ay
+            self.accZ = az
+        except:
+            self.gyroX = 0
+            self.gyroY = 0
+            self.gyroZ = 0
+            self.accX = 0
+            self.accY = 0
+            self.accZ = 0
 
 
     

@@ -52,7 +52,10 @@ class ADSSensorDataLogger:
     def create_new_csv_file(self):
         if self.csv_file:
             self.csv_file.close()
-        timestamp = self.RTC.getTime()
+        try:
+            timestamp = self.RTC.getTime()
+        except:
+            timestamp = time.time()
         filename = os.path.join(self.data_dir, f"{timestamp}_ads_data_{self.file_counter}.csv")
         self.csv_file = open(filename, mode='w', newline='')
         self.csv_writer = csv.writer(self.csv_file)

@@ -39,7 +39,10 @@ class OPV:
 
     def generate_opv_file_name(self, directory):
         num_files = len([f for f in os.listdir(directory) if os.path.isfile(os.path.join(directory, f))])
-        timestamp = self.RTC.getTime()
+        try:
+            timestamp = self.RTC.getTime()
+        except:
+            timestamp = time.time()
         file_name = f"{num_files}_{timestamp}.csv"
         return os.path.join(directory, file_name)
 
