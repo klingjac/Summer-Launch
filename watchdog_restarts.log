@@ -1,0 +1,12 @@
+2024-08-20 20:38:38,987 - WatchdogLogger - INFO - Started ADS thread with ID 548487315904
+2024-08-20 20:38:39,013 - WatchdogLogger - INFO - Started OPV thread with ID 548259611072
+2024-08-20 20:38:39,073 - WatchdogLogger - INFO - Started Status thread with ID 548094046656
+2024-08-20 20:38:39,080 - WatchdogLogger - INFO - Started Beacon_Transmitter thread with ID 547742544320
+2024-08-20 20:43:39,108 - WatchdogLogger - INFO - Started ADS thread with ID 548359143872
+2024-08-20 20:43:39,132 - WatchdogLogger - INFO - Started OPV thread with ID 548131439040
+2024-08-20 20:43:39,195 - WatchdogLogger - INFO - Started Status thread with ID 547965874624
+2024-08-20 20:43:39,203 - WatchdogLogger - INFO - Started Beacon_Transmitter thread with ID 547957481920
+2024-08-20 20:55:29,256 - WatchdogLogger - INFO - Started ADS thread with ID 548113785280
+2024-08-20 20:55:29,281 - WatchdogLogger - INFO - Started OPV thread with ID 547886080448
+2024-08-20 20:55:29,351 - WatchdogLogger - INFO - Started Status thread with ID 547720544704
+2024-08-20 20:55:29,359 - WatchdogLogger - INFO - Started Beacon_Transmitter thread with ID 547712152000

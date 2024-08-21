@@ -85,7 +85,6 @@ class ADSSensorDataLogger:
     def imu_triclops_interrupt_handler(self, channel):
         self.ads_sensors.getGyroReading()
         self.ads_sensors.getTriclopsReading()
-
         # Write to CSV
         try: 
             self.csv_writer.writerow([

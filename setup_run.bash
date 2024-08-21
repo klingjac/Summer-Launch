@@ -7,6 +7,7 @@ rm -rf OPV_logs
 rm -rf QM_logs
 rm -rf gps_data
 rm -rf Beacon_logs
+rm -rf watchdog_restarts.log
 mkdir Beacon_logs
 mkdir gps_data
 mkdir QM_logs
